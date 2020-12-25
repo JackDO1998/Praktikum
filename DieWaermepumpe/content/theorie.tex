@@ -1,0 +1,61 @@
+\section{Theorie}
+\label{sec:Theorie}
+\section{Zielsetzung}
+Bei dem vorliegenden Experiment der Wärmepumpe wird Wärmeenergie aus einem kälteren in ein Wärmeres Reservoir übertragen. Dabei sollen essentielle Kennwerte der Wärmepumpe wie die Güteziffer und der Massendurchsatz bestimmt werden.
+\section{Theorie}
+\subsection{Grundlagen}
+Die Wärmepumpe arbeitet zwischen zwei Wärmereservoirs. Sie bringt die Arbeit auf, die nötig ist um Wärme vom kälteren in das wärmere Reservoir zu transferieren. Aus dem ersten Hauptsatz der Thermodynamik folgt für den Zusammenhang zwischen den Wärmemengen und der aufgebrachten Arbeit:
+\begin{equation*}
+Q_1=Q_2+A.
+\end{equation*}
+Eine wichtige Kennziffer einer Wärmepumpe ist die Güteziffer $v$, die das Verhältnis zwischen der transportierten Wärmemenge $Q_1$ und der dafür aufgebrachten Arbeit $A$ angibt:
+\begin{equation*}
+v=\frac{Q_1}{A}.
+\end{equation*}
+Aus dem zweiten Hauptsatz der Thermodynamik lässt sich außerdem für den idealisierten Fall eines reversiblen Prozesses ein Zusammenhang zwischen den reduzierten Wärmemengen herstellen. Hierbei sind die Temperaturen der Reservoire $T_1$ und $T_2$ als konstant anzunehmen:
+\begin{equation*}
+\frac{Q_1}{T_1}-\frac{Q_2}{T_2}=0.
+\end{equation*}
+Daraus lässt sich für die Güteziffer ein neuer Zusammenhang herleiten:
+\begin{equation}
+Q_1=\frac{Q_1}{T_1}T_2+A \iff Q_1=\frac{A}{1-\frac{T_2}{T_1}}
+\implies v_real=\frac{T_1}{T_1-T_2}
+\end{equation}
+Daraus folgt, dass die Wärmepumpe effizienter arbeitet, je kleiner die Temperaturdifferenz der Reservoire ist.
+Mit zwei Messreihen $T_1$ und $T_2$ und den aus diesen Daten mithilfe von Ausgleichsrechnungen erhaltenen Funktionen $T_1(t)$ und $T_2(t)$ lässt sich die pro Zeit gewonnene Wärmemenge 
+\begin{equation}
+\frac{dQ_1}{dt}=(m_1c_w+m_kc_k)\frac{dT_1}{dt}
+\end{equation}
+sowie die pro Zeit aus dem kälteren Reservoire entnommene Wärmemenge
+\begin{equation}
+\frac{dQ_2}{dt}=(m_2c_w+m_kc_k)\frac{dT_2}{dt}
+\end{equation}
+bestimmen.Dabei ist $m_k c_k$ die Wärmekapazität von Kupferschlange und Eimer, $c_w$ die spezifische Wärmekapazität von Wasser und $m_1$ bzw. $m_2$ die Masse des Wassers im jeweiligen Reservoir.Damit ergibt sich die Güteziffer der Wärmepumpe als:
+\begin{equation}
+v=\frac{dQ_1}{Ndt}=\frac{1}{N}(m_1c_w+m_kc_k)\frac{dT_1}{dt}
+\end{equation}
+Mit der über die Zeit gemittelten Leistungsaufnahme des Kompressors $N$.
+\subsection{Massendurchsatz}
+Weiterhin lässt sich $(dQ_2)/dt$ mithilfe der Verdampfungswärme $L$ neu ausdrücken:
+\begin{equation}
+\frac{dQ_2}{dt}=L\frac{dm}{dt}
+\end{equation}
+Dies erlaubt die Berechnung des Massendurchsatzes $\dot{m}$ , wenn die Verdampfungswärme bekannt ist:
+\begin{equation}
+\dot{m}=\frac{dm}{dt}=\frac{1}{L}\frac{dQ_2}{dt}=\frac{1}{L}(m_2c_w+m_kc_k)\frac{dT_2}{dt}
+\end{equation}
+\subsection{Kompressorleistung}
+Zuletzt muss noch die mechanische Kompressor Leistung berechnet werden. Für die Arbeit , die der Kompressor benötigt um das Volumen $V_a$ auf das Volumen $V_b$ zu reduzieren gilt:
+\begin{equation}
+A_m=-p_aV_a^K\int_{V_a}^{V_b} V^-K dV=\frac{p_aV_a^k}{K-1}(V_b^{-k+1}-V_a^{-K+1}=\frac{1}{K-1}(p_a\sqrt[K]{\frac{p_a}{p_b}}-p_a)V_a
+\end{equation}
+Daraus ergibt sich die mechanische Kompressorleistung $N_m$ als zeitliche ableitung der aufgewendeten Arbeit:
+\begin{equation}
+N_m=\frac{dA_m}{dt}=\frac{1}{K-1}(p_a\sqrt[K]{\frac{p_a}{p_b}}-p_a)\frac{1}{\rho}\dot{m}
+\end{equation}
+\subsection{Funktionsweise}
+Die Wärmepumpe funktioniert mithilfe eines Gases, welches im kalten Reservoir Wärme aufnimmt und speichert, und diese anschließend bei der Kondensation im wärmeren Reservoiran dieses abgibt. Um dies realisieren zu können wird ein Kompressor benötigt,sowie ein Drosselventil, welches dazu dient den Duck des Gases von $p_b$ auf $p_a$ zu verringern.
+Da das Gas so beschaffen ist, dass es bei dem Druck $p_a$ und der Temparatur $T_2$ des Kälteren Reservoirs gasförmig ist, verdampft es in Reservoire 2 und nimmt dabei die Verdampfungswärme $L$ auf.
+Anschließend wird das Gas im Kompressor in einem, wie für die Rechnungen angenommen annähernd adiabatisch ablaufenden Verfahren, unter Aufwendung der Arbeit $A$, auf das Volumen $V_b$ komprimiert, wodurch sich der Druck auf $p_b$ erhöht. 
+Da das verwendete Medium weiterhin beim Druck $p_b$ und der höheren Temperatur $T_1$ flüssig sein soll, kondensiert das Gas im wärmeren Reservoire mit der Temperatur $T_1$ und gibt dabei die in $Q_2$ aufgenommene Kondensationswärme L  an $Q_1$ ab.
+Anschließend wird der Druck mit Hilfe des Drosselventils wieder verringert und der Prozess wiederholt sich.
