@@ -1,0 +1,14 @@
+#Dies sind die Messdaten eines durch einen Elektromagneten erzeugten Magnetfeldes
+# Die Größen U,I,B stehen für Spannung, Strom und Magnetfeldstärke
+#Das magnetfeld wurde zweimal vermessen und dazwischen umgepolt.
+#
+#   U1[v]    I1[A]   B1[T]   U2[T]    I2[A]   B2[T]   
+1    3.32    0.5     0.0810   3.420   0.5     0.0977
+2    6.65    1.0     0.1668   6.828   1.0     0.2009
+3    9.98    1.5     0.2524  10.231   1.5     0.3044
+4   13.317   2.0     0.3327  13.634   2.0     0.4073
+5   16.67    2.5     0.4114  17.043   2.5     0.5088
+6   20.07    3.0     0.4859  20.464   3.0     0.6086
+7   23.56    3.5     0.5936  23.900   3.5     0.7089
+8   26.99    4.0     0.6597  27.380   4.0     0.7879
+9   30.57    4.5     0.7132  30.870   4.5     0.8478
