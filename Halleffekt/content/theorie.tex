@@ -1,0 +1,85 @@
+\section{Zielsetzung}
+In dem im folgenden dokumentierten Experiment sollen mehrere signifikante Materialwerte eines elektrischen Leiters ermittelt werden. Dazu wird insbesondere die durch den gleichnahmigen Effekt hervorgerufene Hall-Spannung gemessen.
+\section{Theorie}
+\subsection{Grundlagen zur elektrischen Leitfähigkeit}
+I einem Festkörper kristalliner Struktur unterliegen die Elektronen dem Pauli-Prinzip, daraus folgt, dass jewils nur zwei Elektronen mit der gleichen Energie existieren können (die mit entgegengesetztem Spin). Daher spalten sich die diskreten Energieniveaus der Atomhüllen in Energiebänder auf, deren Breite dem Energieintervall entspricht in dem die zugehörigen Elektronen liegen. Die Bänder können sich abhängig vom Material überschneiden, oder durch ein Energieintervall getrennt sein in dem keine Elektronen liegen ("verbotene Zone"). Zu der elektrischen Leitfähigkeit des Materials tragen nur die Elektronen des Leitungsbandes, also des höchsten nicht volständig besetzten Bandes, bei, da diese als einzige noch Energie aufnehmen, also durch äußere Krafteinwirkung beschleunigt werden können. Falls das oberste Band leer und vom darunterliegenden Band getrennt ist, können keine Elektronen beschleunigt werden, der Werkstoff ist in diesem Fall nicht leitend.
+\subsection{Berechnung des Widerstandes}
+In einer realen Kristallstruktur stoßen die beschleunigten Elektronen beständig auf strukturelle Fehlstellen und werden von diesen abgelenkt. Die gemittelte Zeit zwischen zwei solchen zusammenstößen wird als mittlere Flugzeit $\tau$ bezeichnet.       
+Bei äußerem elektrischen Feld gilt $F=mb=F_{el}$, gilt daher für die Beschleunigung $b$ in Richtung des Feldes $E$:
+\begin{equation*}
+b=-\frac{e_0}{m_0}E
+\end{equation*}
+mit der Elektronenmasse $m_0$ und der Elementarladung $e_0$. Daraus ergibt sich die Änderung der Geschwindigkeit $\Delta v$:
+\begin{equation}
+\Delta v=-\frac{e_0}{m_0}E\tau
+\end{equation}
+(mit $b=\frac{\Delta v}{\tau}$). Aufgrund der willkürlichen Ablenkrichtung ,aus der  $v_0=0$ (im Mittel) nach dem Stoß folgt und der gleichmäßigen Beschleunigung in E-Richtung gilt für die mittlere Driftgeschwindigkeit
+\begin{equation}
+v_d=\frac{1}{2}\Delta v
+\end{equation} 
+Damit ergibt sich die Stromdichte j (in Bewegungsrichtung) 
+\begin{equation}
+j=-nv_de_0
+\end{equation}
+wobei $n$ die Anzahl an Elektronen pro Volumenelement beschreibt. Wenn man nun einen geraden Leiter mit der Länge $L$ und Querschnittsfläche $Q$ annimmt, ist die Stromdichte als Strom pro Querschnittsfäche ($j=\frac{I}{Q}$ definiert. Für das E-Feld gilt (nach Vorbild des Plattenkondensators) $E=\frac{U}{L}$.Außerdem lässt sich $v_d$ über die Geschwindigkeitsänderung sowie deren Definition ausdrücken ($v_d=\frac{1}{2}\Delta v=-\frac{1}{2}\frac{e_0}{m_0}E\tau$). Damit lässt sich der Ausdruck für die Stromdichte umformen:
+\begin{equation}
+I=\frac{e_0^2n\tau Q}{2m_0L}U
+\end{equation}
+In dieser Gleichung kann man das bekannte Ohmsche Gesetz $U=RI$ wiedererkennen. Daraus lässt sich der Widerstand
+\begin{equation}
+R=\frac{2m_0L}{e_0^2n\tau Q}
+\end{equation}
+sowie dessen Kehrwert, die elektrische Leitfähigkeit
+\begin{equation}
+S=R^{-1}=\frac{e_0^2n\tau Q}{2m_0L}
+\end{equation}
+ablesen. Die zugehörigen spezifischen, also von der geometrischen Beschaffenheit unabhängigen, Größen sind der spezifische Widerstand $\rho=\frac{2m_0}{e_0^2n\tau}$ bzw. die spezifische Leitfähigkeit $\sigma=\rho^{-1}=\frac{e_0^2n\tau}{2m_0}$.
+\subsection{Hall Effekt}
+In der vorliegenden Formel existieren einige Werte wie die Elektronenzahl die unbekannt sind, um diese zu bestimmen kann die Hall Spannung verwendet werden. Dafür wird an eine Leiterplatte, durch die der Querstrom $I_q$ fließt, der Breite $b$ und Dicke $d$ ein homogenes magnetisches Feld angelegt, welches orthogonal auf der Bewegungsrichtung der Elektronen und der Leiterfläche steht. Auf die Elektronen wirkt nun die Lorentzkraft
+\begin{equation*}
+F_l=e_0v_dB
+\end{equation*}
+deren Richtung sich aus der rechten Hand Regel ergibt. Sie sorgt in dieser Anordnung dafür, dass alle Elektronen zu einer Seite der Leiterplatte bewegt werden (welche hängt von der Polung des Magnetfeldes ab). Durch diese Ladungsteilung entsteht ein elektrisches Feld $E_l$, welches der Lorentzkraft entgegenwirkt. Die Stärke dieses Feldes wächst so lange an, bis sich die elektrische Kraft und die Lorentzkraft ausgleichen.
+\begin{equation}
+F_{el}=F_l \implies   e_0E_l=e_0v_dB
+\end{equation}
+Zwischen den Enden der Leiterplatte liegt daher nun eine Spannung an, dies ist die Hall-Spannung $U_H$. Wenn die Anordnung als Plattenkondensator mit Abstand $b$ angenommen wird, kann man in den Ausdruck aus (7) für die elektrische Feldstärke $E_l=\frac{U_H}{b}$ einsetzten, und erhält für die Hall-Spannung
+\begin{equation}
+U_H=v_dBb
+\end{equation}
+Wenn nun noch $v_d$ durch den Querstrom ausgedrückt wird (hier $Q=bd$)
+\begin{equation}
+v_d=-\frac{j}{ne_0}=-\frac{i_q}{ne_0bd}
+\end{equation}
+kann aus der Hall-Spannung die Elektronenzahl berechnet werden
+\begin{equation}
+U_H=-\frac{i_qb}{ne_0d} \implies n=-\frac{i_qd}{U_He_0d}
+\end{equation}
+\subsection{Weitere Parameter}
+Ein anderer wichtiger Materialwert ist die mittlere freie Weglänge $l$, also die Distanz, die ein Elektron im Mittel zwischen zwei Stößen zurücklegt. Für diese gilt
+\begin{equation}
+l=\tau \vert v \vert
+\end{equation}  
+mit der Totalgeschwindigkeit $\vert v \vert$. diese lässt sich durch die Energie ausdrücken
+\begin{equation}
+\vert v \vert=\sqrt{\frac{2E}{m_0}}=\sqrt{\frac{2E_F}{m_0}}
+\end{equation}
+Für die Energie in dieser Formel ist die Fermi-Energie $E_F$, also der Wert der energiereichsten Elektronen am absoluten Nullpunkt verwendet worden, da nur die Elektronen zur Leitfähigkeit beitragen für die $E\approx E_F$ gilt. Die Fermi-Energie lässt sich durch
+\begin{equation}
+E_F=\frac{h^2}{2m_0}\sqrt[3]{\frac{3n}{8\pi}^2}
+\end{equation}
+mit dem Planckschen Wirkungsquantum $h$ ausdrücken. Daraus ergibt sich für $l$:
+\begin{equation}
+   l=\tau\sqrt{\frac{2E_F}{m_0}}
+\end{equation}
+Außerdem kann die Beweglichkeit $\mu$ als Proportionalitätskonstante definiert werden.
+\begin{equation}
+v_d=\mu E;\mu=\frac{e_0\tau}{2m_0}
+\end{equation}
+\subsection{Störspannung}
+Da es in der Realität nie möglich ist, die Hallspannung an einer Äquipotentialfläche zu messen, tritt bei der Messung eine Störspannung auf. Diese lässt sich eliminieren in dem man die Spannung jeweils für beide Polungen des B-Feldes misst, da sich
+bei der Umpolung die Richtung der Lorentzkraft und somit das Vorzeichen der Spannung ändert, das der Störspannung jedoch nicht. Dann lässt sich aus den beiden gemessenen Spannungen $U_+=U_s+U_H$ und $U_-=U_s-U_H$ die tatsächliche Hall-Spannung
+\begin{equation}
+U_H=\frac{1}{2}(U_+-U_-)
+\end{equation}
+ ermitteln
