@@ -1,0 +1,13 @@
+# Dies sind die Daten für einen konstanten Strom durch die Spulen des Elektromagneten von 4,0 Ampere
+# Der Strom durch die Kupferprobe wurde in 0,5 A schritten bis auf 4,0 A bzw. 2.5 A erhöht.
+# Die mit 1 und 2 indizierten Daten unterscheiden sich dadurch das umgepolt wurde.
+#
+#       U1[V]       I1[A]       Uh1[µV]     U2[V]       I2[A]       Uh2[µV] 
+1       0.028       0.5         2.2         0.027       0.5         4.0
+2       0.054       1.0         1.7         0.054       1.0         5.2
+3       0.081       1.5         0.9         0.080       1.5         5.8
+4       0.120       2.0         0.1         0.106       2.0         7.1
+5       0.145       2.5        -0.8         0.132       2.5         7.9 
+6       0.173       3.0        -1.3         
+7       0.201       3.5        -2.2 
+8       0.236       4.0        -2.8
