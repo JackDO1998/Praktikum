@@ -4,12 +4,21 @@
 Bei dem im Folgenden beschriebenen Doppelpendel-Versuch werden gekoppelte Schwingungen unter verschiedenen Anfangsbedingungen untersucht. Dafür wird unter den jeweiligen Bedingungen die Periodendauer zweier durch eine Feder gekoppelter Pendel gemessen, um schließlich den Kopplungsgrad der Feder feststellen zu können.
 \section{Theorie}
 \subsection{harmonische Schwingungen}
-Zunächst wird ein einfaches Fadenpendel mit reibungsfreier Aufhängung, einem Faden der Länge $l$ welcher als masselos angenommen wird und einer Punktmasse $m$. Nach der Anfangsauslenkung wird das Pendel vom tangentialen Anteil der Gewichtskraft $F=mgsin(\varphi)$ beschleunigt.
-Daraus erhält man mit der Kleinwinkelnäherung $sin(\varphi)=\varphi$ für kleine Auslenkungen die homogene Differentialgleichung:
+Zunächst wird ein einfaches Fadenpendel mit reibungsfreier Aufhängung, einem Faden der Länge $l$ 
+welcher als masselos angenommen wird und einer Punktmasse $m$. Nach der Anfangsauslenkung wird das 
+Pendel vom tangentialen Anteil der Gewichtskraft $F=mgsin(\varphi)$ beschleunigt.
+Daraus kann mit der Kleinwinkelnäherung $sin(\varphi)\approx\varphi$ für kleine Auslenkungen die 
+homogene Differentialgleichung:
 \begin{equation}
-\ddot{\varphi}+w^2\varphi=0,w=\sqrt{\frac{g}{l}}
+\ddot{\varphi}+w^2\varphi=0\\
+w=\sqrt{\frac{g}{l}}
 \end{equation}
-Dies ist die Differentialgleichung des harmonischen Oszillator mit der allgemeinen Lösung $\varphi(t)=acos(wt+\phi)$ mit der Amplitude $a$ und der Phase $\phi$. Aus ihr folgt, dass die  Kreisfrequenz und damit die Periodendauer $T$ unabhängig von der Auslenkung und der Masse des Pendels ist ($w=\frac{2\pi}{T}$). Die DGL des harmonischen Oszillators lässt sich auch durch Drehmomente ausdrücken: 
+aufgestellt werden.\newline
+Dies ist die Differentialgleichung des harmonischen Oszillators mit der allgemeinen Lösung 
+$\varphi(t)=acos(wt+\phi)$ mit der Amplitude $a$ und der Phase $\phi$. Aus ihr folgt, dass 
+die  Kreisfrequenz und damit die Periodendauer $T$ unabhängig von der Auslenkung und der Masse 
+des Pendels ist ($w=\frac{2\pi}{T}$). Die Differentialgleichung des harmonischen Oszillators lässt 
+sich auch durch Drehmomente ausdrücken: 
 \begin{equation}
 J\ddot{\varphi}+D_p\varphi, w=\sqrt{\frac{D_p}{J}}=\sqrt{\frac{g}{l}}
 \end{equation}
@@ -21,11 +30,20 @@ welches von der Differenz der Auslenkwinkel abhängt. Daraus lässt sich ein Sys
 J\ddot{\varphi_1}+D\varphi_1=D_F(\varphi_2-\varphi_1) \\
 J\ddot{\varphi_2}+D\varphi_2=D_F(\varphi_1-\varphi_2)
 \end{gather} 
-Dieses System lässt sich durch entsprechende Wahl der Winkel entkoppeln. Die resultierenden entkoppelten DGLs ergeben wieder zwei harmonischen Schwingungen mit den Kreisfrequenzen $w_1$ und $w_2$ und den Auslenkungen $\alpha_1$ und $\alpha_2$. \newline
-Abhängig von den Anfangsbedingungen $\alpha(t=0)$ und $\dot{\alpha}(t=0)$, ergeben sich unterschiedliche Schwingungen. Qualitativ lassen sich drei wesentliche Arten von Schwingungen für die gekoppelten Pendel unterscheiden ( Im folgenden wird jeweils von zwei identischen Pendeln ausgegangen).
+Dieses System lässt sich durch entsprechende Wahl der Winkel entkoppeln. Die resultierenden entkoppelten 
+Differentialgleichungen ergeben wieder zwei harmonischen Schwingungen mit den Kreisfrequenzen $w_1$ und 
+$w_2$ und den Auslenkungen $\alpha_1$ und $\alpha_2$. \newline
+Abhängig von den Anfangsbedingungen $\alpha(t=0)$ und $\dot{\alpha}(t=0)$, ergeben sich unterschiedliche 
+Schwingungen. Qualitativ lassen sich drei wesentliche Arten von Schwingungen für die gekoppelten Pendel 
+unterscheiden ( Im folgenden wird jeweils von zwei identischen Pendeln ausgegangen).
 \begin{itemize}
 \item Gleichsinnige Schwingung: \newline
-Eine Gleichsinnige Schwingung liegt vor, wenn beide Pendel eine identische Anfangsauslenkung haben. Für eine Gleichsinnige liegt also die Anfangsbedingung: $\alpha_1(t=0)=\alpha_2(t=0)$ vor. Bei einer gleichsinnigen Schwingung entfällt das von der Feder ausgeübte Drehmoment ( da $\varphi_1-\varphi_2=\varphi_2-\varphi_1=0$), daher ergibt sich für beide Pendel einfach wieder die DGL des ungestörten harmonischen Oszillator und die Pendel verhalten sich wie im ungekoppelten Zustand. Für die Kreisfrequenz der gleichsinnigen Schwingung gilt daher:
+Eine Gleichsinnige Schwingung liegt vor, wenn beide Pendel eine identische Anfangsauslenkung haben. 
+Für eine Gleichsinnige liegt also die Anfangsbedingung: $\alpha_1(t=0)=\alpha_2(t=0)$ vor. Bei einer 
+gleichsinnigen Schwingung entfällt das von der Feder ausgeübte Drehmoment 
+( da $\varphi_1-\varphi_2=\varphi_2-\varphi_1=0$), daher ergibt sich für beide Pendel einfach wieder die 
+Differentialgleichung des ungestörten harmonischen Oszillator und die Pendel verhalten sich wie im 
+ungekoppelten Zustand. Für die Kreisfrequenz der gleichsinnigen Schwingung gilt daher:
 \begin{equation}
 w_+=w=\sqrt{\frac{g}{l}}
 \end{equation}
@@ -44,8 +62,19 @@ T_-=2\pi\sqrt{\frac{l}{2K+g}}
 \end{equation}
 mit dem Kopplungsgrad $K$ der Feder.
 \item Gekoppelte Schwingung: \newline
-Im Falle der gekoppelten Schwingung befindet sich eines der Pendel in Ruhelage, während das andere um einen beliebigen Winkel (im Rahmen der Kleinwinkelnäherung) ausgelenkt wird. Es gilt also die Anfangsbedingung: $\alpha_1(t=0)=0,\alpha_2(t=0)\neq0$ bzw. $\alpha_2(t=0)=0,\alpha_1(t=0)\neq0$. In diesem Fall wird die Gesamtenergie des Systems mit Hilfe der Feder immer wieder Periodisch von einem Pendel auf das andere übertragen. Das anfangs maximal ausgelenkte Pendel gibt also über die Feder seine Energie unter Abnahme der Amplitude an das andere Pendel ab dessen Amplitude sich dementsprechend erhöht. Das zweite Pendel erreicht genau dann die maximale Auslenkung, wenn das erste stillsteht, also der Energieübertrag vollständig ist. Die Periodendauer eines Zyklus dieser Energieübertragung, also die Dauer zwischen zwei Stillständen eines Pendels, wird als Schwebung bezeichnet. \newline
-Die Schwebungsdauer $T_S$ und Kreisfrequenz der Schwebung $w_S$ können mithilfe der Schwingungsdauern der gleich- und gegensinnigen Schwingungen $T_+$ und $T_-$ berechnet werden. Mit diesen ergibt sich die Schwebungsdauer zu
+Im Falle der gekoppelten Schwingung befindet sich eines der Pendel in Ruhelage, während das andere um 
+einen beliebigen Winkel (im Rahmen der Kleinwinkelnäherung) ausgelenkt wird. Es gilt also die 
+Anfangsbedingung: $\alpha_1(t=0)=0,\alpha_2(t=0)\neq0$ bzw. $\alpha_2(t=0)=0,\alpha_1(t=0)\neq0$. 
+In diesem Fall wird die Gesamtenergie des Systems mit Hilfe der Feder immer wieder periodisch von 
+einem Pendel auf das andere übertragen. Das anfangs maximal ausgelenkte Pendel gibt also über die 
+Feder seine Energie unter Abnahme der Amplitude an das andere Pendel ab dessen Amplitude sich 
+dementsprechend erhöht. Das zweite Pendel erreicht genau dann die maximale Auslenkung, wenn das 
+erste stillsteht, also der Energieübertrag vollständig ist. Die Periodendauer eines Zyklus dieser 
+Energieübertragung, also die Dauer zwischen zwei Stillständen eines Pendels, wird als Schwebung 
+bezeichnet. \newline
+Die Schwebungsdauer $T_S$ und Kreisfrequenz der Schwebung $w_S$ 
+können mithilfe der Schwingungsdauern der gleich- und gegensinnigen 
+Schwingungen $T_+$ und $T_-$ berechnet werden. Mit diesen ergibt sich die Schwebungsdauer zu
 \begin{equation}
 T_S=\frac{T_+T_-}{T_+-T_-}
 \end{equation}
