@@ -89,7 +89,7 @@ $T_-$ ist die Schwingungsdauer für zwei mit einer Feder gekoppelten Pendel die 
   $\SI{1.426\pm0.006}{s}$
 \end{center}
 \subsubsection{Schwingungsdauer $T-$für $L=\SI{0,75}{m}$}
-\label{T-75}
+\label{sec:T-75}
 \begin{center}
   $\SI{1.639\pm0.005}{s}$
 \end{center}
@@ -122,12 +122,21 @@ und für ein $\SI{0,75}{m}$ Pendel:
 
 
 \subsection{Berechnung des Kopplungsgrades $K$}
+\label{sec:kopplungsgrad}
 Der Kopplungsgrad ist eine spezifische Größe der Feder.
 Er berechnet sich mit der Formel aus der Versuchsanleitung
-über \autoref{eq:kappa}
+über \autoref{eq:kappa}. Der zugehörige Fehler lässt sich mit der Gaußschen-Fehlerfortpflanzung aus 
+\autoref{eq:gaussfehler} berechnen. Die dazu nötigen Ableitungen lauten:
+\begin{center}
+  
+
+
+  $\frac{\partial K}{\partial T+}=\dfrac{4m^2p}{\left(p^2+m^2\right)^2}$\\
+  $\frac{\partial K}{\partial T-}=-\dfrac{4p^2m}{\left(m^2+p^2\right)^2}$
+\end{center}
 Mit den in \autoref{sec:T+50} und \autoref{sec:T-50} berechneten Werten folgt:
 \begin{center}
-  $K=0.017\pm0.007$
+  $K=0.016\pm0.006$
 \end{center}
 Mit den in \autoref{sec:T+75} und \autoref{sec:T-75} berechneten Werten folgt:
 
@@ -135,23 +144,83 @@ Mit den in \autoref{sec:T+75} und \autoref{sec:T-75} berechneten Werten folgt:
   $K=0.026\pm0.005$
 \end{center}
 
-\subsection{Vergleich von berechneter und gemessener Schwebungsdauer $T_S$}
-Die Schwebungsdauer berechnet sich laut Versuchsanleitung über \autoref{eq:TS}:
-
-Mit folgenden Werten für ein $\SI{0,5}{m}$ Pendel:
+\subsection{Berechnung von $\omega_+, \omega_-$ und $\omega_S$}
+In den folgenden Berechnungen wurde für $g=\SI{9,81}{\frac{m}{s^2}}$ und für K die Größen aus
+\autoref{sec:kopplungsgrad} angenommen. Die zugehörigen Fehler lassen sich mit der 
+Gaußschen-Fehlerfortpflanzung aus \autoref{eq:gaussfehler} berechnen.
+Die hierfür benötigten Ableitungen lauten:
 \begin{center}
-  $T_+=\SI{7.25\pm0.04}{s}$\\
-  $T_-=\SI{7.128\pm0.032}{s}$
+  
 \end{center}
+\subsubsection{Berechnung von $\omega_+$}
+$\omega_+$ berechnet sich mit \autoref{eq:omegaplus} für ein $\SI{0,5}{m}$ Pendel zu:
+\begin{center}
+  $\omega_+=\SI{4.429}{\frac{1}{s}}$
+\end{center}
+und für ein $\SI{0,75}{m}$ Pendel:
+\begin{center}
+  $\omega_+=\SI{3.616}{\frac{1}{s}}$
+\end{center}
+\subsubsection{Berechnung von $\omega_-$}
+$\omega_-$ berechnet sich mit \autoref{eq:omegaminus} für ein $\SI{0,5}{m}$ Pendel zu:
+\begin{center}
+  $\omega_-=\SI{4.4368\pm0.0029}{\frac{1}{s}}$
+\end{center}
+
+und für ein $\SI{0,75}{m}$ Pendel:
+\begin{center}
+  $\omega_+=\SI{3.6261\pm0.0017}{\frac{1}{s}}$
+\end{center}
+
+\subsubsection{Berechnung von $\omega_S$}
+$\omega_S$ berechnet sich mit \autoref{eq:omegas} für ein $\SI{0,5}{m}$ Pendel zu:
+\begin{center}
+  $\omega_S=\SI{-0.0073\pm0.0029}{\frac{1}{s}}$
+\end{center}
+und für ein $\SI{0,75}{m}$ Pendel:
+\begin{center}
+  $\omega_S=\SI{-0.0095\pm0.0017}{\frac{1}{s}}$
+\end{center}
+
+\subsection{Vergleich von berechneter und gemessener Schwebungsdauer $T_S$}
+Die Schwebungsdauer berechnet sich laut Versuchsanleitung über \autoref{eq:TS}
+Ihr Fehler ist nach \autoref{eq:gaussfehler} zu errrechnen dazu werden folgende Ableitungen benötigt:
+\begin{center}
+  $\frac{\partial T_S}{\partial T+}=-\dfrac{m^2}{\left(p-m\right)^2}$\\
+  $\frac{\partial T_S}{\partial T-}=\dfrac{p^2}{\left(m-p\right)^2}}$
+\end{center}
+\subsubsection{Berechnung des theoriewertes von T+}
+\label{sec:T+th}
+Der Theoriewert $T+$ berechnet sich mit \autoref{eq:tplus} für ein $\SI{0,5}{m}$ Pendel zu:
+\begin{center}
+  $T+=\SI{1.539}{s}$
+\end{center}
+und für ein ein $\SI{0,75}{m}$ Pendel:
+\begin{center}
+  $T+=\SI{1.885}{s}$
+\end{center}
+\subsubsection{Berechnung des theoriewertes von T+}
+\label{sec:T-th}
+Der Theoriewert $T-$ berechnit sich mit \autoref{eq:tminus} für ein $\SI{0,5}{m}$ Pendel zu:
+\begin{center}
+  $T-=\SI{1.537\pm0.0010}{s}$
+\end{center}
+und für ein ein $\SI{0,75}{m}$ Pendel:
+\begin{center}
+  $T-=\SI{1.880\pm0.0009}{s}$
+\end{center}
+
+\subsubsection{Berechnung des Theoriewertes von $T_S$}
+mit folgenden Werten aus \autoref{sec:T+th} und \autoref{sec:T-th} für ein $\SI{0,5}{m}$ Pendel:
+
 folgt:
 \begin{center}
-  $T_{S_{theorie}}=\SI{(4.3\pm1.7)*10^2}{s}$
+  $T_{S_{theorie}}=(9\pm4)*10^2 s$
 \end{center}
 und für das $\SI{0,75}{m}$ Pendel folgt:
 \begin{center}
-  $T_+=\SI{8.415\pm0.033}{s}$\\
-  $T_-=\SI{8.196\pm0.025}{s}$\\
-  $\Rightarrow T_{S_{theorie}}=\SI{(2.5\pm0.6)*10^2}{s}$
+  
+  $ T_{S_{theorie}}={(7.2\pm1.3)*10^2 s$
 \end{center}
 
 
