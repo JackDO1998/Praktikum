@@ -2,147 +2,161 @@
 \label{sec:Auswertung}
 In diesem Kapitel werden alle Mittelwerte und deren Fehler berechnet. 
 Dazu wurde Python Numpy benutzt. Diese Mittelwerte sind die anzunehmenden, fehlerbehafteten Größen.
+
+Der Mittelwert:
+\begin{center}
+  \begin{equation}
+    \label{eq:Mittelwert}
+  \bar{x}=\frac{1}{n}\sum\nolimits_{i=0} x_i
+  \end{equation} 
+\end{center}
+
+Die Standardabweichung:
+\begin{center}
+  \begin{equation}
+    \label{eq:standardabweichung}
+  
+    \sigma=\sqrt{\frac{\sum(x_i-\bar{x})^2}{n-1}}
+  \end{equation}
+
+  
+\end{center}
+
+Der Fehler des Mittelwertes:
+\begin{center}
+  \begin{equation}
+    \label{eq:mittelwertfehler}
+    \sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}
+  \end{equation}
+
+  
+\end{center}
+
+Die Gaußsche Fehlerfortpflanzung:
+\begin{center}
+  \begin{equation}
+  \label{eq:gaussfehler}  
+  
+  $$\sigma_x=\sqrt{(\frac{\partial f}{\partial x_1})^2\sigma_{x_1}^2+(\frac{\partial f}{\partial x_2})^2\sigma_{x_2}^2+...+(\frac{\partial f}{\partial x_n})^2\sigma_{x_n}^2}$$
+\end{equation}
+\end{center}
+
+
+
 \subsection{Schwingungsdauern $T_1$ und $T_2$ der  freischwingenden Pendel}
 Die Schwingungsdauern $T_1$ und $T_2$ sind die Schwingungsdauern des linken bzw. des rechten Pendels ohne das
 beide mit einer Feder gekoppelt sind.
 
-\subsubsection{Schwingungsdauern für die Pendellänge $L=0,5m$}
-Die Schwingungsdauern $T_1$ und $T_2$ ergeben sich aus dem mit (1) berechneten Mittelwerten
-zusammen mit deren über (2) berechneten Fehlern der Mittelwerte zu:
+\subsubsection{Schwingungsdauern für die Pendellänge $L=\SI{0,5}{m}$}
+Die Schwingungsdauern $T_1$ und $T_2$ ergeben sich aus dem mit \autoref{eq:Mittelwert} berechneten Mittelwerten
+zusammen mit deren über \autoref{eq:mittelwertfehler} berechneten Fehlern der Mittelwerte zu:
 \begin{center}
-  $T_1=7.31\pm0.05s$\\
-  $T_2=7.282\pm0.034s$
+  $T_1=\SI{1.463\pm0.001}{s}$\\
+  $T_2=\SI{1.456\pm0.007}{s}$
 \end{center}
 
 
-\subsubsection{Schwingungsdauern für die Pendellänge $L=0,75m$}
-Die Schwingungsdauern $T_1$ und $T_2$ ergeben sich aus dem mit (3) berechneten Mittelwerten
-zusammen mit deren über (2) berechneten Fehlern der Mittelwerte zu:
+\subsubsection{Schwingungsdauern für die Pendellänge $L=\SI{0,75}{m}$}
+Die Schwingungsdauern $T_1$ und $T_2$ ergeben sich aus dem mit \autoref{eq:Mittelwert} berechneten Mittelwerten
+zusammen mit deren über \autoref{eq:mittelwertfehler} berechneten Fehlern der Mittelwerte zu:
 \begin{center}
-  $T_1=8.398\pm0.022s$\\
-  $T_2=8.408\pm0.016s$
+  $T_1=\SI{1.680\pm0.004}{s}$\\
+  $T_2=\SI{1.68116\pm0.0032}{s}$
 \end{center}
 
 
-\subsection{Schwingungsdauer $T_+$  für gleichphasige Schwingungen}
-$T_+$ ist die Schwingungsdauer für zwei mit einer Feder gekoppelte Pendel die gleichohasig schwingen.
-\subsubsection{Schwingungsdauer für $L=0,5m$}
-Die Fehlerbehaftete Größe der Schwingungsdauer $T_+$ ist der Mittlewert nach (1) zusammen 
-mit dessen Fehler nach (2):
+\subsection{Schwingungsdauer $T+$  für gleichphasige Schwingungen}
+$T+$ ist die Schwingungsdauer für zwei mit einer Feder gekoppelte Pendel die gleichphasig schwingen.
+\subsubsection{Schwingungsdauer für $L=\SI{0,5}{m}$}
+\label{sec:T+50}
+Die fehlerbehaftete Größe der Schwingungsdauer $T+$ ist der Mittlewert nach \autoref{eq:Mittelwert} zusammen 
+mit dessen Fehler nach \autoref{eq:mittelwertfehler}:
 \begin{center}
-  $7.25\pm0.04s$
+  
+  $\SI{1.449\pm0.007}{s}$
 \end{center}
-\subsubsection{Schwingungsdauer für $L=0,75m$}
+\subsubsection{Schwingungsdauer für $L=\SI{0,75}{m}$}
+\label{sec:T+75}
 \begin{center}
- $8.415\pm0.033s$ 
+ $\SI{1.683\pm0.007}{s}$ 
 \end{center}
 
-\subsection{Schwingungsdauer $T_-$ für gegenphasige Schwingungen}
+\subsection{Schwingungsdauer $T-$ für gegenphasige Schwingungen}
 $T_-$ ist die Schwingungsdauer für zwei mit einer Feder gekoppelten Pendel die gegenphasig schwingen.
-\subsubsection{Schwingungsdauer $T_-$ für $L=0,5m$}
+\subsubsection{Schwingungsdauer $T-$ für $L=\SI{0,5}{m}$}
+\label{sec:T-50}
 \begin{center}
-  $7.128\pm0.032s$
+  $\SI{1.426\pm0.006}{s}$
 \end{center}
-\subsubsection{Schwingungsdauer $T_-$für $L=0,75m$}
+\subsubsection{Schwingungsdauer $T-$für $L=\SI{0,75}{m}$}
+\label{T-75}
 \begin{center}
-  $8.196\pm0.025s$
+  $\SI{1.639\pm0.005}{s}$
 \end{center}
 
 
 \subsection{Schwingungsdauer $T$ und Schwebungsdauer $T_S$}
 Die Schwingungsdauer $T$ ist die Schwingungsdauer eines gekoppelten Pendels. Die Schwebungsdauer $T_S$ ist 
-die Zeit die ein Pendel braucht um vom Stillstand über eine Schwingungsperiode bis zum erneuten Stillstand benötigt.
+die Zeit die ein Pendel braucht um vom Stillstand über eine Schwingungsperiode bis zum erneuten Stillstand 
+benötigt.
 \subsubsection{Schwingungsdauer $T$}
 Die Schwingungsdauer $T$ ist die Verknüpfung aus dem Mittelwert und dessen Fehler.
-Dieser Wert lautet für ein 0,5m Pendel:
+Dieser Wert lautet für ein $\SI{0,5}{m}$ Pendel:
 \begin{center}
-  $6.853\pm0.028s$
+  $\SI{1.371\pm0.006}{s}$
 \end{center}
-und für ein 0,75m Pendel:
+und für ein $\SI{0,75}{m}$ Pendel:
 \begin{center}
-  $8.38\pm0.04s$
+  $\SI{1.667\pm0.009}{s}$
 \end{center}
 \subsubsection{Schwebungsdauer $T_S$}
-Auch die Schwebungsdauer ist der Mittelwert und sein Fehler.
+Auch die Schwebungsdauer ist der Mittelwert und sein Fehler nach \autoref{eq:Mittelwert} und \autoref{eq:mittelwertfehler}.
 Für ein 0,5m Pendel hat sie die Größe:
 \begin{center}
-  $37,33\pm0.24s$
+  $\SI{37.33\pm0.24}{s}$
 \end{center}
-und für ein 0,75m Pendel:
+und für ein $\SI{0,75}{m}$ Pendel:
 \begin{center}
-  $63,7\pm0,4s$
+  $\SI{63,7\pm0,4}{s}$
 \end{center}
 
 
 \subsection{Berechnung des Kopplungsgrades $K$}
 Der Kopplungsgrad ist eine spezifische Größe der Feder.
 Er berechnet sich mit der Formel aus der Versuchsanleitung
-über:
-\begin{center}
-  $K=\frac{T^2_+-T^2_-}{T^2_++T^2_-}$
-\end{center}
-Mit folgenden Werten für ein 0,5m Pendel:
-\begin{center}
-  $T_+=7.25\pm0.04s$\\
-  $T_-=7.128\pm0.032s$
-\end{center}
-folgt:
+über \autoref{eq:kappa}
+Mit den in \autoref{sec:T+50} und \autoref{sec:T-50} berechneten Werten folgt:
 \begin{center}
   $K=0.017\pm0.007$
 \end{center}
-Mit diesen Werten für das 0,75m Pendel:
-\begin{center}
-  $T_+=8.415\pm0.033s$
-  $T_-=8.196\pm0.025s$
-\end{center}
-folgt:
+Mit den in \autoref{sec:T+75} und \autoref{sec:T-75} berechneten Werten folgt:
+
 \begin{center}
   $K=0.026\pm0.005$
 \end{center}
 
 \subsection{Vergleich von berechneter und gemessener Schwebungsdauer $T_S$}
-Die Schwebungsdauer berechnet sich laut Versuchsanleitung über:
+Die Schwebungsdauer berechnet sich laut Versuchsanleitung über \autoref{eq:TS}:
+
+Mit folgenden Werten für ein $\SI{0,5}{m}$ Pendel:
 \begin{center}
-  $T_S=\frac{T_+*T_-}{T_+-T_-}$
-\end{center}
-Mit folgenden Werten für ein 0,5m Pendel:
-\begin{center}
-  $T_+=7.25\pm0.04s$\\
-  $T_-=7.128\pm0.032s$
+  $T_+=\SI{7.25\pm0.04}{s}$\\
+  $T_-=\SI{7.128\pm0.032}{s}$
 \end{center}
 folgt:
 \begin{center}
-  $T_{S_{theorie}}=(4.3\pm1.7)*10^2s$
+  $T_{S_{theorie}}=\SI{(4.3\pm1.7)*10^2}{s}$
 \end{center}
-und für das 0,75m Pendel folgt:
+und für das $\SI{0,75}{m}$ Pendel folgt:
 \begin{center}
-  $T_+=8.415\pm0.033s$\\
-  $T_-=8.196\pm0.025s$\\
-  $\Rightarrow T_{S_{theorie}}=(2.5\pm0.6)*10^2s$
-\end{center}
-Die errechneten Schwebungsdauern sind weit größer als die
-gemessenen.
-
-\subsection{Verwendete statistische Formeln}
-
-Der Mittelwert:
-\begin{center}
-$\bar{x}=\frac{1}{n}\sum\nolimits_{i=0} x_i$ (1)
+  $T_+=\SI{8.415\pm0.033}{s}$\\
+  $T_-=\SI{8.196\pm0.025}{s}$\\
+  $\Rightarrow T_{S_{theorie}}=\SI{(2.5\pm0.6)*10^2}{s}$
 \end{center}
 
-Die Standardabweichung:
-\begin{center}
-$\sigma=\sqrt{\frac{\sum(x_i-\bar{x})^2}{n-1}}$
-  
-\end{center}
 
-Der Fehler des Mittelwertes:
-\begin{center}
-$\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}$ (2)
-  
-\end{center}
 
-Für alle Rechnungen wurden die Python Funktionen numpy.meam() und numpy.std().
+
 
 
 
