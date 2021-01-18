@@ -2,7 +2,7 @@
 In dem im folgenden dokumentierten Experiment sollen mehrere signifikante Materialwerte eines elektrischen Leiters ermittelt werden. Dazu wird insbesondere die durch den gleichnahmigen Effekt hervorgerufene Hall-Spannung gemessen.
 \section{Theorie}
 \subsection{Grundlagen zur elektrischen Leitfähigkeit}
-I einem Festkörper kristalliner Struktur unterliegen die Elektronen dem Pauli-Prinzip, daraus folgt, dass jewils nur zwei Elektronen mit der gleichen Energie existieren können (die mit entgegengesetztem Spin). Daher spalten sich die diskreten Energieniveaus der Atomhüllen in Energiebänder auf, deren Breite dem Energieintervall entspricht in dem die zugehörigen Elektronen liegen. Die Bänder können sich abhängig vom Material überschneiden, oder durch ein Energieintervall getrennt sein in dem keine Elektronen liegen ("verbotene Zone"). Zu der elektrischen Leitfähigkeit des Materials tragen nur die Elektronen des Leitungsbandes, also des höchsten nicht volständig besetzten Bandes, bei, da diese als einzige noch Energie aufnehmen, also durch äußere Krafteinwirkung beschleunigt werden können. Falls das oberste Band leer und vom darunterliegenden Band getrennt ist, können keine Elektronen beschleunigt werden, der Werkstoff ist in diesem Fall nicht leitend.
+In einem Festkörper kristalliner Struktur unterliegen die Elektronen dem Pauli-Prinzip, daraus folgt, dass jewils nur zwei Elektronen mit der gleichen Energie existieren können (die mit entgegengesetztem Spin). Daher spalten sich die diskreten Energieniveaus der Atomhüllen in Energiebänder auf, deren Breite dem Energieintervall entspricht in dem die zugehörigen Elektronen liegen. Die Bänder können sich abhängig vom Material überschneiden, oder durch ein Energieintervall getrennt sein in dem keine Elektronen liegen ("verbotene Zone"). Zu der elektrischen Leitfähigkeit des Materials tragen nur die Elektronen des Leitungsbandes, also des höchsten nicht volständig besetzten Bandes, bei, da diese als einzige noch Energie aufnehmen, also durch äußere Krafteinwirkung beschleunigt werden können. Falls das oberste Band leer und vom darunterliegenden Band getrennt ist, können keine Elektronen beschleunigt werden, der Werkstoff ist in diesem Fall nicht leitend.
 \subsection{Berechnung des Widerstandes}
 In einer realen Kristallstruktur stoßen die beschleunigten Elektronen beständig auf strukturelle Fehlstellen und werden von diesen abgelenkt. Die gemittelte Zeit zwischen zwei solchen zusammenstößen wird als mittlere Flugzeit $\tau$ bezeichnet.       
 Bei äußerem elektrischen Feld gilt $F=mb=F_{el}$, gilt daher für die Beschleunigung $b$ in Richtung des Feldes $E$:
@@ -55,6 +55,8 @@ kann aus der Hall-Spannung die Elektronenzahl berechnet werden
 \begin{equation}
 U_H=-\frac{i_qb}{ne_0d} \implies n=-\frac{i_qd}{U_He_0d}
 \end{equation}
+\subsection{anormaler Hall-Effekt}
+Wenn bei einem Material der oben beschriebene Fall eintritt, dass sich das oberste und das darunterliegende Band überschneiden, können Elektronen aus dem unteren in das obere Band wechseln. Sie lassen dabei Leerstellen, sogenannte "Löcher", zurück. Diese verhalten sich wie positive Ladungsträger und rufen daher ebenfalls einen Hall-Effekt hervor, jedoch mit umgekehrtem Vorzeichen. Dies bezeichnet man als den anormalen Hall-Effekt. 
 \subsection{Weitere Parameter}
 Ein anderer wichtiger Materialwert ist die mittlere freie Weglänge $l$, also die Distanz, die ein Elektron im Mittel zwischen zwei Stößen zurücklegt. Für diese gilt
 \begin{equation}
@@ -66,7 +68,7 @@ mit der Totalgeschwindigkeit $\vert v \vert$. diese lässt sich durch die Energi
 \end{equation}
 Für die Energie in dieser Formel ist die Fermi-Energie $E_F$, also der Wert der energiereichsten Elektronen am absoluten Nullpunkt verwendet worden, da nur die Elektronen zur Leitfähigkeit beitragen für die $E\approx E_F$ gilt. Die Fermi-Energie lässt sich durch
 \begin{equation}
-E_F=\frac{h^2}{2m_0}\sqrt[3]{\frac{3n}{8\pi}^2}
+E_F=\frac{h^2}{2m_0}\sqrt[3]{(\frac{3n}{8\pi})^2}
 \end{equation}
 mit dem Planckschen Wirkungsquantum $h$ ausdrücken. Daraus ergibt sich für $l$:
 \begin{equation}
