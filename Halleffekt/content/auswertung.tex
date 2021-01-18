@@ -78,6 +78,15 @@ der Mittelwert nach \autoref{eq:Mittelwert} und dessen Fehler nach \autoref{eq:m
 \end{center}
 \subsubsection{Ladungsträger pro Atom $z$}
 \label{sec:ladungstraegerAtom}
+Kupfer hat ein molares Volumen von etwa $7,11 \times 10^{-6} \frac{m^3}{mol}$, daraus folgt das ein
+ Kubikmeter etwa $V_m=\SI{14065}{mol}$ enthält. Ein $mol$ hat genau $N_A$ \autoref{sec:Konstanten} Atome.
+ Die Anzahl der zur elektrischen Leitung nutzbaren Elektronen pro Atom ergibt sich also aus:
+ \begin{center}
+     $z=\frac{n}{N_A V_m}$\\
+     $\Rightarrow z=0,74\pm0,04 \approx 1$
+ \end{center}
+ Da z ganzzahlig sein muss wird Kupfer ein nutzbares Elektron pro Atom haben.
+
 \subsubsection{Die mittlere Flugzeit $\bar{\tau}$}
 \label{sec:flugzeit}
 Aus \autoref{eq:widerstand} folgt für eien Runden Draht mit $Q=\frac{\pi d_D^2}{4}$ sofort:
@@ -86,10 +95,10 @@ Aus \autoref{eq:widerstand} folgt für eien Runden Draht mit $Q=\frac{\pi d_D^2}
     \bar{\tau}=\frac{8m_0L}{e_0^2n R \pi d_{D}^2}
 \end{equation}
 \begin{center}
-    $\Rightarrow \bar{\tau}=(1.79\pm0.11) \times10^{-12} As^2$
+    $\Rightarrow \bar{\tau}=(1.79\pm0.11) \times10^{-12} s$
 \end{center}
 
-\subsubsection{Die mittler Driftgeschwindigkeit $\bar{v_d}$}
+\subsubsection{Die mittlere Driftgeschwindigkeit $\bar{v_d}$}
 \label{sec:driftgeschwindigkeit}
 Mit \autoref{eq:drift} und $j=1000000\frac{A}{m^2}$:
 \begin{center}
@@ -110,7 +119,7 @@ Die totale Driftgeschwindigkeit $\vert v \vert$ ergibt sich mit \autoref{eq:vtot
     $\vert v \vert=(6.60\pm0.12)\times10^5 \frac{m}{s}$
 \end{center}
 
-\subsubsection{Die mittler freie Wellenlänge $\bar{l}$}
+\subsubsection{Die mittlere freie Wellenlänge $\bar{l}$}
 \label{sec:wellenlaenge}
 Die materialspezifische freie Wellenlänge ergibt sich über \autoref{eq:freieWellenlaenge} mit den Ergebnissen 
 aus \autoref{sec:totalgeschwindigkeit} und \autoref{eq:tau} zu:
@@ -119,5 +128,20 @@ aus \autoref{sec:totalgeschwindigkeit} und \autoref{eq:tau} zu:
 \end{center}
 \subsection{Löcher- oder Elektronenleitung}
 \label{sec:leiterart}
+In diesem Versuch wurde eine Kupferprobe untersucht, Kupfer ist bekanntermaßen ein Elektronenleiter, dies 
+zeichnet sich durch eine ausgeprägte Hallspannung aus. Zudem hat die Hallspannung die für eine Elektronenleiter
+zu erwartende Richtung.
 \subsection{Flussdichte $B$ des verwendeten Magneten}
+\label{sec:verwendeterMagnet}
+Der für die Messungen benutzte Elektromagnet wurde bezüglich der Feldstärke im Spalt des Eisenkernes vermessen.
+Dazu wurde ein Teslameter in diesen Spalt gehalten und der Spulensrom $I$ in $\SI{0,5}{A}$ bis zur maximalen Leistung 
+der angeschlossenen Konstantstromquelle erhöht, anschließend wurde umgepolt und der Prozess wurde wiederholt. 
+In diesem Diagram \autoref{fig:magnet} sind ist der Spulenstrom $I$ gegen die daraus resultierende 
+Flussdichte $B$ aufgetragen:
+\begin{figure}
+    \centering
+    \includegraphics{plot.pdf}
+    \caption{Flussdichte im Elektromagneten}
+    \label{fig:magnet}
+  \end{figure}
 
