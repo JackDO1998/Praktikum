@@ -11,14 +11,17 @@ b=-\frac{e_0}{m_0}E
 \end{equation*}
 mit der Elektronenmasse $m_0$ und der Elementarladung $e_0$. Daraus ergibt sich die Änderung der Geschwindigkeit $\Delta v$:
 \begin{equation}
+   \label{eq:deltaV}
 \Delta v=-\frac{e_0}{m_0}E\tau
 \end{equation}
 (mit $b=\frac{\Delta v}{\tau}$). Aufgrund der willkürlichen Ablenkrichtung ,aus der  $v_0=0$ (im Mittel) nach dem Stoß folgt und der gleichmäßigen Beschleunigung in E-Richtung gilt für die mittlere Driftgeschwindigkeit
 \begin{equation}
+   \label{eq:vd}
 v_d=\frac{1}{2}\Delta v
 \end{equation} 
 Damit ergibt sich die Stromdichte j (in Bewegungsrichtung) 
 \begin{equation}
+   \label{eq:drift}
 j=-nv_de_0
 \end{equation}
 wobei $n$ die Anzahl an Elektronen pro Volumenelement beschreibt. Wenn man nun einen geraden Leiter mit der Länge $L$ und Querschnittsfläche $Q$ annimmt, ist die Stromdichte als Strom pro Querschnittsfäche ($j=\frac{I}{Q}$ definiert. Für das E-Feld gilt (nach Vorbild des Plattenkondensators) $E=\frac{U}{L}$.Außerdem lässt sich $v_d$ über die Geschwindigkeitsänderung sowie deren Definition ausdrücken ($v_d=\frac{1}{2}\Delta v=-\frac{1}{2}\frac{e_0}{m_0}E\tau$). Damit lässt sich der Ausdruck für die Stromdichte umformen:
@@ -27,6 +30,7 @@ I=\frac{e_0^2n\tau Q}{2m_0L}U
 \end{equation}
 In dieser Gleichung kann man das bekannte Ohmsche Gesetz $U=RI$ wiedererkennen. Daraus lässt sich der Widerstand
 \begin{equation}
+   \label{eq:widerstand}
 R=\frac{2m_0L}{e_0^2n\tau Q}
 \end{equation}
 sowie dessen Kehrwert, die elektrische Leitfähigkeit
@@ -49,21 +53,24 @@ U_H=v_dBb
 \end{equation}
 Wenn nun noch $v_d$ durch den Querstrom ausgedrückt wird (hier $Q=bd$)
 \begin{equation}
-v_d=-\frac{j}{ne_0}=-\frac{i_q}{ne_0bd}
+v_d=-\frac{j}{ne_0}=-\frac{I_q}{ne_0bd}
 \end{equation}
 kann aus der Hall-Spannung die Elektronenzahl berechnet werden
 \begin{equation}
-U_H=-\frac{i_qb}{ne_0d} \implies n=-\frac{i_qd}{U_He_0d}
+   \label{eq:elektronenzahl}
+U_H=-\frac{i_qb}{ne_0d} \implies n=-\frac{I_qb}{U_He_0d}
 \end{equation}
 \subsection{anormaler Hall-Effekt}
 Wenn bei einem Material der oben beschriebene Fall eintritt, dass sich das oberste und das darunterliegende Band überschneiden, können Elektronen aus dem unteren in das obere Band wechseln. Sie lassen dabei Leerstellen, sogenannte "Löcher", zurück. Diese verhalten sich wie positive Ladungsträger und rufen daher ebenfalls einen Hall-Effekt hervor, jedoch mit umgekehrtem Vorzeichen. Dies bezeichnet man als den anormalen Hall-Effekt. 
 \subsection{Weitere Parameter}
 Ein anderer wichtiger Materialwert ist die mittlere freie Weglänge $l$, also die Distanz, die ein Elektron im Mittel zwischen zwei Stößen zurücklegt. Für diese gilt
 \begin{equation}
+   \label{eq:freieWellenlaenge}
 l=\tau \vert v \vert
 \end{equation}  
 mit der Totalgeschwindigkeit $\vert v \vert$. diese lässt sich durch die Energie ausdrücken
 \begin{equation}
+   \label{eq:vtot}
 \vert v \vert=\sqrt{\frac{2E}{m_0}}=\sqrt{\frac{2E_F}{m_0}}
 \end{equation}
 Für die Energie in dieser Formel ist die Fermi-Energie $E_F$, also der Wert der energiereichsten Elektronen am absoluten Nullpunkt verwendet worden, da nur die Elektronen zur Leitfähigkeit beitragen für die $E\approx E_F$ gilt. Die Fermi-Energie lässt sich durch
@@ -76,12 +83,14 @@ mit dem Planckschen Wirkungsquantum $h$ ausdrücken. Daraus ergibt sich für $l$
 \end{equation}
 Außerdem kann die Beweglichkeit $\mu$ als Proportionalitätskonstante definiert werden.
 \begin{equation}
+   \label{eq:mu}
 v_d=\mu E;\mu=\frac{e_0\tau}{2m_0}
 \end{equation}
 \subsection{Störspannung}
 Da es in der Realität nie möglich ist, die Hallspannung an einer Äquipotentialfläche zu messen, tritt bei der Messung eine Störspannung auf. Diese lässt sich eliminieren in dem man die Spannung jeweils für beide Polungen des B-Feldes misst, da sich
 bei der Umpolung die Richtung der Lorentzkraft und somit das Vorzeichen der Spannung ändert, das der Störspannung jedoch nicht. Dann lässt sich aus den beiden gemessenen Spannungen $U_+=U_s+U_H$ und $U_-=U_s-U_H$ die tatsächliche Hall-Spannung
 \begin{equation}
+   \label{eq:hallspannung}
 U_H=\frac{1}{2}(U_+-U_-)
 \end{equation}
  ermitteln
