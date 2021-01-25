@@ -1,0 +1,63 @@
+\documentclass{scrartcl}
+\usepackage[aux]{rerunfilecheck}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[unicode]{hyperref}
+\usepackage{bookmark}
+\usepackage{graphicx}
+\begin{document}
+\section{Zielsetzung}
+In diesem Experiment sollen Strahlungsintensitäte mithilfe eines Geiger-Müller-Zählrohres bestimmt werden. Aus diesen lassen sich Rückschlüsse auf die Kenndaten des Zählrohres ziehen.
+\section{Theorie}
+\subsection{Aufbau}
+Zählrohre lösen einen elektrischen impuls aus, wenn sie ionisierender Strahlung ausgesetzt sind, durch deren Messung sich die Strahlungsintensität bestimmen lässt.
+Ein Zählrohr im Allgemeinen besteht aus einer dünnen drahtförmigen Anode des Radius$r_a$ und einer Zylinderförmigen Kathode mit Radius $r_b$, deren Zwischenraum mit einem Gas gefüllt ist. Diese bilden durch Anlegen einer äußeren Spannung $U$ einen zylindrischen Kondensator mit einem radialsymmetrischen elektrischen Feld der Feldstärke
+\begin{equation}
+E=\frac{U}{rln(r_b/r_a)}
+\end{equation}
+im Abstand $r$ von der zentralen Achse.
+\subsection{Funktionsweise}
+Wenn Strahlung durch das Zählrohrfenster einfällt, wird das Strahlungsteilchen Atome im Gas ionisieren. Da für eine Ionisation in der Regel ca.26eV Energie aufgebracht werden muss, und die Teilchen energie deutlich Größer ist, können mehrere ionisationen erfolgen. Das nachfolgende Verhalten der freien Elektronen variirt qualitativ stark in Abhängigkeit von der angelegten Spannung. \\
+Im Bereich geringer Spannung ist die Beschleunigung der Elektronen so gering, dass sie mit den Ionen rekombinieren, wodurch nur ein geringer Anteil der Elektronen die Anode erreicht.\\ Wenn die Spannung ausreichend erhöht wird, ist keine Rekombination der Elektronen mehr möglich, sodass alle freien Elektronen die Anode erreichen. Der resultierende Strom ist proportional zu Intensität und Energie der einfallenden Strahlung. Ein solches Zählrohr wird Ionisationsationskammer genannt, und funktioniert aufgrund der geringen Stärke des Ionisationsstroms nur bei Strahlung hoher Intensität. \\
+Bei weiterer Erhöhung der Kondensatorspannung nehmen die freien Elektronen durch das elektrische Feld genug Energie auf um ihrerseits wiederum Atome zu Ionisieren und dadurch entlang des Feldes eine sogenannte Townsend-Lawine auszulösen. Dies führt zu einem messbaren Ladungsimpul. Die gesammelte Ladung $Q$ ist proportional zur Strahlungsenergie, weshalb dieser Bereich als Proportionalitätsbereich bezeichnet wird. \\ Im letzten und zugleich höchsten praktikablen Spannungsbereich ist die Energie der Elektronen so groß, dass sich die Lawinen durch UV-Quanten nicht nur entlang des Feldes, sondern im gesamten Zählrohr ausbreiten. Der resultierende Spannungsstoß lässt keine Rückschlüsse mehr auf die ursprüngliche Teilchenergie zu, allerdings werden bereits sehr geringe Strahlungsintensitäten registriert. Zählrohre, welche in diesem Bereich arbeiten, werden Geiger-Müller-Zählrohr genannt.
+\subsection{Tot- und Erholungszeit}
+Die positiv geladenen Ionen, die bei Strahlungseinfall entstehen, bewegen sich aufgrund der hohen Masse deutlich langsamer zur Kathode. Sie erzeugen für eine begrentzte Zeit $T$ eine positive Raumladung, die dem äußeren elektrischen Feld entgegenwirkt. Da in dieser Zeit die elektrische Feldstärke in drahtnähe sehr gering ist, können keine Elektronen-lawinen, und somit keine Impulse ausgelöst werden, weshalb diese Zeit als Totzeit bezeichnet wird, in der keine Strahlung registriert wird. Auf die Totzeit folgt ein Zeitraum in der sich die Feldstärke mit Abwandern der positiven Ladungsträger wieder aufbaut. Erst nach Abschluss dieser Erholungszeit $T_e$ haben ausgelöste Ladungsimpulse wieder ihre ursprüngliche Höhe.
+\subsection{Nachentladungen}
+Wenn die Ionen den Zählrohrmantel erreichen, sind sie durch ihre hohe Energie in der Lage, Elektronen aus dem Metall abzulösen. Diese freien Elektronen sind in der Lage nach beschleunigung durch das elektrische Feld selbst ionisationsakte durchzuführen und eine Elektronenlawine auszulösen. Diese Nachentladungen lösen Impulse aus, die ionisierende Strahlung vortäuschen und dadurch Intensitätsmessungen verfälschen können. Daher werden sie durch Zusatz von Alkoholdämpfen zum Zählrohrgas größtenteils unterbunden. Die Alkoholmoleküle werden ionisiert und ihre Energie wird durch Anregung von Schwingungen verbraucht, sodass keine Nachentladungen entstehen.
+\subsection{Charakeristik}
+Jedes Zählrohr besitzt eine bestimmte Charakteristik, die die detektierte Teilchenzahl in Abhängigkeit von der angelegten Spannung beschreibt (bei konstanter Strahlungsintensität). Ab dem Spannungswert $U_e$ kann das Zählrohr akkurat arbeiten. An diesen Wert schließt sich ein Spannungsintervall an in dem das Zählrohr arbeitet, und das die Form eines "Plateaus"  annimmt. Bei einem idealen Zählrohr weist das Plateau eine perfekte ebenheit, also keinerlei Steigung auf, es wird also unabhängig von der angelegten Spannung der gleich Teilchenwert registriert. Im realen Fall hat das Plateau immer eine leichte Steigung, da höhere Spannungswerte öfter zu vereinzelten Nachentladungen führen. Wenn die Spannung über den optimalen Arbeitsbereich hinaus erhöht wird, führen die Nachentladungen zu einer Dauerentladung, die das Zählrohr früher oder später zerstört.
+\subsection{Ansprechrate}
+Ein weiterer essentieller Kennnwert für Geiger-Müller-Zählrohre ist die sogenannte Ansprechrate, also die Wahrscheinlichkeit, mit der das Zählrohr auf Strahlung einer bestimmten Form reagiert. $\alpha$ und $\beta$-Strahlung haben ein so hohes Ionisationsvermögen, dass das Zählrohr sie in nahezu 100\% der Fälle registriert. Um sicherzugehen, dass die Strahlung das Zählrohrgas erreicht, wird für das Zählrohrfenster extrem dünne Mylar-Folie mit geringer Dichte verwendet, sodass selbst $\alpha$-Teilchen die Abschirmung durchdringen können. Im Gegensatz zu $\alpha$ bzw. $\beta$-Strahlung interagieren hochenergetische $\gamma$-Quanten nur äußerst limmitiert mit Materie. Daher liegt die Ansprechrate für diese Form radioaktiver Strahlung nur bei ca. 1\%.
+\subsection{Zählrohrstrom}
+Mithilfe des mittleren Zählrohrstroms $I$ lässt sich die Zahl der freigesetzten Ladungen pro eingefallenen Teilchen 
+\begin{equation}
+Z=\frac{I}{e_0N}
+\end{equation}
+berechnen. 
+\subsection{Zwei Quellen Methode}
+Aufgrund der Totzeit $T$ des Zählrohres ist die gemessene Zählrate $N_r$ immer geringer als die Zahl der tatsächlich eingetroffenen Teilchen $N_w$. Da in der Zeit $t$ $N_rt$ Teilchen registriert werden, ist das Zählrohr für die Zeit $TN_rt$ unempfindlich, und misst nur für $t-TN_rt$. Daraus ergibt sich für die reale Meßrate:
+\begin{equation}
+N_w=\frac{Impulsrate}{Meßzeit}=\frac{N_rt}{(1-TN_r)t}=\frac{N_r}{1-TN_r}
+\end{equation}
+Basierend darauf kann die Totzeit bestimmt werden. Wenn zwei Strahlenquellen zusammen und jeweils getrennt gemessen werden, ist die Zählrate beider Quellen gemeinsam kleiner als die Summe der einzelnen Zählraten $(N_{1+2}<N_1+N_2)$. Da für die realen Zählraten jedoch $N_{w1+2}=N_{w1}+N_{w2}$ gelten muss, ergibt sich aus (3)
+\begin{equation}
+\frac{N_{1+2}}{1-TN_{1+2}}=\frac{N_1}{1-TN_1}-\frac{N_2}{1-TN_2}
+\end{equation}
+Daraus lässt sich bei bekannten Zählraten die Totzeit gemäß
+\begin{equation}
+T\approx\frac{N_1+N_2-N_{1+2}}{2N_1N_2}
+\end{equation}
+berchnen. Hier wurde die Näherung $(TN_i)^2<<1$ (mit $i=1,2,1+2$) angenommen. 
+\section{Versuchsdurchführung}
+\subsection{Versuchsaufbau}
+Für den Versuch wurde die Anordung gemäß Abbildung 3 verwendet. Die Ladung des Zählrohrdrahtes löst am Widerstand einen Spannungsimpuls aus, der am Kondensator entkoppelt wird. Anschließend wird der Impuls verstärkt und am Zähler registriert oder an einem Oszillographen sichtbar gemacht. Die $\beta$-Strahlen Quelle wurde derart auf das Zählrohr gerichtet, dass die Zählrate $100imp/s$ nicht übersteigt, um Abweichungen aufgrund der vergleichsweise hohen Totzeit eines Geiger-Müller-Zählrohres zu vermeiden.
+\subsection{Messung der Charakteristik}
+Zur Messung der Charakteristik wurde die Spannung in Intervallen von $10V$ erhöht, und die Zahl der Impulse pro 60s gemessen. Diese Zeitspanne wurde gewählt, um zu gewährleisten, dass die Zahl der Impulse in der Größenordnung $N=10000$  liegt, damit der Messfehler $\Delta N=\sqrt{N}$ ca. 1\% oder geringer ist. Außerdem wurde die Zählrohrspannung in Abständen von $\Delta U=50V$ gemessen.
+\subsection{Messung der Totzeit}
+\subsubsection{Oszillograph}
+Die Totzeit kann, wenn auch nur ungenau, bestimmt werden, indem von einem Oszillographen die Zeitspanne zwischen dem ursprünglichen Impuls und dem ersten nachfolgenden Impuls bei bekannter Ablenkgeschwindigkeit des Kathodenstrahls agelesen wird.
+\subsubsection{Messung mithilfe der zwei-Quellen-Methode}
+Um eine Totzeitkorrektur zur erhalten wurde die Impulsrate erhöht indem der Abstand zum Zählrohr verringert wurde. Anschließend wurde zunächst über $120s$  die Zählrate der ersten Quelle gemessen, anschließend wurde eine zweite Quelle hinzugefügt und zuletzt die erste Quelle entfernt und jeweils über die gleiche Zeitspanne gemessen.
+\end{document}
