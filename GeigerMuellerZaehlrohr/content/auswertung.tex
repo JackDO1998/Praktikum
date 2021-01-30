@@ -12,13 +12,20 @@ Ungenauigkeit durch Totzeiten zu vermeiden. Da die Messwerte poissonverteilt sin
     \caption{Teilchenzahlen im Geiger-Müller-Zählrohr}
     \label{fig:teilchenzahl}
   \end{figure}
-Um die Plateau-Steigung zu ermittlen wurde mittels linearer Regression ein Polynom ersten Grades der 
-Form $f(x)=ax+b$ durch die Messpunkte gelegt:
+Um die Plateau-Steigung zu ermittlen wurde mittels linearer Regression ein Polynom ersten Grades durch die Messpunkte gelegt:
 \begin{center}
-    $f(x)=(1.215\pm0.256)x + (9567.924\pm125.414)$ $\rightarrow$ $D_f=\{x\in\mathbb{R} \vert 360\le x\le620\}$    
+  $f(x)=ax+b$ $\rightarrow$ $D_f=\{x\in\mathbb{R} \vert 360\le x\le620\}$    
 \end{center}
-Das Plateau hat eine Länge von etwa $\SI{260}{V}$ im Bereich von $\SI{360}{V}$ bis $\SI{620}{V}$ und  eine 
-Steigung von $\SI{1,215\pm0,256}{\frac{\%}{100}}$.
+mit folgenden Parametern:
+\begin{center}
+  $a=1.215\pm0.256 \frac{1}{V} $\\
+  $b=9567.924\pm125.414 $
+\end{center}
+Das Plateau hat eine Länge von etwa $\SI{260}{V}$ im Bereich von $\SI{360}{V}$ bis $\SI{620}{V}$ die Steigung 
+ergibt sich aus:
+\begin{center}
+ $\frac{f(x_2)-f(x_1)}{x_2-x_1}=\frac{((1.014\pm0.017)\times 10^4-1.002\pm0.016)\times 10^4}{470 V-370 V}\SI{1,215\pm0,256}{\frac{\%}{100}}$.
+\end{center}
 \subsection{Totzeit des Zählrohres}
 \label{sec:totzeit}
 An dieser Stelle wird zunächst mithilfe eines Oszilloskopes die Totzeit des Geiger-Müller-Zählrohres
@@ -27,8 +34,7 @@ abgeschätzt und anschließend mit der Zwei-Quellen-Methode genauer vermessen bz
 \label{sec:totzeitO}
 In \autoref{fig:oszilloskop} ist die Bildröhre eines Oszilloskopes zu sehen. Die Totzeit ist der Raum 
 zwischen den ersten beiden Signalen. Da das Oszilloskop auf 100µs/DIV eingestellt ist und die beiden Signale 
-innerhalb einer Unterteilung der DIV liegen muss die Totzeit $T<20µs$ sein. Da der Signalabstand sehr klein ist 
-wird die Totzeit auf $T \approx 2µs$ geschätzt.
+etwa eine Unterteilung (DIV) auseinander liegen wird die Totzeit auf $T \approx 100\mu s$ geschätzt.
 \begin{figure}
   \centering
   \includegraphics{oszilloskop.pdf}
@@ -40,7 +46,7 @@ wird die Totzeit auf $T \approx 2µs$ geschätzt.
 Die Totzeit lässt sich mit der Näherungsformel \autoref{eq:totzeit} aus den Messwerten 
 \autoref{sec:werteTotzeit} für $N_1$, $N_2$ und $N_{1+2}$ sofort ermittlen, es folgt also:
 \begin{center}
-  $T=(0.96\pm0.04) µs$
+  $T=(110\pm50) \mu s$
 \end{center}
 Der entsprechende Fehler wurde mit der Gaußschen-Fehlerfortpflanzung \autoref{eq:gaussfehler} ermittelt.
 Dazu wurden folgende Ableitungen verwendet:
@@ -65,3 +71,23 @@ direkt über \autoref{eq:zaehlrohrstrom} berechnen
   \caption{Pro einfallendem Teilchen ausgelöste Ladung}
   \label{fig:ladungProTeilchen}
 \end{figure}
+\centering
+    \caption{Ladungen pro einfallendem Teilchen}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{S[table-format=3.2] S S S S  [table-format=3.2]}
+      \label{tab:ladungProTeilchen}
+      \toprule
+      {$U$[V]} & {$N[e]$}\\
+      \midrule
+      350  &   {$11420877863  \pm 1906959500$}\\
+      400  &   {$14987116964  \pm 1879377895$}\\
+      450  &   {$25540082774  \pm 1841627474$}\\
+      500  &   {$29513591578  \pm 1867714299$}\\
+      550  &   {$36772445516  \pm 1874382573$}\\
+      600  &   {$47482469587  \pm 1885491961$}\\
+      650  &   {$49965388277  \pm 1849942326$}\\
+      700  &   {$58377332056  \pm 1710174398$}
+\bottomrule
+    
+    \end{tabular}
+  \end{table}
