@@ -4,7 +4,7 @@ In diesem Kapitel werden die aufgenommenen Messwerte ausgewertet.
 \subsection{Zählrohr Charakterristik}
 \label{sec:characteristik}
 In diesem Abschnitt wird die sogenannte Charakeristik des Geiger-Müller-Zählrohres ermittelt. Dazu wird der
-Abstand der Strahlungsquelle so gewählt, das die Impulsrate bei etwa $10000 Imp/min$ liegt um eine zu große 
+Abstand der Strahlungsquelle so gewählt, das die Impulsrate bei etwa $\SI{10000}{Imp/min}$ liegt um eine zu große 
 Ungenauigkeit durch Totzeiten zu vermeiden. Da die Messwerte poissonverteilt sind wird der Fehler über \autoref{eq:poisson}
 \begin{figure}
     \centering
@@ -25,7 +25,7 @@ mit folgenden Parametern:
 Das Plateau hat eine Länge von etwa $\SI{260}{V}$ im Bereich von $\SI{360}{V}$ bis $\SI{620}{V}$ die Steigung 
 ergibt sich aus:
 \begin{center}
- $\frac{f(x_2)-f(x_1)}{x_2-x_1}=\frac{((1.014\pm0.017)\times 10^4-1.002\pm0.016)\times 10^4}{470 V-370 V}\SI{1,215\pm0,256}{\frac{\%}{100}}$.
+ $\frac{f(x_2)-f(x_1)}{x_2-x_1}=\frac{((1.014\pm0.017)\times 10^4-1.002\pm0.016)\times 10^4}{470 V-370 V}=\SI{1,215\pm0,256}{\frac{\%}{100}}$.
 \end{center}
 Die verwendeten Messwerte sind:
 \begin{table}
@@ -33,50 +33,50 @@ Die verwendeten Messwerte sind:
   \centering
   \caption{Gemessene Impulse pro Zeitintervall in Abhängingkeit von der Spannung}
   \sisetup{table-format=1.2}
-  \begin{tabular}{S[table-format=3.2] S S   [table-format=3.2]}
-    \label{tab:werteTeilchenzahlen}
+  \begin{tabular}{S[table-format=3.2] S S S S [table-format=3.2]}
+   % \label{tab:werteTeilchenzahlen}
     \toprule
     {$U$[V]} & {$N$[Imp/min]}\\
     \midrule
-    320  &  {$ 9672  \pm  98$}\\
-    330  &  {$ 9689  \pm  98$}\\
-    340  &  {$ 9580  \pm  98$}\\
-    350  &  {$ 9837  \pm  99$}\\
-    360  &  {$ 9886  \pm  99$}\\
-    370  &  {$ 10041 \pm 100$}\\
-    380  &  {$ 9996  \pm 100$}\\
-    390  &  {$ 9943  \pm 100$}\\
-    400  &  {$ 9995  \pm 100$}\\
-    410  &  {$ 9980  \pm 100$}\\
-    420  &  {$ 9986  \pm 100$}\\
-    430  &  {$ 9960  \pm 100$}\\
-    440  &  {$ 10219 \pm 101$}\\
-    450  &  {$ 10264 \pm 101$}\\
-    460  &  {$ 10174 \pm 101$}\\
-    470  &  {$ 10035 \pm 100$}\\
-    480  &  {$ 10350 \pm 102$}\\
-    490  &  {$ 10290 \pm 101$}\\
-    500  &  {$ 10151 \pm 101$}\\
-    510  &  {$ 10110 \pm 101$}\\
-    520  &  {$ 10255 \pm 101$}\\
-    530  &  {$ 10151 \pm 101$}\\
-    540  &  {$ 10351 \pm 102$}\\
-    550  &  {$ 10184 \pm 101$}\\
-    560  &  {$ 10137 \pm 101$}\\
-    570  &  {$ 10186 \pm 101$}\\
-    580  &  {$ 10171 \pm 101$}\\
-    590  &  {$ 10171 \pm 101$}\\
-    600  &  {$ 10253 \pm 101$}\\
-    610  &  {$ 10368 \pm 102$}\\
-    620  &  {$ 10365 \pm 102$}\\
-    630  &  {$ 10224 \pm 101$}\\
-    640  &  {$ 10338 \pm 102$}\\
-    650  &  {$ 10493 \pm 102$}\\
-    660  &  {$ 10467 \pm 102$}\\
-    670  &  {$ 10640 \pm 103$}\\
-    680  &  {$ 10939 \pm 105$}\\
-    690  &  {$ 11159 \pm 106$}\\
-    700  &  {$ 11547 \pm 107$}
+    320  &  {$$9672  \pm  98$$}\\
+    330  &  {$$9689  \pm  98$$}\\
+    340  &  {$$9580  \pm  98$$}\\
+    350  &  {$$9837  \pm  99$$}\\
+    360  &  {$$9886  \pm  99$$}\\
+    370  &  {$$10041 \pm 100$$}\\
+    380  &  {$$9996  \pm 100$$}\\
+    390  &  {$$9943  \pm 100$$}\\
+    400  &  {$$9995  \pm 100$$}\\
+    410  &  {$$9980  \pm 100$$}\\
+    420  &  {$$9986  \pm 100$$}\\
+    430  &  {$$9960  \pm 100$$}\\
+    440  &  {$$10219 \pm 101$$}\\
+    450  &  {$$10264 \pm 101$$}\\
+    460  &  {$$10174 \pm 101$$}\\
+    470  &  {$$10035 \pm 100$$}\\
+    480  &  {$$10350 \pm 102$$}\\
+    490  &  {$$10290 \pm 101$$}\\
+    500  &  {$$10151 \pm 101$$}\\
+    510  &  {$$10110 \pm 101$$}\\
+    520  &  {$$10255 \pm 101$$}\\
+    530  &  {$$10151 \pm 101$$}\\
+    540  &  {$$10351 \pm 102$$}\\
+    550  &  {$$10184 \pm 101$$}\\
+    560  &  {$$10137 \pm 101$$}\\
+    570  &  {$$10186 \pm 101$$}\\
+    580  &  {$$10171 \pm 101$$}\\
+    590  &  {$$10171 \pm 101$$}\\
+    600  &  {$$10253 \pm 101$$}\\
+    610  &  {$$10368 \pm 102$$}\\
+    620  &  {$$10365 \pm 102$$}\\
+    630  &  {$$10224 \pm 101$$}\\
+    640  &  {$$10338 \pm 102$$}\\
+    650  &  {$$10493 \pm 102$$}\\
+   660  &  {$$10467 \pm 102$$}\\
+   670  &  {$$10640 \pm 103$$}\\
+     680  &  {$$10939 \pm 105$$}\\
+    690  &  {$$11159 \pm 106$$}\\
+    700  &  {$$11547 \pm 107$$}\\
 \bottomrule
   
   \end{tabular}
@@ -143,7 +143,7 @@ wurden gegen die Spannung aufgetragen. Die Zahl $Z$ lässt sich mit diesen Werte
   \caption{Messwerte des Stromes}
   \sisetup{table-format=1.2}
   \begin{tabular}{S[table-format=3.2] S S S S  [table-format=3.2]}
-    \label{tab:werteStrom}
+  
     \toprule
     {$U$[V]} & {$I$[µA]}\\
     \midrule
@@ -166,11 +166,12 @@ direkt über \autoref{eq:zaehlrohrstrom} berechnen
   \caption{Pro einfallendem Teilchen ausgelöste Ladung}
   \label{fig:ladungProTeilchen}
 \end{figure}
+\begin{table}
 \centering
     \caption{Ladungen pro einfallendem Teilchen}
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2] S S S S  [table-format=3.2]}
-      \label{tab:ladungProTeilchen}
+      
       \toprule
       {$U$[V]} & {$N[e]$}\\
       \midrule
@@ -181,7 +182,7 @@ direkt über \autoref{eq:zaehlrohrstrom} berechnen
       550  &   {$36772445516  \pm 1874382573$}\\
       600  &   {$47482469587  \pm 1885491961$}\\
       650  &   {$49965388277  \pm 1849942326$}\\
-      700  &   {$58377332056  \pm 1710174398$}
+      700  &   {$58377332056  \pm 1710174398$}\\
 \bottomrule
     
     \end{tabular}
