@@ -1,5 +1,112 @@
 \section{Zielsetzung}
 \label{sec:zielsetzung}
-
+Im vorliegenden Experiment soll Rhodium durch Neutronen-beschuss radioaktiv aktiviert werden, um anschließend 
+die Zerfallsrate bzw. die Halbwertszeit bestimmen zu können.
 \section{Theorie}
 \label{sec:theorie}
+\subsection{Grundlagen}
+Atomkerne sind nur innerhalb einer bestimmten Anzahl an Neutronen in Relation zu den Protonen stabil. 
+Außerhalb dieses Bereichs zerfällt der Kern unter Aussendung radioaktiver Strahlung und wandelt sich in 
+einen anderen, abhängig vom Ursprungszustand stabilen oder instabilen, Kern um. Die Wahrscheinlichkeit, 
+dass ein solcher Zerfall stattfindet variirt stark abhängig vom beobachteten Nuklid und lässt sich mithilfe 
+der sogenannten Halbwertszeit beschreiben. Diese ist definiert als die Zeitspanne, in der von einer 
+hinreichend großen Anzahl eines bestimmten radioaktiven Nuklids die Hälfte zerfallen ist. Dies bietet 
+sich an, da der Zerfall asymptotisch verläuft und somit nie den Wert $N=0$ erreicht. Vergleichsweise 
+geringe Halbwertszeiten lassen sich am besten messen indem stabile nuklide mit Neutronen beschossen und 
+dadurch instabil werden, ihre Halbwertszeit kann im Anschluss gemessen werden.
+\subsection{Kernreaktionen mit Neutronen}
+Wenn ein Neutron in einen Kern A eindringt entsteht ein sogenannter Zwischen- oder Compoundkern $A*$, dessen 
+Energie um die Gesamtenergie des absorbierten Neutrons größer als die des Ausgangskerns A ist.  Diese 
+zusätzliche Energie verteilt sich über die Nukleonen und erhöht deren Energiezustand. Dies führt nach ca. 
+$10^{-16}$ s zur Emmission eines $\gamma$-Quants, sodass der Kern unter folgender Reaktion in seinen 
+Ursprungszustand zurückkehrt.
+\begin{equation*}
+^m_zA + ^1_0n \implies ^{m+1}_zA* \implies ^{m+1}_z A+ \gamma
+\end{equation*}
+Aufgrund des zusätzlichen Neutrons ist dieser Kern instabil und zerfällt unter Emission eines 
+Elektrons zu einem stabilen Kern
+\begin{equation*}
+^{m+1}_z A \implies  ^{m+1}_{z+1} C + \beta^- + E_{kin} + v_e
+\end{equation*}
+($v_e = Antineutrino$).
+\subsection{Wirkungsquerschnitt}
+Der Wirkungsquerschnitt  $\sigma$ ist eine imaginäre Fläche, die die Wahrscheinlichkeit für das 
+Einfangen eines Neutrons beschreibt. Sie wird so gewählt, dass jedes Neutron, welches auf diese 
+Fläche trifft, vom Nuklid eingefangen werden würde.
+Die Wahrscheinlichkeit und damit der Wirkungsquerschnitt hängt dabei auch von der Geschwindigkeit des 
+Neutrons ab. Ausgehend davon, dass eine Absorption immer dann Eintritt, wenn die Neutronenenergie der 
+Differenz zweier Energieniveaus von $A*$ entspricht, lässt sich der Wirkungsquerschnitt gemäß
+\begin{equation*}
+\sigma(E)=\sigma_0 \sqrt{\frac{E_{ri}}{E}}\frac{c}{(E-E_{ri})^2+c}
+\end{equation*}
+mit den Konstanten $\sigma_0$, $c$ und den Energieniveaus $E_{ri}$ beschreiben. Daraus folgt, dass der
+ Wirkungsquerschnitt umgekehrt proportional zur Geschwindigkeit ist, was sich darauf zurückführen lässt, 
+ dass sich ein langsames Elektron länger im Wirkungsbereich des Nuklids befindet.
+\subsection{Erzeugung von Neutronen}
+Davon ausgehend bieten sich für experimentelle Untersuchungen niederenergetische Neutronen mit einem 
+dementsprechend hohen Wirkungsquerschnitt an. Diese lassen sich durch Beschuss von Berillium Kernen mit 
+$\alpha$-Strahlung gewinnen
+\begin{equation*}
+^9_4Be + ^4_2\alpha \implies ^{12}_6C + ^1_0n
+\end{equation*}
+Die so erzegten Neutronen werden gebremst, indem sie durch mehrere Materieschichten geleitet werden und 
+dort einen Anteil ihrer Energie durch elastische Stöße an die Materie abgeben. Da sich für den maximalen 
+Energieübertrag bei einem solchen Stoß möglichst ähnliche Massen am besten eignen, wird als Stoßpartner 
+Paraffin verwendet. Aus diesem Prozess resultieren sogenannte thermische Neutronen mit der benötigten 
+vergleichsweise geringen mittleren Geschwindigkeit von ca.$2.2$ km/s.
+\subsection{Zerfall radioaktiver Isotope}
+Bestimmte Isotope lassen sich wie in Kapitel $2.2$ beschrieben durch diese Neutronen Aktivieren und 
+stabilisieren sich unter $\beta^-$-Zerfall mit einer Halbwertszeit von einigen Sekunden bis zu einer 
+Stunde. Die Zahl der verbliebenen nicht zerfallenen Kerne $N$ als Funktion der Zeit lässt sich mithilfe 
+des Zerfallsgesetzes
+\begin{equation}
+N(t)=N_0e^{-\lambda t}
+\end{equation}
+beschreiben. Dabei ist $\lambda$ die sogenannte Zerfallkonstante und $N_0$ der Anfangswert, also die Zahl 
+der Kerne zum Zeitpunkt $t=0$. Die Zerfallskonstante hängt von der Wahrscheinlichkeit für den Zerfall ab 
+und steht in direkter Relation zur Halbwertszeit $T$. Diese ergibt sich aus $N(t=T)=N_0/2$ zu
+\begin{equation}
+T=\frac{ln(2)}{\lambda}
+\end{equation}
+Umgekehrt lässt sich durch Messung von $T_{1/2}$ die Zerfallkonstante
+\begin{equation*}
+\lambda=\frac{ln(2)}{T}
+\end{equation*}
+bestimmen. Da die Zahl der nicht zerfallenen Kerne $N(t)$ ein äußerst schwierig zu erhebender Wert ist, 
+bietet es sich an  stattdessen die Zahl der in einem fest definierten Zeitintervall stattfindenden Zerfälle 
+mit einem Zählrohr zu bestimmen . Dieser Wert ergibt sich aus dem Zerfallsgesetz zu
+\begin{gather}
+N_{\Delta t}(t)=N(t)-N(t + \Delta t)=N_0e^{-\lambda t}-N_0e^{-\lambda (t+\Delta t)} \\
+N_{\Delta t}(t)=N_0e^{-\lambda t}(1-e^{-\lambda \Delta t} ) \\
+\iff ln(N_{\Delta t}(t))=-\lambda t + ln(N_0(1-e^{-\lambda \Delta t}))
+\end{gather}
+Aus der letzten Gleichung kann mithilfe einer linearen Ausgleichsrechnug die Zerfallskonstante bestimmt 
+werden, da $ln(N_0(1-e^{\lambda \Delta t}))$ nur von konstanten Faktoren abhängt. Für diesen Ansatz ist 
+es wichtig eine passende Messzeit $\Delta$ t zu wählen, da bei einem zu kleinen Intervall ein großer 
+Messfehlerauftritt, wogegen ein großes Intervall eine scheinbare $\Delta$t Abhängigkeit von $\lambda$ 
+vortäuscht und somit zu einem systematischen Messfehler führt. \\
+In diesem Experiment wurden Messwerte für zwei verschiedene Isotope aufgenommen. Zum einen wurde Vanadium 
+verwendet, welches gemäß folgender Gleichung
+\begin{equation}
+^{51}_{23}V + ^1_0n \implies ^{52}_{23}V \implies ^{52}_{24}Cr + \beta^- + v_e
+\end{equation}
+nach dem Neutronen-beschuss unter Emission von $\beta^-$-Strahlung zu Chrom zerfällt. Des weiteren wurden 
+Messdaten für Rhodium erhoben, für welches zwei verschiedene Zerfälle mit unterschiedlichen
+ Wahrscheinlichkeiten eintreten
+\begin{equation*}
+^{103}_{45}Rh+^1_0n=
+\begin{cases}
+{\stackrel{10\%}{\implies}} &^{104i}_{45}Rh \implies ^{104}_{45}Rh+ \gamma \implies ^{104}_{46}Pd+\beta^-+v_e \\
+{\stackrel{90\%}{\implies}} &^{104}_{45}Rh \implies ^{104}_{46}Pd+\beta^-+v_e \\
+\end{cases}
+\end{equation*}
+Da das Geiger-Müller-Zählrohr sowohl $\beta^-$- als auch $\gamma$-Strahlung detektieren kann entspricht die
+ Messrate der Summe beider Zerfälle, die simultan ablaufen. Die Zerfälle besitzen unterschiedliche 
+ Halbwertszeiten, sodass nach einer bestimmten Zeitspanne $t*$ der kurzlebigere Verfall vernachlässigbar 
+ klein wird und nur noch der langlebigere Zerfall verbleibt. Für diesen kann (für $t>t*$) die 
+ Zerfallskonstante bestimmt werden. Anschließend kann die aus dieser Konstante berechnete Zahl an 
+ Zerfällen für $t<t*$ von der Gesamtaktivität abgezogen werden um den anderen Zerfall zu erhalten.
+\subsection{Nulleffekt}
+Aufgrund diverser natürlicher Phänomene existiert ein Grundwert für Strahlung der als Nulleffekt 
+bezeichnet wird. Um exakte Messwerte zu erhalten muss zunächst der Nulleffekt gemessen und anschließend 
+von späteren Messungen abgezogen werden.
