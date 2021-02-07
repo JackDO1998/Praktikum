@@ -60,6 +60,7 @@ stabilisieren sich unter $\beta^-$-Zerfall mit einer Halbwertszeit von einigen S
 Stunde. Die Zahl der verbliebenen nicht zerfallenen Kerne $N$ als Funktion der Zeit lässt sich mithilfe 
 des Zerfallsgesetzes
 \begin{equation}
+    \label{eq:gesetz}
 N(t)=N_0e^{-\lambda t}
 \end{equation}
 beschreiben. Dabei ist $\lambda$ die sogenannte Zerfallkonstante und $N_0$ der Anfangswert, also die Zahl 
@@ -77,6 +78,7 @@ bietet es sich an  stattdessen die Zahl der in einem fest definierten Zeitinterv
 mit einem Zählrohr zu bestimmen . Dieser Wert ergibt sich aus dem Zerfallsgesetz zu
 \begin{gather}
 N_{\Delta t}(t)=N(t)-N(t + \Delta t)=N_0e^{-\lambda t}-N_0e^{-\lambda (t+\Delta t)} \\
+\label{eq:zerfallsgesetz}
 N_{\Delta t}(t)=N_0e^{-\lambda t}(1-e^{-\lambda \Delta t} ) \\
 \iff ln(N_{\Delta t}(t))=-\lambda t + ln(N_0(1-e^{-\lambda \Delta t}))
 \end{gather}

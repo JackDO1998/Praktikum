@@ -1,0 +1,36 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Grundlagen zur elektrischen Leitfähigkeit}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Berechnung des Widerstandes}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Hall Effekt}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}anormaler Hall-Effekt}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Weitere Parameter}{5}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Störspannung}{6}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Versuchsdurchführung}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Versuchsapparate}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Messung des Widerstandes}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Messung der Hall-Spannung}{7}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Werte}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Messwerte}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Konstanten}{8}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Auswertung}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Abmessungen und Spezifikationen der Proben}{9}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Abmessungen Draht}{9}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Abmessungen der Folie}{10}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Die Hallspannung}{10}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Die mikroskopischen Leitfähigkeitsparameter}{10}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Ladungsträger pro Volumen $n$}{10}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Ladungsträger pro Atom $z$}{10}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Die mittlere Flugzeit $\bar {\mittau }$}{10}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Die mittlere Driftgeschwindigkeit $\bar {v_d}$}{11}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.5}Die Beweglichkeit $\mitmu $}{11}{subsubsection.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.2.6}Die Totalgeschwindigkeit v}{11}{subsubsection.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.2.7}Die mittlere freie Wellenlänge $\bar {l}$}{11}{subsubsection.5.2.7}%
+\contentsline {subsection}{\numberline {5.3}Löcher- oder Elektronenleitung}{11}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Flussdichte $B$ des verwendeten Magneten}{11}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Diskussion}{13}{section.6}%
+\contentsline {section}{\numberline {7}Literatur}{13}{section.7}%
+\contentsline {section}{\numberline {8}Anhang}{13}{section.8}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
