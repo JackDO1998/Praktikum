@@ -1,0 +1,13 @@
+# Die Dichte von Wasser bei ausgesuchten Temperaturen nach:
+#https://www.internetchemie.info/chemie-lexikon/daten/w/wasser-dichtetabelle.php
+#Temperatur T [°C]  Dichte [g/ml]
+20.5    0,998103
+28.0    0,996236 
+35.7    0,993790
+43.5    0,990830
+51.4    0,987400	
+59.2    0,983610
+67.1    0,979400
+75.0    0,974840
+82.9    0,969960
+88.9    0,966050
