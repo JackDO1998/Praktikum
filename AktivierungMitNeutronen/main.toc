@@ -17,6 +17,6 @@
 \contentsline {subsection}{\numberline {6.1}Der Zerfall von Vanadium}{9}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Der Zerfall von Rhodium}{12}{subsection.6.2}%
 \contentsline {section}{\numberline {7}Diskussion}{16}{section.7}%
-\contentsline {section}{\numberline {8}Literatur}{16}{section.8}%
-\contentsline {section}{\numberline {9}Anhang}{16}{section.9}%
+\contentsline {section}{\numberline {8}Literatur}{17}{section.8}%
+\contentsline {section}{\numberline {9}Anhang}{17}{section.9}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

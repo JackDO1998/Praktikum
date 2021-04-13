@@ -3,17 +3,29 @@
 In diesem Kapitel werden die aufgenommenen Messwerte ausgewertet.
 \subsection{Der Zerfall von Vanadium}
 \label{sec:vanadium}
-Die Untergrundstrahlung beläuft sich auf  $13.9 \pm 0.4$ also etwa 14 Zerfälle in einem Zeitintervall
-von $\Delta t =\SI{30}{s}$. Diese wurde von der Gemessenen Strahlung abgeszogen anschließend wird
-eine Kurve nach \autoref(eq:) an die Messwerte angepasst. Daraus ergeben sich diese Werte für $\lambda$ und 
+Die Untergrundstrahlung beläuft sich auf  $13.9 \pm 0.4 \mathrm{Imp}$ also etwa 14 Zerfälle in einem Zeitintervall
+von $\Delta t =\SI{30}{s}$. Dazu wurde über \autoref{eq:Mittelwert} der Mittelwert und mit \autoref{eq:mittelwertfehler} dessen Fehler bestimmt.
+Diese wurde von der Gemessenen Strahlung abgezogen anschließend wird
+eine Kurve nach \autoref{eq:zerfallsgesetz} an die Messwerte angepasst. Daraus ergeben sich diese Werte für $\lambda$ und 
 $N_0$:
 \begin{center}
-    $ \lambda_V =0.003\pm 0.00$\\
-    $N_0=2141.834 \pm 48.628$
+    $ \lambda_V =0.00342\pm 0.00012\si[]{1/s}$\\
+    $N_0=2141.83363\pm48.62828$
 \end{center}
 Die Anzahl der noch nicht zerfallenen Kerne wird nach \autoref{eq:gesetz} beschrieben mit:
 \begin{center}
-    $N(t)=(2141.834 \pm 48.628) e^{-0.003\frac{1}{s}t}$
+    $N(t)=(2141.83363\pm48.62828) e^{-(0.00342\pm0.00012)\frac{1}{s}t}$
+\end{center}
+Die Halbwertszeit $T_{1/2}$ lässt sich über \autoref{eq:halb} direkt aus $\lambda$ bestimmen:
+\begin{center}
+  $T_{1/2}=(203\pm 7)\si[]{s}$
+\end{center}
+Da ab der etwa 660. Sekunde der Fehler der Zerfallszahlen in der Größenordung der Messwerte selbst liegt
+wurde das Zerfallsgesetz erneut nur bis zur 660. Sekunde angepasst. Daraus ergeben sich dann folgende Werte:
+\begin{center}
+  $ \lambda_V =(0.00342\pm 0.00018)\si[]{1/s}$\\
+  $N_0=2141.83363\pm 69.64741$\\
+  $T_{1/2}=(203 \pm 11)\si[]{s}$
 \end{center}
 Im nachstehenden Plot \autoref{fig:vanadium} sind die Zerfallszahlen ohne Untergrundstrahlung mit zugehörigem 
 Fehler nach \autoref{eq:poisson}, die Untergrundstrahlung und das angepasste Zerfallsgesetz dargestellt:
@@ -32,7 +44,7 @@ Fehler nach \autoref{eq:poisson}, die Untergrundstrahlung und das angepasste Zer
     \begin{tabular}{S[table-format=3.2] S S   [table-format=3.2]}
       
       \toprule
-      {$t$[s]} & {$N$[Imp/30s]}\\
+      {$t$[s]} & {$N$[Imp]}\\
       \midrule
 
 30.000  &   {$$175.071  \pm   13.755$$}\\
@@ -88,23 +100,24 @@ Fehler nach \autoref{eq:poisson}, die Untergrundstrahlung und das angepasste Zer
 
 
 \subsection{Der Zerfall von Rhodium}
-Die Untergrundstrahlung beläuft sich auf  $6.96 \pm 0.22$ also etwa 7 Zerfälle in einem Zeitintervall
-von $\Delta t =\SI{15}{s}$. Diese wird von der gemessenen Gesamtstrahlung subtrahiert und die Ergebniisse
+Die Untergrundstrahlung beläuft sich auf  $6.96 \pm 0.22 \si[]{\mathrm{Imp}}$ also etwa 7 Zerfälle in einem Zeitintervall
+von $\Delta t =\SI{15}{s}$.Sie wurde wie oben berechnet. Diese wird von der gemessenen Gesamtstrahlung subtrahiert und die Ergebnisse
 im folgenden Diagramm \autoref{fig:rhodium} mit den nach \autoref{eq:poisson} berechneten Fehlern dargestellt.
-Da Rhodium auf zwei arten zerfällt: 
+Da Rhodium auf zwei Arten zerfällt: 
 \begin{center} 
     $^{103}_{45}\mathrm{Rh} + \mathrm{n}$ $\rightarrow$ $^{104i}_{45}\mathrm{Rh}$\\
     $^{103}_{45}\mathrm{Rh} + \mathrm{n}$ $\rightarrow$ $^{104}_{45}\mathrm{Rh}$
 \end{center}
 wird analog zu \autoref{sec:vanadium} zunächst an den bedeutend langsameren Zerfall, der sich anhand der 
 Steigungsänderung identifizieren lässt angepasst. Anschließend wird die Anzahl der zerfälle zurückgerechnet und 
-von der gesamten Messreihe abgeszogen. Das Resultat ist der Verlauf des schnelleren Zerfalls der in 
+von der gesamten Messreihe abgezogen. Das Resultat ist der Verlauf des schnelleren Zerfalls der in 
 \autoref{fig:rhodium1} zu sehen ist. 
   \begin{figure}
+    
     \centering
     \includegraphics{rhodium.pdf}
     \caption{Zerfall von Rhodium}
-    
+    \label{fig:rhodium}
   \end{figure}
 
   \begin{table}
@@ -115,7 +128,7 @@ von der gesamten Messreihe abgeszogen. Das Resultat ist der Verlauf des schnelle
     \begin{tabular}{S[table-format=3.2] S S   [table-format=3.2]}
       
       \toprule
-      {$t$[s]} & {$N$[Imp/30s]}\\
+      {$t$[s]} & {$N$[Imp]}\\
       \midrule
 
 15.000  &   {$$660.036  \pm 25.827$$}\\
@@ -173,7 +186,7 @@ werden.
     \centering
     \includegraphics{rhodium1.pdf}
     \caption{Schneller Zerfall von Rhodium}
-    \label{fig:magnet}
+    \label{fig:rhodium1}
   \end{figure}
 
   \begin{table}
@@ -184,7 +197,7 @@ werden.
     \begin{tabular}{S[table-format=3.2] S S   [table-format=3.2]}
       
       \toprule
-      {$t$[s]} & {$N$[Imp/30s]}\\
+      {$t$[s]} & {$N$[Imp]}\\
       \midrule
 15.000  &   {$$566.472  \pm  35.689$$}\\
 30.000  &   {$$489.921  \pm  32.739$$}\\
@@ -239,13 +252,15 @@ werden.
   \begin{center}
       $N(t)=N_0 e^{-\lambda t}$
   \end{center}
-mit folgenden Werten für den langsameren Zerfall:
+mit folgenden Werten für den langsameren Zerfall, die Halbwertszeit $T_{1/2}$ ergibt sich wieder über \autoref{eq:halb}:
 \begin{center}
     $\lambda_{Rh1} =0.004\pm 0.001$\\
-    $N_{01}=1944.551 \pm 349.657$
+    $N_{01}=1944.551 \pm 349.657$\\
+    $T_{1/2}=(170\pm40)\si[]{s}$
 \end{center}
 und diesen Werten für den schnellen Zerfall:
 \begin{center}
     $\lambda_{Rh2} =0.015\pm 0.000$\\
-    $N_{02}=2930.865 \pm 48.629$  
+    $N_{02}=2930.865 \pm 48.629$\\
+    $T_{1/2}=(46.2098\pm0)\si[]{s}$  
 \end{center}
