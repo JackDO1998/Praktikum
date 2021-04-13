@@ -113,7 +113,7 @@ Die Totzeit lässt sich mit der Näherungsformel \autoref{eq:totzeit} aus den Me
   $N_{1+2}=158479 \frac{Imp}{120 s}$
 \end{center}
 \begin{center}
-  $T=(110\pm50) \mu s$
+  $T=(115\pm4) \mu s$
 \end{center}
 Der entsprechende Fehler wurde mit der Gaußschen-Fehlerfortpflanzung ermittelt.
 Dazu wurden folgende Ableitungen verwendet:
@@ -124,13 +124,13 @@ Dazu wurden folgende Ableitungen verwendet:
   \end{equation}
   \end{center}
 \begin{center}
-  $\frac{\partial T}{\partial N_1}=\dfrac{c-b}{2ba^2}$\\
+  $\frac{\partial T}{\partial N_1}=\dfrac{N_{1+2}-N_2}{2N_2N_1^2}$\\
 \end{center}
 \begin{center}
-  $\frac{\partial T}{\partial N_2}=\dfrac{c-a}{2ab^2}$\\
+  $\frac{\partial T}{\partial N_2}=\dfrac{N_{1+}-N_1}{2N_1N_2^2}$\\
 \end{center}
 \begin{center}
-  $\frac{\partial T}{\partial N_{1+2}}=-\dfrac{1}{2ab}$
+  $\frac{\partial T}{\partial N_{1+2}}=-\dfrac{1}{2N_1N_2}$
 \end{center}
 
 \subsection{Ladung pro einfallendem Teilchen}
@@ -173,7 +173,7 @@ direkt über \autoref{eq:zaehlrohrstrom} berechnen
     \begin{tabular}{S[table-format=3.2] S S S S  [table-format=3.2]}
       
       \toprule
-      {$U$[V]} & {$N[e]$}\\
+      {$U$[V]} & {$Z[e]$}\\
       \midrule
       350  &   {$11420877863  \pm 1906959500$}\\
       400  &   {$14987116964  \pm 1879377895$}\\

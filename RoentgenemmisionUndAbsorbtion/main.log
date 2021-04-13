@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.14)  13 APR 2021 10:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.14)  13 APR 2021 10:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/OneDrive/Documents/Git/Praktikum/Viskosimeter/main.tex
-(d:/OneDrive/Documents/Git/Praktikum/Viskosimeter/main.tex
+**d:/OneDrive/Documents/Git/Praktikum/RoentgenemmisionUndAbsorbtion/main.tex
+(d:/OneDrive/Documents/Git/Praktikum/RoentgenemmisionUndAbsorbtion/main.tex
 LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-12-07> xparse <2020-03-03> (d:/OneDrive/Documents/Git/Praktikum/Viskosimeter/header.tex (c:/texlive/2020/texmf-dist/tex/latex/koma-script/scrartcl.cls
+L3 programming layer <2020-12-07> xparse <2020-03-03> (d:/OneDrive/Documents/Git/Praktikum/RoentgenemmisionUndAbsorbtion/header.tex (c:/texlive/2020/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2020/09/21 v3.32 KOMA-Script document class (article)
 (c:/texlive/2020/texmf-dist/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
@@ -356,10 +356,10 @@ l.45 \msg_fatal:nn {fontspec} {cannot-use-pdftex}
  
 Here is how much of TeX's memory you used:
  5957 strings out of 479383
- 114578 string characters out of 5873325
+ 114680 string characters out of 5873325
  505507 words of memory out of 5000000
  23032 multiletter control sequences out of 15000+600000
  403730 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,1n,113p,10667b,270s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,1n,113p,10684b,270s stack positions out of 5000i,500n,10000p,200000b,80000s
 c:/texlive/2020/texmf-dist/tex/latex/fontspec/fontspec.sty:45:  ==> Fatal error occurred, no output PDF file produced!
