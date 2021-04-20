@@ -57,11 +57,84 @@ Aus diesen Werten ergibt sich über $A=\frac{E_K}{\Delta E_{FWHM}}$ direkt das A
   über den Zusammenhang $\sigma=Z-\sqrt{\frac{E_{K,abs}}{R_\infty}}$, mit der Rydbergenergie $R_\infty=0.0136\si[]{KeV}$
   und der Ordnungszahl von Kupfer $Z=29$ sofort die Absorbtionskonstante $\sigma_1$ berechnet werden:
   \begin{center}
-    $\Rightarrow \sigma_1=$
+    $\Rightarrow \sigma_1=3.2924$
   \end{center}
   Nun lassen sich auch sofort mit $n=1$, $m=2$, $l=3$ die Abschirmkonstanten $\sigma_2$ und $\sigma_3$ bestimmen:
   \begin{center}
-    $\sigma_2=z+(z-\sigma_1)\frac{m}{n}\sqrt{\frac{E_{K,\alpha}}{R_\infty}}$=\\
-    $\sigma_2=z+(z-\sigma_1)\frac{l}{n}\sqrt{\frac{E_{K,\alpha}}{R_\infty}}$=\\
+    $\sigma_2=z-(z-\sigma_1)m\sqrt{\frac{R_\infty +nE_{K,\alpha}}{nR_\infty}}$=11.0843\\
+    $\sigma_2=z-(z-\sigma_1)l\sqrt{\frac{R_\infty +nE_{K,\alpha}}{nR_\infty}}$=2.1265\\
   \end{center}
+  \subsection{Analyse der Absorberspektren}
+  Als nächstes wurden die Absorberspektren verschiedener Elemente bestimmt. Dazu wurde aus dem Winkel $\Theta$ der Mitte der K-Kante mithilfe der Bragg-Bedingung die 
+  zugehörige Energie $E_K$ und daraus die Absorbtionskonstante $\sigma_K$ berechnet. In den nachfolgenden Grafiken 
+  \autoref{fig:EmspektrumIII},
+  \autoref{fig:EmspektrumIV},
+  \autoref{fig:EmspektrumV},
+  \autoref{fig:EmspektrumVI},
+  \autoref{fig:EmspektrumVII},
+  \autoref{fig:EmspektrumVIII},
+  sind die jeweiligen Maximal- und Minimalwerte $I_{max}$ und $I_{min}$
+  aus welchen über die Beziehung $I_K=I_{min}+\frac{I_{max}-I_{min}}{2}$ die Mitte der K-Kante berechnet wurde. Anschließend wurde eine Gerade durch beide Punkte gelegt und anhand ihrer
+  der Winkel $\Theta$ berechnet.
+  \begin{table}
+    \centering
+    \label{tab:magnetfeld}
+    \caption{Daten des Magnetfeldes}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{S[table-format=3.2] S S S  [table-format=3.2]}
+      \toprule
+      {Absorber }& {Ordnungszahl}&  {$\Theta$[°]} & {$E_K$[KeV]}& {$\sigma_K$[]}\\
+      \midrule
+      Brom      & 35  & 14.25 & 12.50 & 4.833\\
+      Zirkonium & 40  & 10.75 & 16.50 & 5.659\\
+      Zink      & 30  & 19.35 & 9.29  & 4.071\\
+      Strontium & 38  & 11.65 & 15.24 & 4.939\\
+      Rubidium  & 37  & 12.25 & 14.51 & 4.724\\
+      Gallium   & 31  & 18.75 & 9.58  & 4.698\\
+
+      \bottomrule
+    
+    \end{tabular}
+  \end{table}
   
+  \begin{figure}
+    \centering
+    \includegraphics{EmmissionsprktrumBrom.pdf}
+    \caption{Intensitäten nach Winkel eines Brom-Absorbers}
+    \label{fig:EmspektrumIII}
+  \end{figure}
+
+  \begin{figure}
+    \centering
+    \includegraphics{EmmissionsprktrumZirkonium.pdf}
+    \caption{Intensitäten nach Winkel eines Zirkonium-Absorbers}
+    \label{fig:EmspektrumIV}
+  \end{figure}
+
+  \begin{figure}
+    \centering
+    \includegraphics{EmmissionsprktrumZink.pdf}
+    \caption{Intensitäten nach Winkel eines Zink-Absorbers}
+    \label{fig:EmspektrumV}
+  \end{figure}
+
+  \begin{figure}
+    \centering
+    \includegraphics{EmmissionsprktrumStrontium.pdf}
+    \caption{Intensitäten nach Winkel eines Strontium-Absorbers}
+    \label{fig:EmspektrumVI}
+  \end{figure}
+
+  \begin{figure}
+    \centering
+    \includegraphics{EmmissionsprktrumRubidium.pdf}
+    \caption{Intensitäten nach Winkel eines Rubidium-Absorbers}
+    \label{fig:EmspektrumVII}
+  \end{figure}
+
+  \begin{figure}
+    \centering
+    \includegraphics{EmmissionsprktrumGallium.pdf}
+    \caption{Intensitäten nach Winkel eines Gallium-Absorbers}
+    \label{fig:EmspektrumVIII}
+  \end{figure}
