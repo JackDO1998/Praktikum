@@ -2,3 +2,28 @@
 Bei dem im folgenden protokollierten Versuch wurde mithilfe von Ultraschall die tiefe mehrerer Fehlstellen eines Probekörpers bestimmt. Anschließend wurde durch das gleiche Verfahren ein Augenmodell vermessen. 
 \section{Theorie}
 \label{sec:theorie}
+Schallwellen werden anhand ihres Frequenzbereiches kategorisiert. Menschen hören in einem Bereich zwischen $16Hz$ und $20 kHz$. Frequenzen oberhalb dieses Grenzwertes bis zu ca. $1 GHz$ werden als Ultraschall bezeichnet, während bei dem Frequenzbereich unterhalb der menschlichen Hörschwelle von Infraschall gesprochen wird. Schallwellen mit einer Frequenz größer als $1 GHz$ nennt man Hyperschall.  
+Schallwellen bewegen sich mithilfe von Druckschwankungen fort, welche sich, in Flüssigkeiten und Gasen, durch eine longitudinale Welle der Form
+\begin{equation}
+p(x,t)=p_0+v_0Zcos(kx-wt)
+\end{equation}
+beschreiben lässt. Hierbei beschreibt $Z=c\rho$ die akustische Impedanz des Mediums, in dem sich die Welle fortbewegt. Sie setzt sich aus der Dichte des Materials sowie der Schallgeschwindigkeit im Material zusammen. Letztere ist bei Schallwellen materialabhängig, da diese auf Schwankungen der Materialdichte basieren. Von diesem Unterschied abgesehen verhalten sich Schallwellen im Bezug auf Reflexions- und Brechungsphänomene ähnlich wie elektromagnetische Wellen. 
+In Gasen und flüssigkeiten hängt die Schallgeschwindigkeit von der Dichte und der Kompressibilität $\kappa$ ab
+\begin{equation}
+c=\sqrt{\frac{1}{\kappa \rho}}
+\end{equation}
+In Festkörpern bildet Schall zusätzlich zu der longitudinalen eine transversale Welle aus, deren Geschwindigkeit sich von der longitudinalen unterscheidet. Allgemein besitzt die Geschwindigkeit im Festkörper die Form
+\begin{equation}
+c_F=\sqrt{\frac{E}{\rho}}
+\end{equation}
+mit dem Elastizitätsmodul $E$ \\
+Bei dem Übergang einer Schallwelle zwischen zwei Medien unterschiedlicher Impedanz wird ein Teil der Welle reflektiert. Der Reflexionskoeffizient $R$ beschreibt das verhältnis von einfallender und reflektierter Intensität und lässt sich aus den Impedanzen gemäß
+\begin{equation}
+R=(\frac{Z_1-Z_2}{Z_1+Z_2})^2
+\end{equation}
+berechnen. Daraus ergibt sich der auch der transmitierte Anteil $T=1-R$, da beide Anteile in Summe $1$ ergeben müssen.
+Weiterhin muss berücksichtigt werden, dass Schallwellen während der Propagation Energie durch Absorption verlieren. Daher nimmt die Schallintensität exponentiell mit der zurückgelegten Strecke ab
+\begin{equation}
+I(t)=I_0e^{-\alpha t}
+\end{equation}
+mit einem materialabhängigen Absorptionskoeffizienten $\alpha$.
