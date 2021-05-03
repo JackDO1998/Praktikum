@@ -3,18 +3,20 @@
 In diesem Versuch sollte zunächst die Braggbedingung überprüft werden, dazu wurde der LiF-Kristall auf einen 
 Winkel von $\Theta=14°$ eingestellt und in Schritten von 0,1° vermessen. Das Maximum der Reflektierten 
 Strahlung wurde bei 28,2° gefunden, der theoretische Wert liegt bei dem doppelten des Eingestellten Winkels
-von 14° also 28° es gibt also nur eine Abweichung von weniger als einem Prozent.
-Im nächsten Schritt wurde dann zunächst die Full Width at half Maximum berechnet, dafür wurden deie Messwinkel 
-benutzt an denen die Halbe Impulsdichte zum letzen mal nicht überschritten bzw. zum ersten mal wieder 
-unterschritten wurden, somit ergibt sich für das daraus im nächsten Schritt berechnete Auflösevermögen der
-Versuchsanordung eine untere Schranke, diese liegt bei  $A_\alpha=35.4835$. Alternativ hätte man den nicht
-vermessenen Raum zwischen den Punkten die jeweils über bzw. unter der FWHM-Linie liegen linear nähern können
-und so ein genaueres Ergebnis erhalten können. Im nächsten Schritt wurden mithilfe von Energiewerten aus der
-NIST Datenbank die Abschirmkonstanten $\sigma_1=3.2924$, $\sigma_1=11.0843$, $\sigma_1=2.1265$ berechnet. Da 
-diese rein auf Theoriewerten beruhen, sind sie selbst Theoriewerte und es ist kaum eine Abweichung zu berechnen.
+von 14° also 28° es gibt also nur eine Abweichung von 0,71\%.
+Im nächsten Schritt wurde dann zunächst die Full Width at half Maximum berechnet, dafür wurde zwischen den beiden Messwinkeln 
+welche am nächsten an der berechneten mittleren Impulsdichte liegen linear interpoliert und der genaue Winkel errechnet.
+Aus diesem wurde dann das Auflösevermögen der Appereatur berechnet, es liegt für die $K_{\alpha}$-Linie bei $A_{\alpha}=43.0752$ und für die 
+$K_{\beta}$-Linie bei $A_{\beta}=48.5050$. Im nächsten Schritt wurden mithilfe von Energiewerten aus der
+NIST Datenbank die Abschirmkonstante $\sigma_1=3.2924$ errehnet. Durch diese und die Energien $E_{K,\alpha}$ und $E_{K,\beta}$ 
+war es möglich auch die Abschirmkonstanten $\sigma_2=24.342$, $\sigma_3=3.998$ zu berechnen. 
+
+%Theoriewerte für Abschirmkonstanten einfügen
+
 Im darauf folgenden Kapitel wurden dann Proben von Brom, Zirkonium, Zink, Strontium, Rubidium und Gallium 
 vermessen und aus dem Winkel an dem die jeweilige K-Kante ihre Mitte erreicht, die Emmisionsenergien und 
-Abschirmkonstanten bestimmt die Ergebnisse werden in der Nachfolgenden Tabelle mit ihren Thoeriewerten verglichen:
+Abschirmkonstanten bestimmt die Ergebnisse werden in der Nachfolgenden Tabelle mit den ebenfalls aus der NIST-Datenbank stammenden
+Thoeriewerten verglichen:
 
 \begin{table}
     \centering
@@ -25,23 +27,52 @@ Abschirmkonstanten bestimmt die Ergebnisse werden in der Nachfolgenden Tabelle m
       \toprule
       {Absorber} & {$E_K$[KeV]}& {$E_K$ Theoriewert[KeV]} & {Abweichung[\%]}\\
       \midrule
-      {Brom      }& 12.50 & 13.50  &8.0\\
-      {Zirkonium }& 16.50 & 18.00  &9.1\\
-      {Zink      }&  9.29 &  9.65  &3.9\\
-      {Strontium }& 15.24 & 16.10  &5.6\\
-      {Rubidium  }& 14.51 & 15.20  &4.8\\
-      {Gallium  } &  9.58 &  9.07  &5.6\\
+      {Brom      }& 13.43 & 13.50  &0.52\\
+      {Zirkonium }& 17.81 & 18.00  &1.07\\
+      {Zink      }&  9.60 &  9.65  &0.52\\
+      {Strontium }& 16.06 & 16.10  &0.24\\
+      {Rubidium  }& 15.12 & 15.20  &0.53\\
+      {Gallium  } & 10.32 &  9.07  &14.0\\
+      \bottomrule
+    
+    \end{tabular}
+  \end{table}
+  \newpage
+  Zuletzt wurde dann noch das Mosley'sche Gesetz überprüft indem aus der Energie $E_K$ über die Rydbergfrequenz 
+  die bekannte Größe der Rydbergenergie $R_{\infty}=0.0136\si[]{Kev}$ berechnet wurde die Ergebnisse mit den 
+  Abweichungen zum aus der Versuchsantleitung zum Versuch 602 stammenden Theoriewert sind in der nachfolgenden
+  \autoref{tab:moseley2} dargestellt:
+  \begin{table}
+    \centering
+    \label{tab:moseley2}
+    \caption{Überprüfung des Moseley-Gesetzes}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{S[table-format=3.2] S S S S S [table-format=3.2]}
+      \toprule
+      {Absorber} &  {$R_{\infty}$ in $\si[]{KeV}$} & {Abweichuing in $\%$}\\
+      \midrule
+      {Brom      }   & 0.0137 &0.74\\
+      {Zirkonium }   & 0.0140 &2.94\\
+      {Zink      }   & 0.0138 &1.47\\
+      {Strontium }   & 0.0139 &2.22\\
+      {Rubidium  }   & 0.0139 &2.22\\
+      {Gallium   }   & 0.0138 &1.47\\
 
       \bottomrule
     
     \end{tabular}
   \end{table}
-Die geringen Abweichungen können z.B. durch unregelmäßigkeiten im Kristall, durch das mit $\Delta\Theta=0.1°$ 
-nur recht grob vermessene Spektrum und durch weitere Fehler an der Apperatur verursacht werden.
+
+Die geringen Abweichungen können z.B. durch unregelmäßigkeiten im Kristall und durch weitere Fehler an der Apperatur verursacht werden.
+Die einzige auffällige Abwichung liegt mit 14\% bei der Absorbtionsenergie des Galliums hier könnte ein systematischer Messfehler oder
+ein unentdeckter Rechenfehler der Grund sein. Ansonsten sind die Abweichungen der Energien meist weit unterhalb eines Prozentes und damit
+sehr gut. Auch die Abweichungen bei der Überprüfung des Moseleyschen Gesetzes liegen alle im Bereich unter 3\%, das Moseley-Gesetz kann 
+also als korrekt angesehen werden.
 Am Ende kann gesagt werden das es sich um einen aufschlussreichen Versuch gehandelt hat.
 \section{Literatur}
 \label{Literatur}
 1. TU Dortmund, Versuch 602 Röntgenemmision und Absorbtion\\
-2. Wolfgang Demtröder, Experimentalphysik 2\\
-3. NIST X-Ray Transition Database 
+2. Demtröder, Wolfgang, 1995, Experimentalphysik 2, 6.Aufl., Berlin\\
+3. NIST X-Ray Transition Database, Abgerufen 18.04.2021, von https://physics.nist.gov/PhysRefData/XrayTrans/Html/search.html
+
 
