@@ -15,26 +15,30 @@ gegen den Winkel an dem sie gemessen Wurden aufgetragen.
 
 \subsection{Bestimmung der Full Width at Half Maximum}
 Im Diagramm \autoref{fig:Emspektrum} sind die gemessenen Strahlungsintensitäten gegen die 
-verschiedenen Wellenlängen aufgetragen worden, Im Diagramm \autoref{fig:EmspektrumII} gegen die Energien.
+verschiedenen Wellenlängen aufgetragen worden, im Diagramm \autoref{fig:EmspektrumII} gegen die Energien.
 Die Punkte zeigen an welchen Stellen die verbundenen Messwerte genau liegen. Auf der ganz linken Seite sieht man Teile des Bremsberges, dessen 
 maximale Energie bzw. minimale Wellenlänge kann hier nicht ersichtlich werden da im zugehörigen Winkelbereich nicht 
 gemessen wurde. Darauf folgt die $K_\alpha-$ und dann ganz rechts die $K_\beta-$Linie, weleche jeweils als deutlicher
-Peak erkennbar sind. In den Peaks sind bei der hälfte ihrer Höhe horizontale Linien eingezeichnet welche die halbe
+Peak erkennbar sind. In den Peaks sind bei der Hälfte ihrer Höhe horizontale Linien eingezeichnet welche die halbe
 Höhe der Peaks kennzeichnen. Die Peaks liegen an folgenden Stellen:
 \begin{center}
   $K_\alpha -Peak: \lambda_\alpha=13,9086\si[]{nm},$  $E_{K\alpha}=8.914\si[]{KeV}$\\
   $K_\beta -Peak:  \lambda_\beta=15,4145\si[]{nm},$  $E_{K\beta}=8.043\si[]{KeV}$
 \end{center} 
-Die zugehörigen Halbwerte $K_{i,1/2}$ und Messpunkte $E_{i,j}$ $i\in\{\alpha,\beta\}$, $j\in\{+,-\}$ bei denen 
-der Halbwert zum ersten mal überschritten bzw. wieder unterschritten wurde lauten:
+Die zugehörigen Halbwerte $K_{i,1/2}$ und die diesen entsprechende linear interpolierten Energien $E_{i,j}$ $i\in\{\alpha,\beta\}$, $j\in\{1,2\}$
+lauten:
 \begin{center}
-  $K_{\alpha,1/2}=799.5\si[]{Imp/s}$, $E_{\alpha,+}=8.9996\si[]{KeV}$, $E_{\alpha,-}=8.7484\si[]{KeV}$, $\Rightarrow$ $\Delta E_{FWHM\alpha}=0.2512\si[]{KeV}$\\
-  $K_{\beta,1/2}=2525.0\si[]{Imp/s}$, $E_{\beta,+}=8.1118\si[]{KeV}$, $E_{\beta,-}=7.9102\si[]{KeV}$, $\Rightarrow$ $\Delta E_{FWHM\beta}=0.2015\si[]{KeV}$
+  $K_{\alpha,1/2}=799.5\si[]{Imp/s}$, $E_{\alpha,1}=8.9734\si[]{KeV}$, $E_{\alpha,2}=8.7665\si[]{KeV}$\\
+  $\Rightarrow$ $\Delta E_{FWHM\alpha}=0.2069\si[]{KeV}$
+\end{center}
+\begin{center}
+  $K_{\beta,1/2}=2525\si[]{Imp/s}$, $E_{\beta,1}=8.0927\si[]{KeV}$, $E_{\beta,-}=7.9268\si[]{KeV}$\\
+  $\Rightarrow$ $\Delta E_{FWHM\beta}=0.1658\si[]{KeV}$
 \end{center}
 Aus diesen Werten ergibt sich über $A=\frac{E_K}{\Delta E_{FWHM}}$ direkt das Auflösungsvermögen:
 \begin{center}
-  $A_\alpha=35.4835$\\
-  $A_\beta=39.9101$
+  $A_\alpha=43.0752$\\
+  $A_\beta=48.5050$
 \end{center}
 
 
@@ -54,15 +58,15 @@ Aus diesen Werten ergibt sich über $A=\frac{E_K}{\Delta E_{FWHM}}$ direkt das A
 
   \subsection{Bestimmung der Absorbtionskonstanten}
   Aus der NIST Datenbank wird die Abschirmkonstante $E_{K,abs}=  8.98796\si[]{KeV}$\\ übernommen. Durch sie kann
-  über den Zusammenhang $\sigma=Z-\sqrt{\frac{E_{K,abs}}{R_\infty}}$, mit der Rydbergenergie $R_\infty=0.0136\si[]{KeV}$
+  über den Zusammenhang $\sigma=z-\sqrt{\frac{E_{K,abs}}{R_\infty}}$, mit der Rydbergenergie $R_\infty=0.0136\si[]{KeV}$
   und der Ordnungszahl von Kupfer $Z=29$ sofort die Absorbtionskonstante $\sigma_1$ berechnet werden:
   \begin{center}
     $\Rightarrow \sigma_1=3.2924$
   \end{center}
   Nun lassen sich auch sofort mit $n=1$, $m=2$, $l=3$ die Abschirmkonstanten $\sigma_2$ und $\sigma_3$ bestimmen:
   \begin{center}
-    $\sigma_2=z-(z-\sigma_1)m\sqrt{\frac{R_\infty +nE_{K,\alpha}}{nR_\infty}}$=11.0843\\
-    $\sigma_2=z-(z-\sigma_1)l\sqrt{\frac{R_\infty +nE_{K,\alpha}}{nR_\infty}}$=2.1265\\
+    $\sigma_2=z-m\sqrt[]{\frac{R_{\infty}(z-\sigma)^2-E_{K,\alpha}}{R_{\infty}}}$=24.342\\
+    $\sigma_3=z-l\sqrt[]{\frac{R_{\infty}(z-\sigma)^2-E_{K,\beta}}{R_{\infty}}}$=3.998\\
   \end{center}
   \subsection{Analyse der Absorberspektren}
   Als nächstes wurden die Absorberspektren verschiedener Elemente bestimmt. Dazu wurde aus dem Winkel $\Theta$ der Mitte der K-Kante mithilfe der Bragg-Bedingung die 
@@ -83,14 +87,14 @@ Aus diesen Werten ergibt sich über $A=\frac{E_K}{\Delta E_{FWHM}}$ direkt das A
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2] S S S S S [table-format=3.2]}
       \toprule
-      {Absorber} & {Ordnungszahl}&  {$\Theta$[°]} & {$E_K$[KeV]}& {$\sigma_K$[]}\\
+      {Absorber} & {Ordnungszahl z}&  {$\Theta$in °} & {$E_K$ in KeV}& {$\sigma_K$}\\
       \midrule
-      Brom      & 35  & 14.25 & 12.50 & 4.833\\
-      Zirkonium & 40  & 10.75 & 16.50 & 5.659\\
-      Zink      & 30  & 19.35 & 9.29  & 4.071\\
-      Strontium & 38  & 11.65 & 15.24 & 4.939\\
-      Rubidium  & 37  & 12.25 & 14.51 & 4.724\\
-      Gallium   & 31  & 18.75 & 9.58  & 4.698\\
+      {Brom      }& 35  & 13.25 & 13.43 & 3.726\\
+      {Zirkonium }& 40  &  9.95 & 17.81 & 4.282\\
+      {Zink      }& 30  & 18.70 &  9.60 & 3.635\\
+      {Strontium }& 38  & 11.05 & 16.06 & 4.043\\
+      {Rubidium  }& 37  & 11.75 & 15.12 & 4.039\\
+      {Gallium   }& 31  & 17.35 & 10.32 & 3.675\\
 
       \bottomrule
     
@@ -138,3 +142,29 @@ Aus diesen Werten ergibt sich über $A=\frac{E_K}{\Delta E_{FWHM}}$ direkt das A
     \caption{Intensitäten nach Winkel eines Gallium-Absorbers}
     \label{fig:EmspektrumVIII}
   \end{figure}
+  \subsection{Überprüfung des Moseley'schen Gesestzes}
+  Henry Meseley beschrieb einen Zusammenhang zwischen Rydbergfrequenz und Energie der K-Kante aus dem die 
+  Rydbergenergie $R_{\infty}$ berechnen:
+  \begin{center}
+    $R_{\infty}=\frac{E_K}{(z-\sigma)^2}$
+  \end{center}
+  \begin{table}
+    \centering
+    \label{tab:magnetfeld}
+    \caption{Daten der Absorber}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{S[table-format=3.2] S S S S S [table-format=3.2]}
+      \toprule
+      {Absorber} & {Ordnungszahl z}&  {$E_K$ in KeV}& {$\sigma_K$} & {$R_{\infty} \si[]{J}$}\\
+      \midrule
+      {Brom      }& 35  &  13.43 & 3.726 & 0.0137\\
+      {Zirkonium }& 40  &  17.81 & 4.282 & 0.0140\\
+      {Zink      }& 30  &   9.60 & 3.635 & 0.0138\\
+      {Strontium }& 38  &  16.06 & 4.043 & 0.0139\\
+      {Rubidium  }& 37  &  15.12 & 4.039 & 0.0139\\
+      {Gallium   }& 31  &  10.32 & 3.675 & 0.0138\\
+
+      \bottomrule
+    
+    \end{tabular}
+  \end{table}
