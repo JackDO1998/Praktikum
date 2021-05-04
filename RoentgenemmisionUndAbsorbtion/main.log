@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  3 MAY 2021 16:36
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  4 MAY 2021 11:06
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1696,7 +1696,7 @@ File: Röntgenemission.png Graphic file (type png)
 Package luatex.def Info: Röntgenemission.png  used on input line 11.
 (luatex.def)             Requested size: 186.19516pt x 99.371pt.
  [3<./Röntgenemission.png>]
-<Röntgenabsorption.png, id=69, 114.92938pt x 159.09438pt>
+<Röntgenabsorption.png, id=70, 114.92938pt x 159.09438pt>
 File: Röntgenabsorption.png Graphic file (type png)
 <use Röntgenabsorption.png>
 Package luatex.def Info: Röntgenabsorption.png  used on input line 36.
@@ -1706,14 +1706,14 @@ Package luatex.def Info: Röntgenabsorption.png  used on input line 36.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4]
-<Bragg-Reflexion.png, id=77, 114.92938pt x 89.83563pt>
+<Bragg-Reflexion.png, id=78, 114.92938pt x 89.83563pt>
 File: Bragg-Reflexion.png Graphic file (type png)
 <use Bragg-Reflexion.png>
 Package luatex.def Info: Bragg-Reflexion.png  used on input line 49.
 (luatex.def)             Requested size: 114.9291pt x 89.8354pt.
 ) (./content/durchfuehrung.tex [5<./Röntgenabsorption.png><./Bragg-Reflexion.PN
 G>]
-<Röntgenröhre.png, id=88, 496.35437pt x 269.50688pt>
+<Röntgenröhre.png, id=89, 496.35437pt x 269.50688pt>
 File: Röntgenröhre.png Graphic file (type png)
 <use Röntgenröhre.png>
 Package luatex.def Info: Röntgenröhre.png  used on input line 5.
@@ -1724,7 +1724,7 @@ Overfull \hbox (78.09761pt too wide) in paragraph at lines 5--6
  []
 
 [6<./Röntgenröhre.png>]) (./content/auswertung.tex
-<Braggwinkel.pdf, id=96, 433.62pt x 289.08pt>
+<Braggwinkel.pdf, id=97, 433.62pt x 289.08pt>
 File: Braggwinkel.pdf Graphic file (type pdf)
 <use Braggwinkel.pdf>
 Package luatex.def Info: Braggwinkel.pdf  used on input line 10.
@@ -1735,7 +1735,7 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 10--11
  []
 
 [7<./Braggwinkel.pdf>]
-<Emmisionssprktrum.pdf, id=149, 433.62pt x 289.08pt>
+<Emmisionssprktrum.pdf, id=150, 433.62pt x 289.08pt>
 File: Emmisionssprktrum.pdf Graphic file (type pdf)
 <use Emmisionssprktrum.pdf>
 Package luatex.def Info: Emmisionssprktrum.pdf  used on input line 47.
@@ -1745,7 +1745,7 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 47--48
  [][] 
  []
 
-<EmmisionssprktrumII.pdf, id=150, 433.62pt x 289.08pt>
+<EmmisionssprktrumII.pdf, id=151, 433.62pt x 289.08pt>
 File: EmmisionssprktrumII.pdf Graphic file (type pdf)
 <use EmmisionssprktrumII.pdf>
 Package luatex.def Info: EmmisionssprktrumII.pdf  used on input line 54.
@@ -1866,7 +1866,7 @@ Overfull \hbox (5.475pt too wide) detected at line 97
  []
 
 [8] [9<./Emmisionssprktrum.pdf>] [10<./EmmisionssprktrumII.pdf>]
-<AbsorbtionsspektrumBrom.pdf, id=286, 433.62pt x 289.08pt>
+<AbsorbtionsspektrumBrom.pdf, id=287, 433.62pt x 289.08pt>
 File: AbsorbtionsspektrumBrom.pdf Graphic file (type pdf)
 <use AbsorbtionsspektrumBrom.pdf>
 Package luatex.def Info: AbsorbtionsspektrumBrom.pdf  used on input line 106.
@@ -1876,7 +1876,7 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 106--107
  [][] 
  []
 
-<AbsorbtionsspektrumZirkonium.pdf, id=287, 433.62pt x 289.08pt>
+<AbsorbtionsspektrumZirkonium.pdf, id=288, 433.62pt x 289.08pt>
 File: AbsorbtionsspektrumZirkonium.pdf Graphic file (type pdf)
 <use AbsorbtionsspektrumZirkonium.pdf>
 Package luatex.def Info: AbsorbtionsspektrumZirkonium.pdf  used on input line 11
@@ -1887,7 +1887,7 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 113--114
  [][] 
  []
 
-<AbsorbtionsspektrumZink.pdf, id=288, 433.62pt x 289.08pt>
+<AbsorbtionsspektrumZink.pdf, id=289, 433.62pt x 289.08pt>
 File: AbsorbtionsspektrumZink.pdf Graphic file (type pdf)
 <use AbsorbtionsspektrumZink.pdf>
 Package luatex.def Info: AbsorbtionsspektrumZink.pdf  used on input line 120.
@@ -1897,7 +1897,7 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 120--121
  [][] 
  []
 
-<AbsorbtionsspektrumStrontium.pdf, id=289, 433.62pt x 289.08pt>
+<AbsorbtionsspektrumStrontium.pdf, id=290, 433.62pt x 289.08pt>
 File: AbsorbtionsspektrumStrontium.pdf Graphic file (type pdf)
 <use AbsorbtionsspektrumStrontium.pdf>
 Package luatex.def Info: AbsorbtionsspektrumStrontium.pdf  used on input line 12
@@ -1908,7 +1908,7 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 127--128
  [][] 
  []
 
-<AbsorbtionsspektrumRubidium.pdf, id=290, 433.62pt x 289.08pt>
+<AbsorbtionsspektrumRubidium.pdf, id=291, 433.62pt x 289.08pt>
 File: AbsorbtionsspektrumRubidium.pdf Graphic file (type pdf)
 <use AbsorbtionsspektrumRubidium.pdf>
 Package luatex.def Info: AbsorbtionsspektrumRubidium.pdf  used on input line 134
@@ -1919,7 +1919,7 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 134--135
  [][] 
  []
 
-<AbsorbtionsspektrumGallium.pdf, id=291, 433.62pt x 289.08pt>
+<AbsorbtionsspektrumGallium.pdf, id=292, 433.62pt x 289.08pt>
 File: AbsorbtionsspektrumGallium.pdf Graphic file (type pdf)
 <use AbsorbtionsspektrumGallium.pdf>
 Package luatex.def Info: AbsorbtionsspektrumGallium.pdf  used on input line 141.
@@ -2181,24 +2181,25 @@ Here is how much of LuaTeX's memory you used:
  742 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 34 attribute, 79 gl
 ue_spec, 19 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:4,2:2953,3:360,4:57,5:1275,6:55,7:6975,8:41,9:1373,10:17,11:81
-7
+   avail lists: 1:4,2:2953,3:360,4:57,5:1275,6:55,7:7035,8:41,9:1373,10:17,11:82
+1
  53864 multiletter control sequences out of 65536+600000
  148 fonts using 38006591 bytes
  110i,15n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
 <c:/texlive/2020/texmf-dist/fonts/opentype/public/xits/XITSMath-Regular.otf><c:/
 texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/t
 exlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/te
-xlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/tex
-live/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/202
-0/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/tex
-mf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-di
-st/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fonts/
-opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (19 pages, 882215 bytes).
+xlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/
+2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2
+020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2020/texm
+f-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dis
+t/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-dist/fon
+ts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fonts/openty
+pe/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (19 pages, 883862 bytes).
 
-PDF statistics: 773 PDF objects out of 1000 (max. 8388607)
- 345 compressed objects within 4 object streams
+PDF statistics: 780 PDF objects out of 1000 (max. 8388607)
+ 349 compressed objects within 4 object streams
  61 named destinations out of 1000 (max. 131072)
  145 words of extra memory for PDF output out of 10000 (max. 100000000)
 
