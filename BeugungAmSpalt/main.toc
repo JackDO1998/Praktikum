@@ -1,0 +1,12 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\contentsline {section}{\numberline {3}Durchführung}{5}{section.3}%
+\contentsline {section}{\numberline {4}Auswertung}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Der Einfachspalt}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Doppelspalt}{6}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Diskussion}{8}{section.5}%
+\contentsline {section}{\numberline {6}Literatur}{9}{section.6}%
+\contentsline {section}{\numberline {7}Anhang}{9}{section.7}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

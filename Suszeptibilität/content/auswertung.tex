@@ -5,13 +5,20 @@ zweier Materialien zu bestimmen.
 \subsection{Güte des selektiven Verstärkers}
 \label{sec:verstaerker}
 Um die Güte des selektiven Verstärkers zu bestimmen wurde für unterschiedliche Frequenzen bei gleicher Eingangsspannung 
-$U_E$ die verstärkte Spannung gemessen. Das Ergebnis ist im folgenden Diagram \autoref{fig:verstaerker} aufgetragen:
+$U_E$ die verstärkte Spannung gemessen. Das Ergebnis ist im folgenden Diagram \autoref{fig:verstaerker} aufgetragen. 
+Um die Güte des Verstärkers zu messen wurde die Kurve auf die Eingangsspannung normiert und die Breite
+bei einer Höhe von $\frac{1}{\sqrt{2}}$ bestimmt. Diese liegt bei $\Delta v=\SI[]{695.8}[]{Hz}$. Die Güte lässt sich
+mit $v_0=\SI[]{35.5}[]{kHz}$ dann bestimmen über:
+\begin{center}
+  $Q=\frac{v_0}{\Delta v}=\frac{\SI[]{35.5}[]{kHz}}{\SI[]{0.6958}[]{kHz}}=51.02$
+\end{center}
 \begin{figure}
     \centering
     \includegraphics{verstaerker.pdf}
-    \caption{Intensitäten nach Winkel eines Gallium-Absorbers}
+    \caption{Filterkurve des Selektivverstärkers}
     \label{fig:verstaerker}
   \end{figure}
+\newpage
 \subsection{Berechnung der Suszeptibilität mittels Quantenzahlen}
 \label{sec:quantenzahlen}
 $Dy^{3+}$ besitzt 9 Elektronen auf der 4f-Schale, es müssen also nach der ersten Hundschen-Regel sieben 
@@ -31,7 +38,7 @@ molaren Masse M berechnet:
   \begin{table}
     \centering
     
-    \caption{Berechnete Rydbergenergien}
+    \caption{Magnetische Momente pro Voulumenanteil}
     \label{tab:moseley}
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2] S S S S  [table-format=3.2]}
@@ -59,10 +66,10 @@ Daraus folgt sofort über \autoref{eq:xi} mit $T=25\si[]{°C}=298.15\si[]{K}$
 
 \subsection{Berechnung der Suszeptibilität durch Messungen an der Brückenschaltung}
 \label{sec:messung}
-Zunächst werden die $\Delta R$ berechnet und eren Mittelwert gebildet:
+Zunächst werden die $\Delta R$ berechnet und deren Mittelwert gebildet:
 \begin{center}
-    $\Delta R_{Dy_2 O_3}=1.55833 \si[]{\Omega}$\\
-    $\Delta R_{Gd_2 O_3}=0.76833 \si[]{\Omega}$
+    $\Delta R_{Dy_2 O_3}=\SI[]{1.55833}[]{\Omega}$\\
+    $\Delta R_{Gd_2 O_3}=\SI[]{0.76833}[]{\Omega}$
 \end{center}
 Als nächstes wird dann $Q_{real}=\frac{m}{l*\rho_w}$ berechnet:
 \begin{center}
@@ -87,7 +94,7 @@ Jetzt können mit $\chi=2\frac{\Delta R F}{Q_{real} R_3}$ sofort die Suszeptibil
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2] S S S S  [table-format=3.2]}
       \toprule
-      {Material} & { $\chi_{Quant}$ in $\si{\frac{m^3}{kg}}$} & {$\chi_{gemessen}$ in $\si{\frac{m^3}{kg}}$} &  {Abweichung in \%}\\
+      {Material} & { $\chi_{Quantenzahlen}$ in $\si{\frac{m^3}{kg}}$} & {$\chi_{Brückenspannung}$ in $\si{\frac{m^3}{kg}}$} &  {Abweichung in \%}\\
       \midrule
       {$$Dy_2 O_3$$}& {$$12.444 \times 10^{-3}$$} & {$$18.124 \times 10^{-3}$$} & {9.03}\\
       {$$Gd_2 O_3$$}& {$$ 6.798 \times 10^{-3}$$} & {$$11.540 \times 10^{-3}$$} &{69.76}\\
