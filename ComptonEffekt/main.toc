@@ -2,9 +2,11 @@
 \babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
 \contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
-\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Emissionspektrum der Kupferröntgenröhre}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Bestimmung der Transmission als Funktion der Wellenlänge}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Bestimmung der Compton Wellenlänge}{8}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Diskussion}{8}{section.4}%
+\contentsline {section}{\numberline {3}Durchführung}{5}{section.3}%
+\contentsline {section}{\numberline {4}Auswertung}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Emissionspektrum der Kupferröntgenröhre}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Bestimmung der Transmission als Funktion der Wellenlänge}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Bestimmung der Compton Wellenlänge}{9}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Diskussion}{9}{section.5}%
+\contentsline {section}{\numberline {6}Literatur}{9}{section.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
