@@ -17,7 +17,7 @@ Sättigungsströme $I_{s}$ ablesen.
   \begin{table}
     \centering
     \caption{Sättigungsströme}
-    \label{tab:vergleich}
+    \label{tab:stroeme}
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2] S S S S  [table-format=3.2]}
       \toprule
@@ -26,8 +26,8 @@ Sättigungsströme $I_{s}$ ablesen.
       {$2.0$}& {$ 1.8 \times 10^{-4}$}& {$$--$$}\\
       {$2.2$}& {$ 6.3 \times 10^{-4}$}& {$$--$$}\\
       {$2.3$}& {$13.1 \times 10^{-4}$}& {$$--$$}\\
-      {$2.4$}& {$\geq 22.2 \times 10^{-4}$ & {$$30.0\times 10^{-4}$$}\\
-      {$2.5$}& {$\geq 29.3 \times 10^{-4}$}& {$$38.0\times 10^{-4}$$}\\
+      {$2.4$}& {$\geq 22.2 \times 10^{-4}$} & {$30.0\times 10^{-4}$}\\
+      {$2.5$}& {$\geq 29.3 \times 10^{-4}$} & {$38.0\times 10^{-4}$}\\
       \bottomrule
     \end{tabular}
   \end{table}
@@ -118,7 +118,8 @@ $x=1.450\pm 0.014$ errechnet.
   \label{sec:arbeit}
   Um die Austrittsarbeit aus der Wolframelektrode zu berechnen wurde die Richardsongleicheung \autoref{eq:richardson}
   nach $e_0\phi$ umgestellt und für die $T$,$I_S$ wertepare berechnet. Anschießend wurde mit der Python numpy Bibliothek der
-  Mittelwert und desen Feler bestimmt. Die Ergebnisse sind in \autoref{tab:austritsarbeit} dargestellt.
+  Mittelwert und desen Feler bestimmt. Die Ergebnisse sind in \autoref{tab:austritsarbeit} dargestellt. Im unteren Teil der
+  Tabelle befinden sich die auf Grundlage der Sättigungstromschätzung gemachten Berechnungen der Austrittsarbeit.
 
   \begin{table}
     \centering
@@ -129,15 +130,15 @@ $x=1.450\pm 0.014$ errechnet.
       \toprule
       { $I_S$ in A}  & {$T$ in K}& {$e_0\phi$ in eV}\\
       \midrule
-      {$$0.00018$$}& {$$1930.045$$}&{$$6.2789$$}\\
-      {$$0.00063$$}& {$$1982.611$$}&{$$6.2451$$}\\
-      {$$0.00131$$}& {$$2073.968$$}&{$$6.4181$$}\\
-      {$$0.00222$$}& {$$2159.537$$}&{$$6.5998$$}\\
-      {$$0.00293$$}& {$$2240.384$$}&{$$6.8075$$}\\
-      {$$\diameter $$}& {$$--$$}&{$$6.47\pm 0.09$$}\\
+      {$$0.00018$$}& {$$1930.045$$}&{$$4.5564$$}\\
+      {$$0.00063$$}& {$$1982.611$$}&{$$4.4757$$}\\
+      {$$0.00131$$}& {$$2073.968$$}&{$$4.5672$$}\\
+      {$$0.00222$$}& {$$2159.537$$}&{$$4.6725$$}\\
+      {$$0.00293$$}& {$$2240.384$$}&{$$4.8081$$}\\
+      {$$\diameter $$}& {$$--$$}&{$$4.65\pm 0.04$$}\\
       \midrule
-      {$$0.0030$$}& {$$2159.537$$}&{$$6.54377$$}\\
-      {$$0.0038$$}& {$$2240.384$$}&{$$6.80295$$}\\
+      {$$0.0030$$}& {$$2159.537$$}&{$$4.6725$$}\\
+      {$$0.0038$$}& {$$2240.384$$}&{$$4.8081$$}\\
       \bottomrule
     \end{tabular}
   \end{table}
