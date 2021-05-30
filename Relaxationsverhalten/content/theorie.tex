@@ -1,0 +1,78 @@
+\section{Zielsetzung}
+Bei diesem Experiment wird das Relaxationsverhalten eines RC-Kreises anhand des Aufladevorgangs beobachtet. Außerdem wird die Frequenzabhängigkeit von Phase
+und Amplitude eines durch eine Sinusspannung gespeisten RC-Kreises bestimmt.
+\section{Theorie}
+\aubsection{Der allgemeine Relaxationsvorgang}
+Allgemein wird von einem Relaxationsvorgang gesprochen, wenn ein System nach der Auslenkung aus seinem jeweiligen Anfangszustand wieder in selbigen 
+zurückkehrt, ohne dabei jedoch oszillatorisches Verhalten an den Tag zu legen. Sowohl die Auf- als auch die Entladung eines Kondensators sind
+Beispiele für einen solchen Vorgang. Bei einem Relaxationsvorgang, bei dem sich die betrachtete Größe $A$ asymptotisch seinem Endzustand $A(\infty)$
+nähert, ist die Änderungsrate proportional zur Differenz vom Zustand $A(t)$ zum Endzustand:
+\begin{equation*}
+\frac{dA}{dt}=c(A(t)-A(\infty)
+\end{equation*}
+was ein allgemeine Differentialgleichung für Relaxationsvorgänge darstellt
+Die Lösung dieser Differentialgleichung ergibt sich durch Integration und hat die allgemeine Form:
+\begin{equation}
+A(t)=A(\infty)+(A(0)+A(\infty))e^ct
+\label{eq:allgemeine Relaxationsgleichung}
+\end{equation}
+mit dem Anfangszustand $A(0)$. Da die Funktion A(t) beschränkt sein soll ergibt sich weiterhin, dass der Parameter $c<0$ gelten muss.
+\subsection{Auf- und Entladevorgang des Kondensators}
+An einem Kondensator der Kapazität $C$ mit der Ladung $Q$ liegt eine Spannung $U_C$ an, die durch
+\begin{equation*}
+U_C=\frac{Q}{C}
+\end{equation*}
+beschrieben wird. Daraus resultiert nach dem Ohmschen Gesetz ein Strom $I=U_C/R$ über den Wiederstand R. Da in der Zeit $dt$ die Ladung 
+$Idt$ überfließt ergibt sich für den Strom weiterhin die Darstellung
+\begin{equation*}
+\frac{dQ}{dt}=-I
+\end{equation*}
+des Stroms als Ableitung der Ladung nach der Zeit. Mit den vorangegangenen grundlegenden Zusammenhängen für den Kondensator lässt sich daraus die 
+eine Differentialgleichung für die Ladung des Kondensators $Q(t)$ in Abhängigkeit von der Zeit herleiten
+\begin{equation}
+\frac{dQ}{dt}=-\frac{1}{RC}
+\end{equation}
+welche eine Form der allgemeinen Relaxationsgleichung \ref{allgemeine Relaxationsgleichung} darstellt. Mit Anfangsbedingung $Q(\infty)=0$, die sich ergibt da der 
+Kondensator im Endzustand entladen sein soll wird der Entladevorgang durch die Gleichung
+\begin{equation}
+Q(t)=Q(0)\exp (-t/RC)
+\end{equation}
+beschreiben. \\
+Analog dazu lässt sich für die Anfangsbedingung des Aufladevorgangs, bei dem der Kondensator am Anfang entladen ($Q(0)=0$) sein und am Ende der Aufladung durch die
+Spannung $U_0$ die Ladung $Q(\infty)=CU_0$ besitzen soll, die Gleichung 
+\begin{equation}
+Q(t)=CU_0(1-\exp(-t/RC))
+\end{equation}
+herleiten. Der Konstante Faktor $RC$ wird als Zeitkonstante bezeichnet und gibt an wie schnell die Auf bzw. Entladung erfolgt. Je größer die Zeitkonstante,
+desto langsamer strebt das System seinen jeweiligen Endzustand an.
+\subsection{Relaxation unter periodischer Auslenkung}
+Der RC-Kreis soll nun durch eine Wechselspannung der Form 
+\begin{equation}
+U(t)=U_0cos(wt)
+\end{equation}
+gespeist werden. Dadurch ergibt sich ein Vorgang der wiederum analog zu seinem mechanischen Äquivalent verläuft. Wenn die Frequenz der angelegten Wechselspannung
+klein gegenüber der Zeitkonstante ist entspricht die Spannung am Kondensator annähernd der anregenden Spannung. Wenn die Frequenz erhöht wird, verzögert sich die 
+Auf bzw. Entladung des Kondensators jedoch gegenüber der anregenden Spannung, woraus sich eine frequenzabhängige Phaseverschiebung $\phi(w)$ ergibt. Daher kann 
+die Spannung am Kondensator mit dem Ansatz
+\begin{equation}
+U_C(t)=A(w)cos(wt+\phi(w))
+\end{equation}
+mit der Amplitude $A(w)$ beschreiben. Aus vorigen Überlegungen sowie den Kirchhoffschen Regeln lässt sich damit die Gleichung 
+\begin{equation*}
+U_0\cos(wt)=-AwRC\sin(wt+\phi)+A(w)\cos(wt+\phi)
+\end{equation*}
+herleiten aus der sich wiederum die Frequenzabhängigkeit von Phase und Amplitude ableiten lassen. Die Phase ergibt sich daraus zu:
+\begin{equation}
+\phi(w)=\arctan(-wRC)
+\end{equation}
+Die Phasenverschiebung verschwindet also für $w=0$, und nähert sich bei hohen Frequenzen dem Grenzwert $\phi(\infty)=\pi/2$.
+Weiterhin ergibt sich für die Frequenzabhängigkeit der Amplitude der Kondensatorspannung:
+\begin{equation}
+A(w)=\frac{U_0}{\sqrt{1+w^2R^2C^2}}
+\end{equation}
+Hieraus lässt sich schließen, dass die Amplitude bei minimaler Frequenz der anregenden Spannung U_0 entspricht ($A(0)=U_0$) während
+sie für hohe Frequenzen verschwindet. Aus letzterer Eigenschaft folgt weiterhin auch, dass RC-Kreise als Tiefpässe verwendet werden können,
+da sie kleine Frequenzen ungehindert passieren lassen und hohe Frequenzen herausfiltern.
+herleiten. Der Konstante Faktor $RC$ wird als Zeitkonstante bezeichnet und gibt an wie schnell die Auf bzw. Entladung erfolgt. Je größer die Zeitkonstante,
+desto langsamer strebt das System seinen jeweiligen Endzustand an.
+
