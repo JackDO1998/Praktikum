@@ -8,7 +8,7 @@ zurückkehrt, ohne dabei jedoch oszillatorisches Verhalten an den Tag zu legen. 
 Beispiele für einen solchen Vorgang. Bei einem Relaxationsvorgang, bei dem sich die betrachtete Größe $A$ asymptotisch seinem Endzustand $A(\infty)$
 nähert, ist die Änderungsrate proportional zur Differenz vom Zustand $A(t)$ zum Endzustand:
 \begin{equation*}
-\frac{dA}{dt}=c(A(t)-A(\infty)
+\frac{dA}{dt}=c(A(t)-A(\infty))
 \end{equation*}
 was ein allgemeine Differentialgleichung für Relaxationsvorgänge darstellt
 Die Lösung dieser Differentialgleichung ergibt sich durch Integration und hat die allgemeine Form:
@@ -16,7 +16,7 @@ Die Lösung dieser Differentialgleichung ergibt sich durch Integration und hat d
 A(t)=A(\infty)+(A(0)+A(\infty))e^ct
 \label{eq:allgemeine Relaxationsgleichung}
 \end{equation}
-mit dem Anfangszustand $A(0)$. Da die Funktion A(t) beschränkt sein soll ergibt sich weiterhin, dass der Parameter $c<0$ gelten muss.
+mit dem Anfangszustand $A(0)$. Da die Funktion A(t) beschränkt sein soll ergibt sich weiterhin, dass $c<0$ gelten muss.
 \subsection{Auf- und Entladevorgang des Kondensators}
 An einem Kondensator der Kapazität $C$ mit der Ladung $Q$ liegt eine Spannung $U_C$ an, die durch
 \begin{equation*}
@@ -27,7 +27,7 @@ $Idt$ überfließt ergibt sich für den Strom weiterhin die Darstellung
 \begin{equation*}
 \frac{dQ}{dt}=-I
 \end{equation*}
-des Stroms als Ableitung der Ladung nach der Zeit. Mit den vorangegangenen grundlegenden Zusammenhängen für den Kondensator lässt sich daraus die 
+als Ableitung der Ladung nach der Zeit. Mit den vorangegangenen grundlegenden Zusammenhängen für den Kondensator lässt sich daraus die 
 eine Differentialgleichung für die Ladung des Kondensators $Q(t)$ in Abhängigkeit von der Zeit herleiten
 \begin{equation}
 \frac{dQ}{dt}=-\frac{1}{RC}Q(t)
@@ -47,16 +47,16 @@ herleiten. Der Konstante Faktor $RC$ wird als Zeitkonstante bezeichnet und gibt 
 desto langsamer strebt das System seinen jeweiligen Endzustand an.
 \subsection{Relaxation unter periodischer Auslenkung}
 Der RC-Kreis soll nun durch eine Wechselspannung der Form 
-\begin{equation}
+\begin{equation*}
 U(t)=U_0cos(wt)
-\end{equation}
+\end{equation*}
 gespeist werden. Dadurch ergibt sich ein Vorgang der wiederum analog zu seinem mechanischen Äquivalent verläuft. Wenn die Frequenz der angelegten Wechselspannung
 klein gegenüber der Zeitkonstante ist entspricht die Spannung am Kondensator annähernd der anregenden Spannung. Wenn die Frequenz erhöht wird, verzögert sich die 
 Auf bzw. Entladung des Kondensators jedoch gegenüber der anregenden Spannung, woraus sich eine frequenzabhängige Phaseverschiebung $\phi(w)$ ergibt. Daher kann 
 die Spannung am Kondensator mit dem Ansatz
-\begin{equation}
+\begin{equation*}
 U_C(t)=A(w)cos(wt+\phi(w))
-\end{equation}
+\end{equation*}
 mit der Amplitude $A(w)$ beschreiben. Aus vorigen Überlegungen sowie den Kirchhoffschen Regeln lässt sich damit die Gleichung 
 \begin{equation*}
 U_0\cos(wt)=-AwRC\sin(wt+\phi)+A(w)\cos(wt+\phi)
