@@ -79,22 +79,23 @@ Aus diesen Werten ergibt sich über $A=\frac{E_K}{\Delta E_{FWHM}}$ direkt das A
   \autoref{fig:EmspektrumVIII},
   sind die jeweiligen Maximal- und Minimalwerte $I_{max}$ und $I_{min}$
   aus welchen über die Beziehung $I_K=I_{min}+\frac{I_{max}-I_{min}}{2}$ die Mitte der K-Kante berechnet wurde. Anschließend wurde eine Gerade durch beide Punkte gelegt und anhand ihrer
-  der Winkel $\Theta$ berechnet.
-  \begin{table}
+  der Winkel $\Theta$ berechnet. Wenn an zwei unterschiedlichen Messtellen der gleiche Messwert gemessen wurde,
+  wurde der Winkel gemittelt.
+   \begin{table}
     \centering
-    \label{tab:sigma}
     \caption{Daten der Absorber}
+    \label{tab:sigma}
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2] S S S S S [table-format=3.2]}
       \toprule
-      {Absorber} & {Ordnungszahl z}&  {$\Theta$in °} & {$E_K$ in KeV}& {$\sigma_K$}\\
+      {Absorber} & {Ordnungszahl z}&  {$\Theta$ in °} & {$E_K$ in KeV}& {$\sigma_K$}\\
       \midrule
-      {Brom      }& 35  & 13.25 & 13.43 & 3.726\\
-      {Zirkonium }& 40  &  9.95 & 17.81 & 4.282\\
-      {Zink      }& 30  & 18.70 &  9.60 & 3.635\\
-      {Strontium }& 38  & 11.05 & 16.06 & 4.043\\
-      {Rubidium  }& 37  & 11.75 & 15.12 & 4.039\\
-      {Gallium   }& 31  & 17.35 & 10.32 & 3.675\\
+      {Brom      }& 35  & 13.275 & 13.4047 & 3.7554\\
+      {Zirkonium }& 40  &  9.950 & 17.8140 & 4.2820\\
+      {Zink      }& 30  & 18.675 &  9.6129 & 3.6172\\
+      {Strontium }& 38  & 11.150 & 15.9173 & 4.1972\\
+      {Rubidium  }& 37  & 11.725 & 15.1468 & 4.0032\\
+      {Gallium   }& 31  & 17.450 & 10.2645 & 3.7521\\
 
       \bottomrule
     
@@ -142,16 +143,18 @@ Aus diesen Werten ergibt sich über $A=\frac{E_K}{\Delta E_{FWHM}}$ direkt das A
     \caption{Intensitäten nach Winkel eines Gallium-Absorbers}
     \label{fig:EmspektrumVIII}
   \end{figure}
+  \newpage
   \subsection{Überprüfung des Moseley'schen Gesestzes}
   Henry Meseley beschrieb einen Zusammenhang zwischen Rydbergfrequenz und Energie der K-Kante aus dem die 
-  Rydbergenergie $R_{\infty}$ berechnen:
+  Rydbergenergie $R_{\infty}$ berechnet werden kann:
   \begin{center}
     $R_{\infty}=\frac{E_K}{(z-\sigma)^2}$
   \end{center}
   \begin{table}
     \centering
-    \label{tab:moseley}
+    
     \caption{Berechnete Rydbergenergien}
+    \label{tab:moseley}
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2] S S S S S [table-format=3.2]}
       \toprule
@@ -168,3 +171,11 @@ Aus diesen Werten ergibt sich über $A=\frac{E_K}{\Delta E_{FWHM}}$ direkt das A
     
     \end{tabular}
   \end{table}
+  Da die Absorbtionsenergie $E_K$ proportional zu $Z^2$ ist, folgt aus der Steigung der Ausgleichsgraden
+  im $\sqrt{E_K}-Z$ Diagramm \autoref{fig:rydberg}, die Rydbergkonstente. Sie liegt demnach bei $R_{\infty}=0.112 \pm 0.001$
+  \begin{figure}
+    \centering
+    \includegraphics{rydberg.pdf}
+    \caption{Bestimmung der Rydbergkonstanten anhand der Steigung}
+    \label{fig:rydberg}
+  \end{figure}

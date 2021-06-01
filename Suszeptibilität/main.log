@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  18 MAY 2021 13:58
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  1 JUN 2021 17:34
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1690,20 +1690,20 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 
 ]
 (./content/theorie.tex [3]
-<Drehimpuls.png, id=64, 308.65312pt x 371.3875pt>
+<Drehimpuls.png, id=68, 308.65312pt x 371.3875pt>
 File: Drehimpuls.png Graphic file (type png)
 <use Drehimpuls.png>
 Package luatex.def Info: Drehimpuls.png  used on input line 36.
 (luatex.def)             Requested size: 113.81102pt x 136.94086pt.
  [4<./Drehimpuls.PNG>]
-<Brückenschaltung.png, id=74, 313.67188pt x 321.70187pt>
+<Brückenschaltung.png, id=78, 313.67188pt x 321.70187pt>
 File: Brückenschaltung.png Graphic file (type png)
 <use Brückenschaltung.png>
 Package luatex.def Info: Brückenschaltung.png  used on input line 78.
 (luatex.def)             Requested size: 113.81102pt x 116.7256pt.
  [5<./Brückenschaltung.png>])
 (./content/durchfuehrung.tex
-<Aufbau.png, id=84, 962.84718pt x 466.74374pt>
+<Aufbau.png, id=88, 962.84718pt x 466.74374pt>
 File: Aufbau.png Graphic file (type png)
 <use Aufbau.png>
 Package luatex.def Info: Aufbau.png  used on input line 12.
@@ -1713,7 +1713,7 @@ Package luatex.def Info: Aufbau.png  used on input line 12.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 (./content/auswertung.tex [6]
-<verstaerker.pdf, id=93, 433.62pt x 289.08pt>
+<verstaerker.pdf, id=97, 433.62pt x 289.08pt>
 File: verstaerker.pdf Graphic file (type pdf)
 <use verstaerker.pdf>
 Package luatex.def Info: verstaerker.pdf  used on input line 17.
@@ -1736,169 +1736,29 @@ Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman10-regular]:+tlig;
 !
 Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman8-regular]:+tlig;!
 Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman5-regular]:+tlig;!
+ [9]
+Missing character: There is no ü (U+00FC) in font cmmi7!
+Missing character: There is no ü (U+00FC) in font cmmi7!
+) (./content/diskussion.tex
 Missing character: There is no ü (U+00FC) in font cmmi7!
 
-! Missing $ inserted.
-<inserted text> 
-$
-l.99       {$$Dy_2 O_3$$}&
-                         {$$24.889\times 10^{-3}$$} & {$$18.124 \times 10^{-...
-? 
-! Extra }, or forgotten $.
-<recently read> }
- 
-l.99       {$$Dy_2 O_3$$}&
-                         {$$24.889\times 10^{-3}$$} & {$$18.124 \times 10^{-...
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.99       {$$Dy_2 O_3$$}&
-                         {$$24.889\times 10^{-3}$$} & {$$18.124 \times 10^{-...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.99       {$$Dy_2 O_3$$}&
-                         {$$24.889\times 10^{-3}$$} & {$$18.124 \times 10^{-...
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.99 ...{$$Dy_2 O_3$$}& {$$24.889\times 10^{-3}$$} &
-                                                   {$$18.124 \times 10^{-3}$...
-? 
-! Extra }, or forgotten $.
-<recently read> }
- 
-l.99 ...{$$Dy_2 O_3$$}& {$$24.889\times 10^{-3}$$} &
-                                                   {$$18.124 \times 10^{-3}$...
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.99 ...{$$Dy_2 O_3$$}& {$$24.889\times 10^{-3}$$} &
-                                                   {$$18.124 \times 10^{-3}$...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.99 ...{$$Dy_2 O_3$$}& {$$24.889\times 10^{-3}$$} &
-                                                   {$$18.124 \times 10^{-3}$...
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.99 ...s 10^{-3}$$} & {$$18.124 \times 10^{-3}$$} &
-                                                   {37.3}\\
-? 
-! Extra }, or forgotten $.
-<recently read> }
- 
-l.99 ...s 10^{-3}$$} & {$$18.124 \times 10^{-3}$$} &
-                                                   {37.3}\\
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.99 ...s 10^{-3}$$} & {$$18.124 \times 10^{-3}$$} &
-                                                   {37.3}\\
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.99 ...s 10^{-3}$$} & {$$18.124 \times 10^{-3}$$} &
-                                                   {37.3}\\
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.100       {$$Gd_2 O_3$$}&
-                          {$$13.593\times 10^{-3}$$} & {$$11.540 \times 10^{...
-? 
-! Extra }, or forgotten $.
-<recently read> }
- 
-l.100       {$$Gd_2 O_3$$}&
-                          {$$13.593\times 10^{-3}$$} & {$$11.540 \times 10^{...
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.100       {$$Gd_2 O_3$$}&
-                          {$$13.593\times 10^{-3}$$} & {$$11.540 \times 10^{...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.100       {$$Gd_2 O_3$$}&
-                          {$$13.593\times 10^{-3}$$} & {$$11.540 \times 10^{...
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.100 ...$$Gd_2 O_3$$}& {$$13.593\times 10^{-3}$$} &
-                                                   {$$11.540 \times 10^{-3}$...
-? 
-! Extra }, or forgotten $.
-<recently read> }
- 
-l.100 ...$$Gd_2 O_3$$}& {$$13.593\times 10^{-3}$$} &
-                                                   {$$11.540 \times 10^{-3}$...
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.100 ...$$Gd_2 O_3$$}& {$$13.593\times 10^{-3}$$} &
-                                                   {$$11.540 \times 10^{-3}$...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.100 ...$$Gd_2 O_3$$}& {$$13.593\times 10^{-3}$$} &
-                                                   {$$11.540 \times 10^{-3}$...
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.100 ... 10^{-3}$$} & {$$11.540 \times 10^{-3}$$} &
-                                                   {17.3}\\
-? 
-! Extra }, or forgotten $.
-<recently read> }
- 
-l.100 ... 10^{-3}$$} & {$$11.540 \times 10^{-3}$$} &
-                                                   {17.3}\\
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.100 ... 10^{-3}$$} & {$$11.540 \times 10^{-3}$$} &
-                                                   {17.3}\\
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.100 ... 10^{-3}$$} & {$$11.540 \times 10^{-3}$$} &
-                                                   {17.3}\\
-? 
-[9]) (./content/diskussion.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 25--23
+[10])
+Underfull \hbox (badness 10000) in paragraph at lines 30--23
 
  []
 
 
 LaTeX Warning: Empty bibliography on input line 24.
 
-[10] (./main.aux)
+[11] (./main.aux)
 
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 2C686A4B574296CABAAD6E654125B377;12623
-(rerunfilecheck)             After:  E4F4729A430F1F3BD57AA37662159A06;12750.
+(rerunfilecheck)             Before: 4A79D30532CA2ADE482584A55BD3C2E6;13949
+(rerunfilecheck)             After:  714BE35295E1061A6DF225BF2A1BD3BB;14144.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 0321487FA2B94D8250347E4DAE2685F4;1672.
+(rerunfilecheck)             Checksum: D4E76041E12A7D00822D80ABC5858411;1889.
 
 LaTeX Warning: There were undefined references.
 
@@ -1913,14 +1773,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35408 strings out of 478903
+ 35427 strings out of 478903
  100000,1977958 words of node,token memory allocated
- 796 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 54 attribute, 79 gl
+ 801 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 54 attribute, 80 gl
 ue_spec, 29 attribute_list, 1 write nodes
-   avail lists: 1:4,2:1210,3:261,4:54,5:437,6:54,7:6020,8:47,9:604,10:30,11:684
- 53810 multiletter control sequences out of 65536+600000
- 148 fonts using 38006367 bytes
+   avail lists: 1:4,2:925,3:287,4:59,5:485,6:59,7:6755,8:47,9:510,10:30,11:690
+ 53826 multiletter control sequences out of 65536+600000
+ 148 fonts using 38007039 bytes
  110i,15n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
 <c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf><c:/te
 xlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/
@@ -1932,10 +1792,10 @@ dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/
 fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-dist/fonts
 /opentype/public/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype
 /public/lm/lmroman12-bold.otf>
-Output written on main.pdf (10 pages, 1287870 bytes).
+Output written on main.pdf (11 pages, 1290239 bytes).
 
-PDF statistics: 295 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 131072)
- 137 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 314 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 131072)
+ 153 words of extra memory for PDF output out of 10000 (max. 100000000)
 

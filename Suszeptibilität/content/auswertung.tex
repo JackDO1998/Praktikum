@@ -66,6 +66,7 @@ Daraus folgt sofort über \autoref{eq:xi} mit $T=25\si[]{°C}=298.15\si[]{K}$
 
 \subsection{Berechnung der Suszeptibilität durch Messungen an der Brückenschaltung}
 \label{sec:messung}
+\subsubsection{Berechnung mittels Widerstand}
 Zunächst werden die $\Delta R$ berechnet und deren Mittelwert gebildet:
 \begin{center}
     $\Delta R_{Dy_2 O_3}=\SI[]{1.55833}[]{\Omega}$\\
@@ -81,7 +82,13 @@ Jetzt können mit $\chi=2\frac{\Delta R F}{Q_{real} R_3}$ sofort die Suszeptibil
     $\chi_{Dy2 O_3}=18.124 \times 10^{-3}$\\
     $\chi_{Gd2 O_3}=11.540 \times 10^{-3}$
 \end{center}
-
+\subsubsection{Berechnung mittels Brückenspannung}
+Um die Suszeptibilität mittels Brückenspannung zu bestimmen werden die bekannten Daten in 
+\autoref{eq:sechs} eingesetzt. Daraus folgt sofort:
+\begin{center}
+  $\chi_{Dy2 O_3}=40.553 \times 10^{-3}$\\
+  $\chi_{Gd2 O_3}=20.227 \times 10^{-3}$
+\end{center}
 
 \subsection{Vergleich der Suszeptibilitäten}
 \label{sec:vergleich}
@@ -94,13 +101,14 @@ Jetzt können mit $\chi=2\frac{\Delta R F}{Q_{real} R_3}$ sofort die Suszeptibil
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2] S S S S  [table-format=3.2]}
       \toprule
-      {Material} & { $\chi_{Quantenzahlen}$ in $\si{\frac{m^3}{kg}}$} & {$\chi_{Brückenspannung}$ in $\si{\frac{m^3}{kg}}$} &  {Abweichung in \%}\\
+      {Material} & { $\chi_{Quantenzahlen}$ in $\si{\frac{m^3}{kg}}$} & {$\chi_{Brückenschaltung}$ in $\si{\frac{m^3}{kg}}$} &  {$\chi_{Brückenspannung}$ in $\si{\frac{m^3}{kg}}$}\\
       \midrule
-      {$$Dy_2 O_3$$}& {$$24.889\times 10^{-3}$$} & {$$18.124 \times 10^{-3}$$} & {37.3}\\
-      {$$Gd_2 O_3$$}& {$$13.593\times 10^{-3}$$} & {$$11.540 \times 10^{-3}$$} & {17.3}\\
+      {$Dy_2 O_3$}& {$24.889\times 10^{-3}$} & {$18.124 \times 10^{-3}$} & {$40.553 \times 10^{-3}$} \\
+      {$Gd_2 O_3$}& {$13.593\times 10^{-3}$} & {$11.540 \times 10^{-3}$} & {$20.227 \times 10^{-3}$}\\
       \bottomrule
     
     \end{tabular}
   \end{table}
 
-  Die berechneten Suszeptibilitäten weichen stark von den gemessenen ab.
+  Die berechneten Suszeptibilitäten weichen stark von den gemessenen ab. Auffällig ist das die über die Brückenspannung
+  mittels \autoref{eq:sechs} in beiden fällen etwa doppelt so groß sind wie die mit $\Delta R$ berechneten. 
