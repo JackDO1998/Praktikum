@@ -67,10 +67,34 @@ Daraus folgt sofort über \autoref{eq:xi} mit $T=25\si[]{°C}=298.15\si[]{K}$
 \subsection{Berechnung der Suszeptibilität durch Messungen an der Brückenschaltung}
 \label{sec:messung}
 \subsubsection{Berechnung mittels Widerstand}
-Zunächst werden die $\Delta R$ berechnet und deren Mittelwert gebildet:
+Für die Widerstände wurden folgende Werte gemessen:
+\caption{Vergleich der Suszeptibilitäten}
+    \label{tab:widerstsande}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{S[table-format=3.2] S | S S S  [table-format=3.2]}
+      \toprule
+      {$Dy_2 O_3$}&{}&{$Gd_2 O_3$}&{}\\
+      \midrule
+      {Widerstand $R$ in $\Omega$}&{Widerstand $R_{Abgeglichen}$in $\Omega$} & {Widerstand $R$in $\Omega$}&{Widerstand $R_{Abgeglichen}$in $\Omega$}
+      \midrule
+      {3.025}&{1.460}&{3.045}&{2.260}\\
+      {3.040}&{1.490}&{3.040}&{2.275}\\
+      {3.035}&{1.475}&{3.025}&{2.270}\\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+  Mit den Daten aus \autoref{tab:widerstsande} werden zunächst über $\Delta R=R-R_{Abgeglichen}$ die
+  nötigen Änderungen des Widerstandes berechnet. Jetzt können über:
+  \begin{center}
+    $\bar{x} = \frac{1}{n} \sum \nolimits_{i=0} x_i$\\
+    $\sigma=\sqrt{\frac{\sum(x_i-\bar{x})^2}{n-1}}$\\
+    $\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}$\\
+  \end{center}
+  der Mittelwert und sein Fehler berechnet werden. Damit folgt:
 \begin{center}
     $\Delta R_{Dy_2 O_3}=\SI[]{1.55833}[]{\Omega}$\\
-    $\Delta R_{Gd_2 O_3}=\SI[]{0.76833}[]{\Omega}$
+    
+    $\Delta R_{Gd_2 O_3}=\SI[]{0.76833}[]{\Omega}$\\
 \end{center}
 Als nächstes wird dann $Q_{real}=\frac{m}{l*\rho_w}$ berechnet:
 \begin{center}
