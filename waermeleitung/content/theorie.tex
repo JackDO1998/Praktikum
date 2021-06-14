@@ -1,0 +1,25 @@
+\section{Zielsetzung}
+In diesem Versuch werden verschiedene Metalle sowohl durch die statische als auch die dynamische Methode auf ihre Wärmeleitfähigkeit hin untersucht.
+\section{Theorie}
+Bei einem Körper in einem Temparaturungleichgewicht, wird dieses durch den Transport von Wärme hin zu den stellen niedriger Temparatur ausgeglichen. Dieser Transport kann durch Konvektion, Wärmestrahlung und Wärmeleitung zustande kommen, wobei in diesem Falle nur letzteres berücksichtigt wird. Die Wärmeleitung wird von Phononen und freien Elektronen verursacht, erstere können jedoch vernachlässigt werden. Für die Wärmemenge $dQ$, die in einem festgelegten Zeitintervall in einem Stab der Querschnittsfläche $A$ übertragen wird, gilt:
+\begin{equation}
+dQ=-\kappa A \frac{\partial T}{\partial x}dt
+\end{equation}
+mit der Temparatur $T$, welche per Voraussetzung entlang des Stabes ungleich verteilt sein muss. Die Konstante $\kappa$ ist materialspezifisch und wird Wärmeleitfähigkeit genannt. Aufgrund des zweiten Hauptsatzes der Thermodynamik fließt die Temparatur immer entlang des Temparaturgefälles, was durch das Minuszeichen berücksichtigt wird. Aus dieser Gleichung lässt sich unter Anwendung der Kontinuitätsgleichung die Wärmeleitungsgleichung 
+\begin{equation}
+\frac{\partial T}{\partial t}=\frac{\kappa}{\rho c} \frac{\partial^2 T}{\partial x^2}=\sigma_T \frac{\partial^2 T}{\partial x^2} 
+\end{equation}
+in einer Dimension herleiten. Hier bezeichnet $\rho$ die Dichte und $c$ die spezifische Wärmekapazität des betreffenden Materials. Die Größe $\sigma_T=\frac{\kappa}{\rho c}$ wird Temparaturleitfähigkeit genannt und beschreibt die Geschwindigkeit, mit der sich Temparatur ausgleicht. Die genaue Lösung dieser Differentialgleichung hängt von den Anfangsbedingungen und der Geometrie des Problems ab. \\
+Durch das abwechselnde Anheizen und Abkühlen eines Stabes an einem Ende mit der Periode T führt zu einer Temparaturwelle der Form
+\begin{equation}
+T(x,t)=e^{-\sqrt{\frac{w\rho c}{2\kappa}}x}cos(wt--\sqrt{\frac{w\rho c}{2\kappa}}x)
+\end{equation}
+die sich mit der Phasengeschwindigkeit
+\begin{equation}
+v=\frac{w}{k}=\sqrt{\frac{2\kappa w}{\rho c}}
+\end{equation}
+im Stab fortsetzt. Hier wird zusätzlich die Kreisfrequenz $w=2\pi /T$ der Anregung verwendet, welche sich aus der Periodendauer ergibt. Mithilfe des Verhältnisses der Amplituden $A_{nah}$ und $A_{fern}$ der Welle an zwei Punkten $x_{nah}$ und $x_{fern}$ lässt sich nun die Wärmeleitfähigkeit bestimmen. Diese ergibt sich aus 
+\begin{equation}
+\kappa=\frac{\rho c (\Delta x)^2}{2 \Delta t ln(A_{nah}/A_{fern})}
+\end{equation}
+durch den Abstand $\Delta x=x_{fern}-x_{nah}$ sowie der Phasendifferenz $\Delta t$.
