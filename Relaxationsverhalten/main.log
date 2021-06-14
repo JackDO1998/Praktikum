@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  9 JUN 2021 19:36
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  8 JUN 2021 11:11
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1689,86 +1689,146 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
  [2
 
 ]
-(./content/theorie.tex [3]
-<Drehimpuls.png, id=68, 308.65312pt x 371.3875pt>
-File: Drehimpuls.png Graphic file (type png)
-<use Drehimpuls.png>
-Package luatex.def Info: Drehimpuls.png  used on input line 36.
-(luatex.def)             Requested size: 113.81102pt x 136.94086pt.
- [4<./Drehimpuls.PNG>]
-<Brückenschaltung.png, id=78, 313.67188pt x 321.70187pt>
-File: Brückenschaltung.png Graphic file (type png)
-<use Brückenschaltung.png>
-Package luatex.def Info: Brückenschaltung.png  used on input line 78.
-(luatex.def)             Requested size: 113.81102pt x 116.7256pt.
- [5<./Brückenschaltung.png>])
-(./content/durchfuehrung.tex
-<Aufbau.png, id=88, 962.84718pt x 466.74374pt>
-File: Aufbau.png Graphic file (type png)
-<use Aufbau.png>
-Package luatex.def Info: Aufbau.png  used on input line 12.
-(luatex.def)             Requested size: 284.52756pt x 137.92323pt.
-)
+(./content/theorie.tex
+! Undefined control sequence.
+l.5 \aubsection
+             {Der allgemeine Relaxationsvorgang}
+? 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `allgemeine Relaxationsgleichung' on page 3 undefined o
+n input line 35.
 
-(./content/auswertung.tex [6]
-<verstaerker.pdf, id=97, 433.62pt x 289.08pt>
-File: verstaerker.pdf Graphic file (type pdf)
-<use verstaerker.pdf>
-Package luatex.def Info: verstaerker.pdf  used on input line 17.
+[3]
+! Missing $ inserted.
+<inserted text> 
+$
+l.73 ...inimaler Frequenz der anregenden Spannung U_
+                                                  0 entspricht ($A(0)=U_0$) ...
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.73 ...anregenden Spannung U_0 entspricht ($A(0)=U_
+                                                  0$) während
+? 
+[4]) (./content/durchfuehrung.tex
+<Phasenverschiebung.png, id=64, 387.4475pt x 175.15437pt>
+File: Phasenverschiebung.png Graphic file (type png)
+<use Phasenverschiebung.png>
+Package luatex.def Info: Phasenverschiebung.png  used on input line 14.
+(luatex.def)             Requested size: 227.62204pt x 102.90187pt.
+) (./content/auswertung.tex
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 12.00128pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 8.00085pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+[5<./Phasenverschiebung.PNG>]
+<aufladevorgang.pdf, id=74, 433.62pt x 289.08pt>
+File: aufladevorgang.pdf Graphic file (type pdf)
+<use aufladevorgang.pdf>
+Package luatex.def Info: aufladevorgang.pdf  used on input line 21.
 (luatex.def)             Requested size: 433.61894pt x 289.07928pt.
 
-Overfull \hbox (15.36339pt too wide) in paragraph at lines 17--18
+Overfull \hbox (15.36339pt too wide) in paragraph at lines 21--22
  [][] 
  []
 
-[7<./Aufbau.png>] [8<./verstaerker.pdf>]
-Overfull \hbox (16.23264pt too wide) in paragraph at lines 77--88
+[6<./aufladevorgang.pdf>]
+! Missing $ inserted.
+<inserted text> 
+$
+l.34 mithilfe der scipy.curve_
+                            fit Funktion angepasst. Dabei ergab sich der Wert:
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.35 \begin{center}
+                 
+? 
+! Missing \endgroup inserted.
+<inserted text> 
+\endgroup 
+l.35 \begin{center}
+                 
+? 
+
+! LaTeX Error: \begin{document} ended by \end{center}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \end{center}
+               
+? 
+! Extra \endgroup.
+<recently read> \endgroup 
+          
+l.37 \end{center}
+               
+? 
+<Kondensatorspannung.pdf, id=134, 433.62pt x 289.08pt>
+File: Kondensatorspannung.pdf Graphic file (type pdf)
+<use Kondensatorspannung.pdf>
+Package luatex.def Info: Kondensatorspannung.pdf  used on input line 40.
+(luatex.def)             Requested size: 433.61894pt x 289.07928pt.
+
+Overfull \hbox (15.36339pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman10-regular]:+tlig;
-!
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman10-regular]:+tlig;
-!
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman5-regular]:+tlig;!
-[9]
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman10-regular]:+tlig;
-!
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman10-regular]:+tlig;
-!
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman5-regular]:+tlig;!
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman10-regular]:+tlig;
-!
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman10-regular]:+tlig;
-!
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no 𝛺 (U+1D6FA) in font [lmroman5-regular]:+tlig;!
- [10]
-Missing character: There is no ü (U+00FC) in font cmmi7!
-Missing character: There is no ü (U+00FC) in font cmmi7!
-) (./content/diskussion.tex
-Missing character: There is no ü (U+00FC) in font cmmi7!
- [11])
-Underfull \hbox (badness 10000) in paragraph at lines 32--23
+<verschiebung.pdf, id=136, 433.62pt x 289.08pt>
+File: verschiebung.pdf Graphic file (type pdf)
+<use verschiebung.pdf>
+Package luatex.def Info: verschiebung.pdf  used on input line 65.
+(luatex.def)             Requested size: 433.61894pt x 289.07928pt.
 
+Overfull \hbox (15.36339pt too wide) in paragraph at lines 65--66
+ [][] 
  []
 
+<polar.pdf, id=138, 433.62pt x 289.08pt>
+File: polar.pdf Graphic file (type pdf)
+<use polar.pdf>
+Package luatex.def Info: polar.pdf  used on input line 72.
+(luatex.def)             Requested size: 433.61894pt x 289.07928pt.
 
-LaTeX Warning: Empty bibliography on input line 24.
+Overfull \hbox (15.36339pt too wide) in paragraph at lines 72--73
+ [][] 
+ []
 
-[12] (./main.aux)
+) (./content/diskussion.tex [7<./Kondensatorspannung.pdf>] [8<./verschiebung.pdf
+>] [9<./polar.pdf>])
+
+LaTeX Warning: Empty bibliography on input line 25.
+
+[10] (./main.aux)
 
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 3AC39D646ADDA90B6170C3A817D4901B;14694
-(rerunfilecheck)             After:  548A71FEC356DAC468CC7621C7CA84DE;14889.
+(rerunfilecheck)             Before: B4100E731BF2F4D28D4030A27CB99C78;8951
+(rerunfilecheck)             After:  59EB35F61721B8056572F530CAAA96AB;9078.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: F299D87E83C8CD14FFA9770EB106D2B1;1889.
+(rerunfilecheck)             Checksum: 44B532D0A4B52CB361C2EAAFC3599767;1175.
 
 LaTeX Warning: There were undefined references.
 
@@ -1783,29 +1843,27 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35573 strings out of 478903
+ 35462 strings out of 478903
  100000,1977958 words of node,token memory allocated
- 837 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 64 attribute, 80 gl
-ue_spec, 34 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:4,2:1048,3:299,4:56,5:554,6:58,7:7391,8:53,9:523,10:30,11:744
- 53967 multiletter control sequences out of 65536+600000
- 214 fonts using 56259311 bytes
- 110i,15n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
-<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf><c:/te
-xlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/
-2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2
-020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2020/texm
-f-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2020/texmf
--dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2020/texmf-
-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/
-fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-dist/fonts
-/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype
-/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (12 pages, 1296262 bytes).
+ 799 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 50 attribute, 82 gl
+ue_spec, 27 attribute_list, 1 write nodes
+   avail lists: 1:4,2:573,3:180,4:39,5:464,6:38,7:5279,8:44,9:257,10:18,11:615
+ 53868 multiletter control sequences out of 65536+600000
+ 181 fonts using 47132211 bytes
+ 110i,7n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
+<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><
+c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texli
+ve/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texliv
+e/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive
+/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020
+/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texm
+f-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fo
+nts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (10 pages, 115165 bytes).
 
-PDF statistics: 328 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 131072)
- 153 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 370 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 36 named destinations out of 1000 (max. 131072)
+ 97 words of extra memory for PDF output out of 10000 (max. 100000000)
 

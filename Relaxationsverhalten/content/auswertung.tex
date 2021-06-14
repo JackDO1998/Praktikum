@@ -13,8 +13,8 @@ dessen Steigung dann auf den Wert für $RC$ geschlossen werden kann. Das Polynom
 \end{center}
 mit den durch python berechnetenParametern:
 \begin{center}
-    $RC=\SI[]{(5.6\pm0.7)\times 10^{-3}}[]{s}$\\
-    $b=0.17341742 \pm 0.05212717$
+    $RC=(5.6\pm0.7)\times 10^{-3}\si[]{s}$\\
+    $b=0.17341742 \pm 0.05212717$\\
 \end{center}
 \begin{figure}
     \centering
@@ -33,7 +33,7 @@ Messwerte wurde eine Funktion der Form:
 \end{center}
 mithilfe der scipy.curve_fit Funktion angepasst. Dabei ergab sich der Wert:
 \begin{center}
-    $RC=\SI[]{(1.5046 \pm 0.0986)\times 10^{-3}}[]{s}$\\
+    $RC=(1.5046 \pm 0.0986)\times 10^{-3}\si[]{s}$\\
 \end{center}
 \begin{figure}
     \centering
@@ -50,13 +50,14 @@ zwischen den beiden Maxima vom Oszilloskop abgelesen und mittels:
     $b=\frac{c}{f}$\\
     $\phi=2\pi \frac{a}{b}$\\
 \end{center}
-in Winkel umgerechnet. Anschließend wird eine Kurve der Form:
+in Winkel umgerechnet. Da es drei gleiche Werte gibt wird angenommen das hier die Phasenverschiebung
+bereits an ihrem maximum von $2\pi$ angekommen ist und die Kurve wird daran skaliert. Anschließend wird eine Kurve der Form:
 \begin{center}
     $\phi=a *arctan(f*RC)$
 \end{center}
 angepasst. Dies führt zu einem Wert von:
 \begin{center}
-    $RC=\SI[]{(14.37 \pm 5.81)\times10^{-3}}[]{s}$
+    $RC=(14.37 \pm 5.81)\times10^{-3}\si[]{s}$
 \end{center}
 Der zugehörige Plot ist in \autoref{fig:verschiebung} zu sehen.
 \begin{figure}

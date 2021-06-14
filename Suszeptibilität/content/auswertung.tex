@@ -68,52 +68,86 @@ Daraus folgt sofort über \autoref{eq:xi} mit $T=25\si[]{°C}=298.15\si[]{K}$
 \label{sec:messung}
 \subsubsection{Berechnung mittels Widerstand}
 Für die Widerstände wurden folgende Werte gemessen:
-\caption{Vergleich der Suszeptibilitäten}
+\begin{table}[H]
+  \centering
+    
+    \caption{Messwerte des Widerstandes an der Brückenschaltung}
     \label{tab:widerstsande}
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2] S | S S S  [table-format=3.2]}
       \toprule
       {$Dy_2 O_3$}&{}&{$Gd_2 O_3$}&{}\\
       \midrule
-      {Widerstand $R$ in $\Omega$}&{Widerstand $R_{Abgeglichen}$in $\Omega$} & {Widerstand $R$in $\Omega$}&{Widerstand $R_{Abgeglichen}$in $\Omega$}
+      {Widerstand $R$ / $\Omega$} & {Widerstand $R_{Abg}$ / $\Omega$} & {Widerstand $R$ / $\Omega$} & {Widerstand $R_{Abg}$ / $\Omega$}\\
       \midrule
-      {3.025}&{1.460}&{3.045}&{2.260}\\
-      {3.040}&{1.490}&{3.040}&{2.275}\\
-      {3.035}&{1.475}&{3.025}&{2.270}\\
+      {$3.025$}&{$1.460$}&{$3.045$}&{$2.260$}\\
+      {$3.040$}&{$1.490$}&{$3.040$}&{$2.275$}\\
+      {$3.035$}&{$1.475$}&{$3.025$}&{$2.270$}\\
       \bottomrule
     \end{tabular}
   \end{table}
-  Mit den Daten aus \autoref{tab:widerstsande} werden zunächst über $\Delta R=R-R_{Abgeglichen}$ die
+  Mit den Daten aus \autoref{tab:widerstsande}, für welche jeweils eine Unsicherheit von $\pm \SI[]{5}[]{m\Omega}$ angenommen wurde,
+  werden zunächst über $\Delta R=R-R_{Abg}$ die
   nötigen Änderungen des Widerstandes berechnet. Jetzt können über:
   \begin{center}
-    $\bar{x} = \frac{1}{n} \sum \nolimits_{i=0} x_i$\\
-    $\sigma=\sqrt{\frac{\sum(x_i-\bar{x})^2}{n-1}}$\\
-    $\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}$\\
+    \begin{equation}
+      \label{eq:Mittelwert}
+    \bar{x} = \frac{1}{n} \sum \nolimits_{i=0} x_i
+    \end{equation} 
   \end{center}
+  und die Gaußsche-Fehlerfortpflanzung:
+  \begin{center}
+    \begin{equation}
+      \label{eq:gaussfehler}  
+    \sigma_x=\sqrt{(\frac{\partial f}{\partial x_1})^2\sigma_{x_1}^2+(\frac{\partial f}{\partial x_2})^2\sigma_{x_2}^2+...+(\frac{\partial f}{\partial x_n})^2\sigma_{x_n}^2}
+    \end{equation}
+    \end{center}
   der Mittelwert und sein Fehler berechnet werden. Damit folgt:
 \begin{center}
-    $\Delta R_{Dy_2 O_3}=\SI[]{1.55833}[]{\Omega}$\\
+    $\Delta R_{Dy_2 O_3}=(1.558\pm 0.004)\si[]{\Omega}$\\
     
-    $\Delta R_{Gd_2 O_3}=\SI[]{0.76833}[]{\Omega}$\\
+    $\Delta R_{Gd_2 O_3}=(0.768\pm 0.004)\si[]{\Omega}$\\
 \end{center}
 Als nächstes wird dann $Q_{real}=\frac{m}{l*\rho_w}$ berechnet:
 \begin{center}
-    $Q_{real, Dy_2 O_3}=1.489 \times 10^{-5}$\\
-    $Q_{real, Gd_2 O_3}=1.153 \times 10^{-5}$
+    $Q_{real, Dy_2 O_3}=(1.489\pm 0.011)\times 10^{-5}$\\
+    $Q_{real, Gd_2 O_3}=(1.153\pm 0.007)\times 10^{-5}$
 \end{center}
-Jetzt können mit $\chi=2\frac{\Delta R F}{Q_{real} R_3}$ sofort die Suszeptibilitäten berechnet werden:
+Dazu wurde für $l_{Dy_2 O_3}=(0.13\pm 0.001)\si[]{m}$ und für $l_{Gd_2 O_3}=(0.165\pm 0.001)\si[]{m}$ vverwendet.
+Jetzt können mit $\chi=2\frac{\Delta R F}{Q_{real} R_3}$ und $F=8.66\times 10^{-5} \si[]{m^2}$ sofort die Suszeptibilitäten berechnet werden:
 \begin{center}
-    $\chi_{Dy2 O_3}=18.124 \times 10^{-3}$\\
-    $\chi_{Gd2 O_3}=11.540 \times 10^{-3}$
-\end{center}
-\subsubsection{Berechnung mittels Brückenspannung}
-Um die Suszeptibilität mittels Brückenspannung zu bestimmen werden die bekannten Daten in 
-\autoref{eq:sechs} eingesetzt. Daraus folgt sofort:
-\begin{center}
-  $\chi_{Dy2 O_3}=40.553 \times 10^{-3}$\\
-  $\chi_{Gd2 O_3}=20.227 \times 10^{-3}$
+    $\chi_{Dy2 O_3}=(18.1\pm 0.15) \times 10^{-3}$\\
+    $\chi_{Gd2 O_3}=(11.54\pm 0.09) \times 10^{-3}$\\
 \end{center}
 
+\subsubsection{Berechnung mittels Brückenspannung}
+Um die Suszeptibilität mittels Brückenspannung zu bestimmen werden analog zu \autoref{sec:messung} die 
+gemessenen Daten über \autoref{eq:Mittelwert} gemittelt und in \autoref{eq:sechs} eingesetzt. Für die gemessenen 
+Brückenspannungen wurde eine Unsicherheit von $\pm 0.01\si[]{mV}$ angenommen. Daraus folgt mit den Werten aus \autoref{tab:spannungen} und 
+$U_{SP}=\SI[]{1}[]{V}$sofort:
+\begin{table}[H]
+  \centering
+    
+    \caption{Messwerte des Widerstandes an der Brückenschaltung}
+    \label{tab:spannungen}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{S[table-format=3.2]| S  S S S  [table-format=3.2]}
+      \toprule
+      {$Dy_2 O_3$}&{$Gd_2 O_3$}\\
+      \midrule
+      {Brückenspannung $U_{Br}$ / $mV$} & {Brückenspannung $U_{Br}$ / $mV$}\\
+      \midrule
+      {$1.74\pm 0.014$}&{$0.69\pm 0.014$}\\
+      {$1.76\pm 0.014$}&{$0.66\pm 0.014$}\\
+      {$1.72\pm 0.014$}&{$0.67\pm 0.014$}\\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+\begin{center}
+  $\chi_{Dy2 O_3}=(40.6\pm 0.4) \times 10^{-3}$\\
+  $\chi_{Gd2 O_3}=(20.2\pm 0.27) \times 10^{-3}$
+\end{center}
+Der Fehler ergibt sich wieder über die Gaußsche-Fehlerfortpflanzung \autoref{eq:gaussfehler}.
 \subsection{Vergleich der Suszeptibilitäten}
 \label{sec:vergleich}
 
@@ -127,8 +161,8 @@ Um die Suszeptibilität mittels Brückenspannung zu bestimmen werden die bekannt
       \toprule
       {Material} & { $\chi_{Quantenzahlen}$ in $\si{\frac{m^3}{kg}}$} & {$\chi_{Brückenschaltung}$ in $\si{\frac{m^3}{kg}}$} &  {$\chi_{Brückenspannung}$ in $\si{\frac{m^3}{kg}}$}\\
       \midrule
-      {$Dy_2 O_3$}& {$24.889\times 10^{-3}$} & {$18.124 \times 10^{-3}$} & {$40.553 \times 10^{-3}$} \\
-      {$Gd_2 O_3$}& {$13.593\times 10^{-3}$} & {$11.540 \times 10^{-3}$} & {$20.227 \times 10^{-3}$}\\
+      {$Dy_2 O_3$}& {$24.889\times 10^{-3}$} & {$(18.1\pm 0.15) \times 10^{-3}$} & {$(40.6\pm 0.4) \times 10^{-3}$} \\
+      {$Gd_2 O_3$}& {$13.593\times 10^{-3}$} & {$(11.54\pm 0.09) \times 10^{-3}$} & {$(20.2\pm 0.27) \times 10^{-3}$}\\
       \bottomrule
     
     \end{tabular}
