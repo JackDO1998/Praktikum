@@ -83,18 +83,18 @@ kleiner wird.
 \subsection{Das Angström Messverfahren}
 In diesem Schritt werden die Wärmeleitfähigketen $\kappa$ mit dem Angström Messverfahren also durch
 abwechselndes erhitzen und Kühlen der Stäbe genutzt. Dabei wird eine Periodendauer von $T=\SI[]{80}[]{s}$
-verwendet.
+verwendet. Die Temperaturverläufe sind in \autoref{fig:welmess} für Messing und in \autoref{fig:aluwelle} für Aluminium dargestellt.
 \begin{figure}
     \centering
     \includegraphics{wellemessing.pdf}
     \caption{Temperaturdiffernzverlauf von Edelstahl}
-    \label{fig:differenz}
+    \label{fig:wellmess}
   \end{figure}
   \begin{figure}
     \centering
     \includegraphics{wellenalu.pdf}
     \caption{Temperaturdiffernzverlauf von Edelstahl}
-    \label{fig:differenz}
+    \label{fig:aluwelle}
   \end{figure}
   Mit den gekenzeichneten Amplituden folgen sofort die Phasenverschiebungen $\Delta t_{Messing}=\SI[]{15}[]{s}$ 
   und $\Delta t_{Aluminium}=\SI[]{7}[]{s}$, sowie Amplitudenverhältnisse $(\frac{A_{fern}}{A_{nah}})_{Messing}=1.02279$ und $(\frac{A_{fern}}{A_{nah}})_{Aluminium}=1.00800$,
@@ -104,7 +104,7 @@ verwendet.
       $\kappa_{Aluminium}=18745.14\si[]{\frac{W}{K*m}}$
   \end{center}
   Dazu wurde $\Delta x=\SI[]{0.03}[]{m}$ verwendet.
-  Zur Bestimmung von $\kappa_{Edelstahl}$ wurde eine Periodendauer von $T=\SI[]{200}[]{s}$ genutzt.
+  Zur Bestimmung von $\kappa_{Edelstahl}$ wurde eine Periodendauer von $T=\SI[]{200}[]{s}$ genutzt \autoref{fig:edelwelle}.
   Die zur bestimmung von $\kappa_{Edelstahl}$ benötigten Amplitudenverhältnisse und Phasendifferenzen
   wurden zuerst einzeln berechnet dann über \autoref{eq:Mittelwert} gemittelt und in \autoref{eq:sechs}
   eingesetzt. Der Fehler des Mittelwertes ergibt sich über \autoref{eq:Mittelwertfehler}, er pflanzt sich bei benutzung
@@ -117,10 +117,10 @@ verwendet.
     \centering
     \includegraphics{welleedelstahl.pdf}
     \caption{Temperaturdiffernzverlauf von Edelstahl}
-    \label{fig:differenz}
+    \label{fig:edelwelle}
   \end{figure}
 
-  Die Wellenlängen und frequenzen lassen sich einfach bestimmen mit den Zusammenhängen:
+  Die Wellenlängen und Frequenzen lassen sich einfach bestimmen mit den Zusammenhängen:
   \begin{center}
       $f=\frac{1}{T}$\\
       $v=\frac{\Delta x}{\Delta t}$\\
