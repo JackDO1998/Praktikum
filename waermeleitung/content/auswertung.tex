@@ -1,7 +1,8 @@
 \section{Auswertung}
 In diesem Kapitel sollen die aufgenommenen Messwerte Ausgewertet und verrechnet werden.
 \subsection{Die statische Methode}
-In diesem Kapitel wird die Wärmeleitfähigkeit $\kappa$ von verschiedenen Materialien allein durch die Heizkurve bestimmt.
+\label{sec:auswertung1}
+In diesem Kapitel wird die Wärmeleitfähigkeit von verschiedenen Materialien allein durch die Heizkurve bestimmt.
 
 \begin{figure}
     \centering
@@ -14,7 +15,7 @@ In diesem Kapitel wird die Wärmeleitfähigkeit $\kappa$ von verschiedenen Mater
   \begin{figure}
     \centering
     \includegraphics{stataluedel.pdf}
-    \caption{Statischer Temperaturverlauf von Messing}
+    \caption{Statischer Temperaturverläufe von Aluminium und Edelstahl}
     \label{fig:stataluedel}
   \end{figure}
 In \autoref{fig:statmess} und in \autoref{fig:stataluedel} sind die Temperaturverläufe welche an den weiter
@@ -50,19 +51,21 @@ demnach Aluminium gefolgt von dem breiten und dem schmalen Messingstab und am En
       \sisetup{table-format=1.2}
       \begin{tabular}{S[table-format=3.2] S S S S S [table-format=3.2]}
         \toprule
-        {Zeitpunkt $t$} &{$(\frac{\Delta Q}{\Delta t})_{Messing breit}$} &{$(\frac{\Delta Q}{\Delta t})_{Messing schmal}$}&{$(\frac{\Delta Q}{\Delta t})_{Aluminium}$}&{$(\frac{\Delta Q}{\Delta t})_{Edelstahl}$}\\
+        {Zeitpunkt $t$} &{$(\frac{\Delta Q}{\Delta t})_{Mb} / Wm$} &{$(\frac{\Delta Q}{\Delta t})_{Ms} / Wm$}&{$(\frac{\Delta Q}{\Delta t})_{A} / Wm$}&{$(\frac{\Delta Q}{\Delta t})_{E} / Wm$}\\
         \midrule
         {$$140.8$$} &{$$0.00927$$}&{$$0.01129$$}&{$$0.00639$$}&{$$0.00600$$} \\
         {$$281.6$$} &{$$0.00570$$}&{$$0.00804$$}&{$$0.00405$$}&{$$0.00545$$} \\
         {$$422.4$$} &{$$0.00468$$}&{$$0.00733$$}&{$$0.00359$$}&{$$0.00511$$} \\
         {$$563.2$$} &{$$0.00439$$}&{$$0.00720$$}&{$$0.00345$$}&{$$0.00493$$} \\
         {$$703.8$$} &{$$0.00432$$}&{$$0.00716$$}&{$$0.00341$$}&{$$0.00483$$} \\
-    
+        \midrule
+        {$$\diameter$$}&{$$0.0057\pm 0.0009$$}&{$$0.0082\pm 0.0008$$}&{$$0.0042\pm 0.0006$$}&{$$0.00527\pm 0.00021$$}\\
         
         \bottomrule
       \end{tabular}
     \end{table}
-
+Die in \autoref{tab:strom} berechneten Mittelwerte und entsprechende Fehler wurden nach \autoref{eq:Mittelwert} 
+und \autoref{eq:mittelwertfehler} berechnet.
 In \autoref{fig:differenz1} ist die Differenz der beiden Temperatursensoren des Messingstabes
 aufgetragen und in \autoref{fig:differenz2} ist die Differenz der Temperatursensorendes Edelstahlstabes  aufgetragen.
 Hier fällt auf das der Messingstab die Wärme viel schneller leitet und so die Tepmeraturdifferenz sehr viel schneller
@@ -77,23 +80,24 @@ kleiner wird.
         \centering
         \includegraphics{diffed.pdf}
         \caption{Temperaturdiffernzverlauf von Edelstahl}
-        \label{fig:differenz}
+        \label{fig:differenz2}
       \end{figure}
 
 \subsection{Das Angström Messverfahren}
+\label{sec:auswertung2}
 In diesem Schritt werden die Wärmeleitfähigketen $\kappa$ mit dem Angström Messverfahren also durch
 abwechselndes erhitzen und Kühlen der Stäbe genutzt. Dabei wird eine Periodendauer von $T=\SI[]{80}[]{s}$
-verwendet. Die Temperaturverläufe sind in \autoref{fig:welmess} für Messing und in \autoref{fig:aluwelle} für Aluminium dargestellt.
+verwendet. Die Temperaturverläufe sind in \autoref{fig:wellmess} für Messing und in \autoref{fig:aluwelle} für Aluminium dargestellt.
 \begin{figure}
     \centering
     \includegraphics{wellemessing.pdf}
-    \caption{Temperaturdiffernzverlauf von Edelstahl}
+    \caption{Temperaturverlauf des breiten Messingstabes im Angström-Verfahren}
     \label{fig:wellmess}
   \end{figure}
   \begin{figure}
     \centering
     \includegraphics{wellenalu.pdf}
-    \caption{Temperaturdiffernzverlauf von Edelstahl}
+    \caption{Temperaturverlauf von Aluminium im Angström-Verfahren}
     \label{fig:aluwelle}
   \end{figure}
   Mit den gekenzeichneten Amplituden folgen sofort die Phasenverschiebungen $\Delta t_{Messing}=\SI[]{15}[]{s}$ 
@@ -116,7 +120,7 @@ verwendet. Die Temperaturverläufe sind in \autoref{fig:welmess} für Messing un
   \begin{figure}
     \centering
     \includegraphics{welleedelstahl.pdf}
-    \caption{Temperaturdiffernzverlauf von Edelstahl}
+    \caption{Temperaturverlauf von Edelstahl im Angström-Verfahren}
     \label{fig:edelwelle}
   \end{figure}
 
@@ -130,7 +134,7 @@ Daraus folgen sofort die Ergebnisse in \autoref{tab:ergebnisse}.
 \begin{table}
     \centering
       \caption{Temperatur bei $t=\SI[]{700}[]{s}$}
-      \label{tab:ergebnise}
+      \label{tab:ergebnisse}
       \sisetup{table-format=1.2}
       \begin{tabular}{S[table-format=3.2] S S S S S [table-format=3.2]}
         \toprule
