@@ -1,11 +1,63 @@
 \section{Diskussion}
 \label{sec:diskussion}
-
+In diesem Versuch werden die Elastizitätsmodule von verschiedenen Materialien gemessen bzw. errechnet.
+Dazu wurden zunächst in \autoref{sec:dichte} die Dichten der Metalle bestimmt. Sie liegen wie in
+\autoref{tab:eigenschaften} zu sehen für den ersten Stab bei $$\rho_1=(8.37\pm 0.09)\si[]{\frac{t}{m^3}}$$ für den zweiten Stabe 
+bei $$\rho_2=(7.82\pm 0.08)\si[]{\frac{t}{m^3}}$$, für den dritten Stab bei $$\rho_3=(2.783\pm 0.028)\si[]{\frac{t}{m^3}}$$ und für den vierten Stab bei
+$$\rho_4=(8.91\pm0.09)\si[]{\frac{t}{m^3}}$$. Anhand der Dichten und Materialfarben kann auf das Metall geschlossen werden. Die Theoretische 
+Dichte von Messing liegt bei $\rho_{1,t}=8.4\si[]{\frac{t}{m^3}}$ und weicht damit um 0,35\% vom gemessenen Wert ab ligt jedoch innerhalb des berechneten
+Fehlers. Die Dichte von Eisen liegt bei  $\rho_{2,t}=7.874\si[]{\frac{t}{m^3}}$ und weicht somit um 0,69\% vom experimentellen Wert ab leigt aber auch im 
+errechneten Fehlerintervall. Die Dichte von Aluminium liegt theoretisch bei $\rho_{3,t}=2.7\si[]{\frac{t}{m^3}}$, die Abweichung vom gemessenen Wert liegt daher 
+bei 3,07\% und liegt leicht auserhalb des Fehlerintervalls, allerdings ist die Abweichung zum nächst dichteren Element (Scandium $\rho=2.9$) noch größer
+sodass es wahrscheinlich ist das die Abweichung durch eine ungenaue Messung oder dadurch das das Aluminium nicht in reinform vorliegt hervorgerufen wird.
+Die Dichte von Kupfer liegt bei $\rho_{4,t}=8.92\si[]{\frac{t}{m^3}}$ und weicht damit um 0.1\% ab liegt allerdings wieder im berechneten Fehler.
+Die theoretischen Dichten stammen aus Quelle [2.]. Anschließend werden zuerst die Elastizitätsmodule bestimmt indem der Stab einseitig eingespannt 
+wird und an die andere Seite des Stabes eine Masse angehängt wird. Dannach wird der Stab beidseitig eingespannt und eine Masse in der Mitte angehängt.
+In beiden fällen wird die absenkung des Stabes gemessen. Die Absenkungen können dann wie in \autoref{sec:nr1} und \autoref{sec:nr2} zu sehen gegen eine
+Funktion aufgetragen werden. Aus den Steigungen der errechneten Ausgleichsgraden lassen sich dann die Elastizitätsmodule berechen. Alle berechneten 
+Elastizitätsmodule sind in \autoref{tab:ergebnisse2} dargestellt. Die Abweichungen untereinander sowie von den aus Quelle [3.] stammenden Theoriewerten 
+wurden über:
+\begin{center}
+    $Abweichung=\frac{Experimenteller Wert - Theoriewert}{Theoriewert}\times 100$
+\end{center}
+berechnet und in \autoref{tab:ergebnisse3} dargestellt.
+\begin{table}
+    \centering
+      \caption{In der Tabelle sind alle Abweichungen der errechneten Elastizitätsmodule von den Theoriewerten und die Abweichungen untereinander dargestellt.}
+      \label{tab:ergebnisse3}
+      \sisetup{table-format=1.2}
+      \begin{tabular}{S[table-format=3.2]S S S| S S S S S S S [table-format=3.2]}
+        \toprule
+        {Nr} & {Material}&{Modul} & { Theoriewert $E_{theo}$ /\GPa}& { Abweichung $E_{theo}$ /\%}& { Abweichung $E_{einseitig}$ /\%} & {Abweichung $E_{links}$ /\%} & {Abweichung $E_{rechts}$ /\%}\\
+        \midrule
+        1 & {Messing} &{$E_{einseitig}$}  &{$$78...123$$} &{$$0.0$$}&{$$-$$}&{$$404.9$$}&{$$568.6$$}\\
+        {$$$$}&{$$$$} &{$E_{links}$}      &{$$$$}         &{$$335.7$$}&{$$404.9$$}&{$$-$$}&{$$40.4$$}\\
+        {$$$$}&{$$$$} &{$E_{rechts}$}     &{$$$$}         &{$$471.5$$}&{$$568.6$$}&{$$40.4$$}&{$$-$$}\\
+        \midrule
+        2 & {Eisen}   &{$E_{einseitig}$}  &{$$196$$}      &{$$10.2$$}&{$$-$$}&{$$304.9$$}&{$$341.2$$}\\
+        {$$$$}&{$$$$} &{$E_{links}$}      &{$$$$}         &{$$109.7$$}&{$$304.9$$}&{$$-$$}&{$$8.6$$}\\ 
+        {$$$$}&{$$$$} &{$E_{rechts}$}     &{$$$$}         &{$$129.6$$}&{$$341.2$$}&{$$8.6$$}&{$$-$$}\\
+        \midrule
+        3 & {Aluminium}&{$E_{einseitig}$} &{$$70$$}       &{$$1.4$$}&{$$-$$}&{$$74.2$$}&{$$75.5$$}\\
+        {$$$$}&{$$$$}  &{$E_{links}$}     &{$$$$}         &{$$292.9$$}&{$$74.2$$}&{$$-$$}&{$$5.17$$}\\
+        {$$$$}&{$$$$}  &{$E_{rechts}$}    &{$$$$}         &{$$314.3$$}&{$$75.5$$}&{$$5.17$$}&{$$-$$}\\
+        \midrule
+        4 & {Kupfer}  &{$E_{einseitig}$}  &{$$100...130$$}&{$$0.0$$}&{$$-$$}&{$$107.7$$}&{$$138.3$$}\\
+        {$$$$}&{$$$$} &{$E_{links}$}      &{$$$$}         &{$$77.7$$}&{$$107.7$$}&{$$-$$}&{$$12.8$$}\\
+        {$$$$}&{$$$$} &{$E_{rechts}$}     &{$$$$}         &{$$103.8$$}&{$$138.3$$}&{$$12.8$$}&{$$-$$}\\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+Auffällig ist das die durch einseitiges einspannen erhaltenen Werte gut zu den theoretischen Werten passen wärhend die Doppelseitig
+eingespannten Stäbe sehr große Abweichungen bringen. Dies kann daran liegen das der Stab bei beidseitiger "Einspannung" genaugenommen
+nur einseitig wirklich festgespannt werden konnte während die andere Seite nur auf einem Auflagepunkt auflag. Zudem waren die Stäbe nicht komplett grade.
 
 
 \section{Literatur}
 \label{sec:Literatur}
 1. TU-Dortmund, V103 Biegung elastischer Stäbe
+2.\hyperlink{https://www.chemie.de/lexikon/}{www.chemie.de} abgerufen am 20.06.2021
+3. H. Föll (MaWi 1 Skript),\hyperlink{https://www.tf.uni-kiel.de/matwis/amat/mw1_ge/kap_7/illustr/t7_1_2.html}{www.Uni-Kiel.de} abgerufen am 20.06.2021
 
 \section{Anhang}
 \label{sec:anhang}
