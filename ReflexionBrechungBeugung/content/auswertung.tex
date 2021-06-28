@@ -1,5 +1,22 @@
 \section{Auswertung}
 In diesem Kapitel sollen die aufgenommenen Messwerte Ausgewertet und verrechnet werden.
+\section{Vorbereitungsaufgaben}
+\subsubsection{Brechungsindizes}
+\label{sec:vorbereitung1}
+In Quelle 2 können folgende Brechungsindizes nachgeschlagen werden.
+Luft: $n_{Luft}=1$,\\
+Wasser: $n_{Wasser}=1,333$,\\
+Kronglas: $n_{Kron}=1,5$,\\
+Plexiglas: $n_{Plex}=1,49$,\\
+Diamant: $n_{Dia}=2,42$.
+\subsubsection{Gitterkonstanten}
+\label{sec:vorberitung2}
+Die Gitterkonstanten sind der Kehrwert der Anzahl der Gitterlinien pro mm. Das führt zu den Gitterkonstanten:
+\begin{center}
+  $d_1=\SI[]{0,01}[]{1/mm}$ für 100L/mm,\\
+  $d_2=\SI[]{0,00\bar{3}}[]{1/mm}$ für 300L/mm und\\
+  $d_3=\SI[]{0,001\bar{6}}[]{1/mm}$ für 600L/mm.\\
+\end{center}
 \subsection{Überprüfung des Reflexionsgesetzes}
 Nach dem Reflexionsgesetz ist der Einfallswinkel gleich dem Ausfallswinkel($\alpha_1=\alpha_2$). Es wird
 aus verschiedenen definierten Winkeln $\alpha_1$ ein Laserstrahl auf einen Spiegel gerichtet und der 
@@ -30,6 +47,7 @@ Skala für Einfalls- und Ausfallswinkel ebenfalls nur gradweise eingeteilt ist k
 die Winkel auch nur auf höchstens $\pm \SI[]{1}[]{°}$ genau bestimmt werden.
 
 \subsection{Brechungsgesetz}
+\label{sec:brechungsgesetz}
 Um den Brechungsindex zu bestimmen wird der Brechungswinkel bestimmt. Der Brechungsindex
 kann dann leicht über den Zusammenhang:
 \begin{center}
@@ -68,6 +86,16 @@ gemittelt und in \autoref{tab:brechungsgesetz} dargestellt. Die Fehler ergeben s
 
 
  \subsection{Planparallele Platten}
+ Wenn Licht durch zwei planparallele Schichtgrenzen hindurchfällt erfährt es einen Strahlversatz
+ $s$. Dieser berechnet sich über:
+ \begin{center}
+   $s=d\frac{sin(\alpha-\beta)}{cos\beta}$.\\
+ \end{center}
+ Es wird einerseits der Einfallswinkel $\alpha_1$ und der Brechungswinkel $\beta_{gemessen}$ gemessen und
+ andererseits wird der Winkel $\beta_{berechent}$ aus dem Einfallswinkel und dem Brechungsindex aus 
+ \autoref{sec:brechungsgesetz} berechenet. Für beide wird dann der Strahlversatz berechnet und in \autoref{tab:versatz}
+ dargestellt. Die Fehler ergeben sich über die Gaußsche-Fehlerfortpflanzung \autoref{eq:gaussfehler}. Die am Ende
+ berechneten Mittelwerte ergeben sich mit ihrem Fehler über \autoref{eq:Mittelwert} und \autoref{eq:mittelwertfehler}.
  \begin{table}
   \centering
     \caption{Brechung eines Laserstrahls im Medium.}
@@ -89,8 +117,22 @@ gemittelt und in \autoref{tab:brechungsgesetz} dargestellt. Die Fehler ergeben s
       \bottomrule
     \end{tabular}
   \end{table}
-  
+  Die berechenten Mittelwerte unterscheiden sich kaum voneinander und liegen im gegenseitigen Fehlerintervall.
   \subsection{Das Prisma}
+  In einem Prisma wird Licht in abhängigkeit von seiner Wellenlänge $\lambda$ gebrochen. In diesem Versuch 
+  trifft ein Laserstrahl in unterschiedlichen Winkeln $\alpha_1$ auf das Prisma und tritt im Winkel 
+  $\alpha_2$ wieder aus. Die anderen Winkel ergeben sich dann über die Beziehungen:
+
+  \begin{center}
+    $\beta_2=arcsin(\frac{sin\alpha}{n_{kron}})$,\\
+    $\beta_1=\gamma-\beta_2$ und\\
+    $\delta=(\alpha_1+\alpha_2)-(\beta_1+\beta_2)$.\\
+  \end{center}
+  Mit $n_{kron}$ dem Bechungsindex von Kronglas aus \autoref{sec:vorbereitung1}
+  Für den grünen Laserstrahl sind die Ergebnisse in \autoref{tab:prismagrun} und für den roten in 
+  \autoref{tab:prismarot} dargestellt.
+  Die Messfehler ergeben sich hierbei über \autoref{eq:gaussfehler} und der am Ende berechnetet Mittelwert
+  ergibt sich mit dem zugehörigen Fehler über \autoref{eq:Mittelwert} und \autoref{eq:mittelwertfehler}.
   \begin{table}
     \centering
       \caption{Dispersion eines grünen Laserstrahls im Medium.}
@@ -100,13 +142,13 @@ gemittelt und in \autoref{tab:brechungsgesetz} dargestellt. Die Fehler ergeben s
         \toprule
         { $\alpha_{1,grün}$ / °}&{ $\alpha_{2,grün}$ / °}&{ $\beta_{1,grün}$ / ° }&{ $\beta_{2,grün}$ / °}&{ $\delta$ / ° }\\
         \midrule
-        {$$30$$}  &{$$81\pm 1$$}& {$$17,929\pm 0,512$$}& {$$42,071\pm 0,513$$}   &{$$51.0\pm 1.414$$}    \\
-        {$$35$$}  &{$$68\pm 1$$}& {$$21,023\pm 0,549$$}& {$$38,977\pm 0,549$$}   &{$$43,0\pm 1.414$$}    \\
-        {$$40$$}  &{$$61\pm 1$$}& {$$23,605\pm 0,573$$}& {$$36,395\pm 0,573$$}   &{$$41,0\pm 1.414$$}    \\
-        {$$55$$}  &{$$43\pm 1$$}& {$$32,440\pm 0,628$$}& {$$27,559\pm 0,628$$}   &{$$38,0\pm 1.414$$}    \\
-        {$$60$$}  &{$$38\pm 1$$}& {$$35,312\pm 0,640$$}& {$$24,688\pm 0,639$$}   &{$$38,0\pm 1.414$$}    \\
-        {$$65$$}  &{$$34\pm 1$$}& {$$37,706\pm 0,648$$}& {$$22,294\pm 0,672$$}   &{$$39,0\pm 1.414$$}    \\
-        {$$70$$}  &{$$31\pm 1$$}& {$$39,549\pm 0,653$$}& {$$20,451\pm 0,653$$}   &{$$41,0\pm 1.414$$}    \\
+        {$$30$$}  &{$$81\pm 1$$}& {$$17,929\pm 0,512$$}& {$$42,071\pm 0,513$$}   &{$$51.0\pm 1,414$$}    \\
+        {$$35$$}  &{$$68\pm 1$$}& {$$21,023\pm 0,549$$}& {$$38,977\pm 0,549$$}   &{$$43,0\pm 1,414$$}    \\
+        {$$40$$}  &{$$61\pm 1$$}& {$$23,605\pm 0,573$$}& {$$36,395\pm 0,573$$}   &{$$41,0\pm 1,414$$}    \\
+        {$$55$$}  &{$$43\pm 1$$}& {$$32,440\pm 0,628$$}& {$$27,559\pm 0,628$$}   &{$$38,0\pm 1,414$$}    \\
+        {$$60$$}  &{$$38\pm 1$$}& {$$35,312\pm 0,640$$}& {$$24,688\pm 0,639$$}   &{$$38,0\pm 1,414$$}    \\
+        {$$65$$}  &{$$34\pm 1$$}& {$$37,706\pm 0,648$$}& {$$22,294\pm 0,672$$}   &{$$39,0\pm 1,414$$}    \\
+        {$$70$$}  &{$$31\pm 1$$}& {$$39,549\pm 0,653$$}& {$$20,451\pm 0,653$$}   &{$$41,0\pm 1,414$$}    \\
         \midrule
         {$$\diameter$$}&{$$$$}&{$$$$}&{$$$$}&{$$41,6\pm 1,7$$}\\
         \bottomrule
@@ -127,9 +169,9 @@ gemittelt und in \autoref{tab:brechungsgesetz} dargestellt. Die Fehler ergeben s
           {$$30$$}  &{$$79\pm 1$$}&{$$18,245\pm 0,517$$}&{$$41,755\pm 0,517$$}   &{$$49,0\pm 1,414$$}    \\
           {$$35$$}  &{$$67\pm 1$$}&{$$21,356\pm 0,552$$}&{$$38,643\pm 0,552$$}   &{$$42,0\pm 1,414$$}    \\
           {$$40$$}  &{$$60\pm 1$$}&{$$24,019\pm 0,577$$}&{$$35,981\pm 0,577$$}   &{$$40,0\pm 1,414$$}    \\
-         {$$55$$}  &{$$42\pm 1$$}&{$$33,003\pm 0,630$$}&{$$26,997\pm 0,630$$}   &{$$37,0\pm 1,414$$}    \\
+          {$$55$$}  &{$$42\pm 1$$}&{$$33,003\pm 0,630$$}&{$$26,997\pm 0,630$$}   &{$$37,0\pm 1,414$$}    \\
           {$$60$$}  &{$$37\pm 1$$}&{$$35,903\pm 0,642$$}&{$$24,097\pm 0,642$$}   &{$$37,0\pm 1,414$$}    \\
-         {$$65$$}  &{$$33\pm 1$$}&{$$38,316\pm 0,650$$}&{$$21,684\pm 0,649$$}   &{$$38,0\pm 1,414$$}    \\
+          {$$65$$}  &{$$33\pm 1$$}&{$$38,316\pm 0,650$$}&{$$21,684\pm 0,649$$}   &{$$38,0\pm 1,414$$}    \\
           {$$70$$}  &{$$30\pm 1$$}&{$$40,172\pm 0,655$$}&{$$19,828\pm 0,655$$}   &{$$40,0\pm 1,414$$}    \\
           \midrule
           {$$\diameter$$}&{$$$$}&{$$$$}&{$$$$}&{$$40.4\pm 1.6$$}\\
@@ -137,9 +179,46 @@ gemittelt und in \autoref{tab:brechungsgesetz} dargestellt. Die Fehler ergeben s
       \end{tabular}
     \end{table}
 
-      
-      
+  \subsection{Beugung am Gitter}    
+  Um die Wellenlänge der verwendeten Laser zu messen werden drei optische Beugungsgitter in den
+  Strahlverlauf gestellt und die Beugungswinkel gemessen. Aus diesen lässt sich über die Beziehung:
+   \begin{center}
+     $\lambda=\frac{d sin\alpha}{k}$
+   \end{center}   
+mir $d$ den in \autoref{sec:vorbereitung2} berechneten Gitterkonstanten und $k$ der Beugungsordnung,
+die Wellenlänge berechnen. Der Fehler pflanzt sich dabei über \autoref{eq:gaussfehler} fort. Die berechneten
+$\lambda$ sind in \autoref{tab:gitter} dargestellt und über \autoref{eq:Mittelwert} gemittelt worden.
+Der Mittelwertfehler ergibt sich dabei mit \autoref{eq:mittelwertfehler}.
+\begin{table}
+  \centering
+     \caption{Beugung des roten und grünen Laserstrahls an verschiedenen Gittern.}
+     \label{tab:gitter}
+     \sisetup{table-format=1.2}
+     \begin{tabular}{S[table-format=3.2] S| S S S S [table-format=3.2]}
+       \toprule
+       { $d$ / 1/mm}&{$k$}&{ $\alpha_{rot}$ / °}&{$\lambda_{rot}$ / $\mu m$}&{ $\alpha_{grün}$ / ° }&{$\lambda_{rot}$ / $\mu m$}\\
+       \midrule
+       {$$0,01$$}&{$$1$$}&{$$4\pm 1$$} &{$$0,697\pm 0,174$$}&{$$3\pm 1$$} &{$$0,523\pm 0,174$$}\\
+       {$$$$}&{$$2$$}&{$$7\pm 1$$} &{$$0,609\pm 0,087$$}&{$$6\pm 1$$} &{$$0,523\pm 0,087$$}\\
+       {$$$$}&{$$3$$}&{$$11\pm 1$$}&{$$0,636\pm 0,057$$}&{$$9\pm 1$$} &{$$0,521\pm 0,057$$}\\
+       {$$$$}&{$$4$$}&{$$15\pm 1$$}&{$$0,647\pm 0,042$$}&{$$12\pm 1$$}&{$$0,519\pm 0,043$$}\\
+       {$$$$}&{$$5$$}&{$$19\pm 1$$}&{$$0,651\pm 0,033$$}&{$$16\pm 1$$}&{$$0,551\pm 0,034$$}\\
+       {$$$$}&{$$6$$}&{$$23\pm 1$$}&{$$0,651\pm 0,019$$}&{$$19\pm 1$$}&{$$0,543\pm 0,028$$}\\
+       {$$$$}&{$$7$$}&{$$27\pm 1$$}&{$$0,648\pm 0,022$$}&{$$22\pm 1$$}&{$$0,535\pm 0,023$$}\\
+       {$$$$}&{$$8$$}&{$$31\pm 1$$}&{$$0,644\pm 0,019$$}&{$$26\pm 1$$}&{$$0,548\pm 0,019$$}\\
+       \midrule
+       {$$0,00\bar{3}$$}&{$$1$$}&{$$11\pm 1$$}&{$$0,636\pm 0,057$$}&{$$9\pm 1$$} &{$$0,521\pm 0,057$$}\\
+       {$$$$}&{$$2$$}&{$$22\pm 1$$}&{$$0,624\pm 0,027$$}&{$$19\pm 1$$}&{$$0,542\pm 0,028$$}\\
+       {$$$$}&{$$3$$}&{$$35\pm 1$$}&{$$0,637\pm 0,637$$}&{$$28\pm 1$$}&{$$0,522\pm 0,017$$}\\
+       \midrule
+       {$$0,001\bar{6}$$}&{$$1$$}&{$$23\pm 1$$}&{$$0,651\pm 0,027$$}&{$$19\pm 1$$}&{$$0,543\pm 0,027$$}\\
+       \midrule
+       {$$\diameter$$}&{$$$$}&{$$$$}&{$$0.644\pm 0.006$$}&{$$$$}&{$$0.5327\pm 0.0035$$}\\
   
+       \bottomrule
+      \end{tabular}
+    \end{table}
 
 
-    
+
+       

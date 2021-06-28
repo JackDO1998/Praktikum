@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  28 JUN 2021 15:45
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  28 JUN 2021 19:42
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1689,30 +1689,156 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 
 ] (./content/theorie.tex)
 (./content/durchfuehrung.tex) (./content/fehler.tex) (./content/auswertung.tex
-
-LaTeX Warning: Reference `tab:reflexionsgestz' on page 3 undefined on input line
- 7.
-
 [3]
 
-LaTeX Warning: Reference `eq:Mittelwert' on page 4 undefined on input line 38.
+! Package siunitx Error: Invalid token 'b' in numerical input.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.17   $d_2=\SI[]{0,00\bar{3}}[]{1/mm}
+                                    $ für 300L/mm und\\
+? 
+
+! Package siunitx Error: Invalid token 'b' in numerical input.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.18   $d_3=\SI[]{0,001\bar{6}}[]{1/mm}
+                                     $ für 600L/mm.\\
+? 
+
+LaTeX Warning: Reference `tab:reflexionsgestz' on page 4 undefined on input line
+ 24.
+
+
+LaTeX Warning: Reference `eq:Mittelwert' on page 4 undefined on input line 56.
 
 
 LaTeX Warning: Reference `tab:brechungsgesetz' on page 4 undefined on input line
- 39.
+ 57.
 
 
-LaTeX Warning: Reference `eq:gaussfehler' on page 4 undefined on input line 39.
+LaTeX Warning: Reference `eq:gaussfehler' on page 4 undefined on input line 57.
 
 
 LaTeX Warning: Reference `eq:mittelwertfehler' on page 4 undefined on input line
- 40.
+ 58.
+
+[4]
+
+LaTeX Warning: Reference `sec:brechungsgesetz' on page 5 undefined on input line
+ 96.
+
+
+LaTeX Warning: Reference `tab:versatz' on page 5 undefined on input line 96.
+
+
+LaTeX Warning: Reference `eq:gaussfehler' on page 5 undefined on input line 97.
+
+
+LaTeX Warning: Reference `eq:Mittelwert' on page 5 undefined on input line 98.
+
+
+LaTeX Warning: Reference `eq:mittelwertfehler' on page 5 undefined on input line
+ 98.
+
+[5]
+
+LaTeX Warning: Reference `sec:vorbereitung1' on page 6 undefined on input line 1
+31.
+
+
+LaTeX Warning: Reference `tab:prismagrun' on page 6 undefined on input line 132.
+
+
+
+LaTeX Warning: Reference `tab:prismarot' on page 6 undefined on input line 133.
+
+
+LaTeX Warning: Reference `eq:gaussfehler' on page 6 undefined on input line 134.
+
+
+
+LaTeX Warning: Reference `eq:Mittelwert' on page 6 undefined on input line 135.
+
+
+LaTeX Warning: Reference `eq:mittelwertfehler' on page 6 undefined on input line
+ 135.
 
 Missing character: There is no ü (U+00FC) in font cmmi7!
 Missing character: There is no ü (U+00FC) in font cmmi7!
 Missing character: There is no ü (U+00FC) in font cmmi7!
 Missing character: There is no ü (U+00FC) in font cmmi7!
-) (./content/diskussion.tex [4] [5]
+
+LaTeX Warning: Reference `sec:vorbereitung2' on page 6 undefined on input line 1
+88.
+
+
+LaTeX Warning: Reference `eq:gaussfehler' on page 6 undefined on input line 189.
+
+
+
+LaTeX Warning: Reference `tab:gitter' on page 6 undefined on input line 190.
+
+
+LaTeX Warning: Reference `eq:Mittelwert' on page 6 undefined on input line 190.
+
+
+LaTeX Warning: Reference `eq:mittelwertfehler' on page 6 undefined on input line
+ 191.
+
+Missing character: There is no ü (U+00FC) in font cmmi7!
+! Missing $ inserted.
+<inserted text> 
+$
+l.210        {$$0,00\bar{3}$$}&
+                             {$$1$$}&{$$11\pm 1$$}&{$$0,636\pm 0,057$$}&{$$9...
+? 
+! Extra }, or forgotten $.
+<recently read> }
+ 
+l.210        {$$0,00\bar{3}$$}&
+                             {$$1$$}&{$$11\pm 1$$}&{$$0,636\pm 0,057$$}&{$$9...
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.210        {$$0,00\bar{3}$$}&
+                             {$$1$$}&{$$11\pm 1$$}&{$$0,636\pm 0,057$$}&{$$9...
+? 
+! Missing } inserted.
+<inserted text> 
+}
+l.210        {$$0,00\bar{3}$$}&
+                             {$$1$$}&{$$11\pm 1$$}&{$$0,636\pm 0,057$$}&{$$9...
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.214        {$$0,001\bar{6}$$}&
+                              {$$1$$}&{$$23\pm 1$$}&{$$0,651\pm 0,027$$}&{$$...
+? 
+! Extra }, or forgotten $.
+<recently read> }
+ 
+l.214        {$$0,001\bar{6}$$}&
+                              {$$1$$}&{$$23\pm 1$$}&{$$0,651\pm 0,027$$}&{$$...
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.214        {$$0,001\bar{6}$$}&
+                              {$$1$$}&{$$23\pm 1$$}&{$$0,651\pm 0,027$$}&{$$...
+? 
+! Missing } inserted.
+<inserted text> 
+}
+l.214        {$$0,001\bar{6}$$}&
+                              {$$1$$}&{$$23\pm 1$$}&{$$0,651\pm 0,027$$}&{$$...
+? 
+[6]) (./content/diskussion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
@@ -1721,13 +1847,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
 LaTeX Warning: Empty bibliography on input line 25.
 
-[6] (./main.aux)
+[7] (./main.aux)
 
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
 (rerunfilecheck)             Before: A62A15ECE803E2EBE94952FCC9933BC0;9
-(rerunfilecheck)             After:  FDED776F3F8982E04F9D8B213D5FCC9C;7108.
+(rerunfilecheck)             After:  915196E9854C572907B11B315A92D83C;9472.
 
 LaTeX Warning: There were undefined references.
 
@@ -1745,18 +1871,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35336 strings out of 478903
+ 35362 strings out of 478903
  100000,1977958 words of node,token memory allocated
  709 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 30 attribute, 76 gl
 ue_spec, 17 attribute_list, 1 write nodes
-   avail lists: 1:4,2:3208,3:241,4:31,5:746,6:39,7:6987,8:78,9:663,10:6,11:263
- 53767 multiletter control sequences out of 65536+600000
- 148 fonts using 38007039 bytes
- 110i,9n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
+   avail lists: 1:4,2:2810,3:303,4:40,5:736,6:39,7:7476,8:78,9:627,10:14,11:348
+ 53787 multiletter control sequences out of 65536+600000
+ 148 fonts using 38006815 bytes
+ 110i,10n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
 
-warning  (pdf backend): unreferenced destination with name 'http://www.wittrock-
-web.de/pse_leit_th.html'
+warning  (pdf backend): unreferenced destination with name 'https://www.filmetri
+cs.de/refractive-index-database'
 <c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texl
 ive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texli
 ve/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texliv
@@ -1765,10 +1891,10 @@ e/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive
 /texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texm
 f-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fo
 nts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (6 pages, 48558 bytes).
+Output written on main.pdf (7 pages, 58397 bytes).
 
-PDF statistics: 148 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 131072)
- 81 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 171 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 131072)
+ 113 words of extra memory for PDF output out of 10000 (max. 100000000)
 
