@@ -10,13 +10,39 @@ $(\frac{\Delta Q}{\Delta t})=(0.0042\pm 0.0006)\si[]{Wm}$, für Edelstahl $(\fra
 für den breiten Messingstab$(\frac{\Delta Q}{\Delta t})=(0.0057\pm 0.0009)\si[]{Wm}$ und $(\frac{\Delta Q}{\Delta t})=(0.0082\pm 0.0008)\si[]{Wm}$
 für den schmalen Messingstab. Es liegen leider keine Literaturwerte vor um einen Vergleich anzustellen. Im nächsten 
 Kapitel \autoref{sec:auswertung2}, werden dann mit dem sogenannten Angström-Messverfahren durch periodisches heizen 
-und kühlen des jeweiligen Stabendes die Wärmeleitfähigkeiten $\kappa$ berechnet. Diese liegen bei $\kappa_{Messing}=4367.46\si[]{\frac{W}{K*m}}$,
+und kühlen des jeweiligen Stabendes die Wärmeleitfähigkeiten $\kappa$ berechnet. Sie sind zusammen mit den Literaturwerten
+und prozentualen Abweichungen nach \autoref{eq:prozentuale} in \autoref{tab:vergleich} dargestellt.
+
+\begin{table}
+    \centering
+      \caption{Vergleich mit den Theoriewerten.}
+      \label{tab:vergleich}
+      \sisetup{table-format=1.2}
+      \begin{tabular}{S[table-format=3.2] S S S S S [table-format=3.2]}
+        \toprule
+        {Material}&{ $\kappa_{Theo}$ / $\si[]{\frac{W}{K*m}}$}&{ $\kappa_{Exp}$ /$\si[]{\frac{kW}{K*m}}$}&{ Abw. /\%}\\
+        \midrule
+        {Messing}   &{$$120$$}&{$$4,14\pm 0,17$$}&{$$3350$$}\\
+        {Aluminium} &{$$236$$}&{$$7,8\pm 0,4$$}&{$$3205$$}\\
+        {Edelstahl} &{$$30$$}&{$$18,8\pm 0,8$$}&{$$62566$$}\\
+        \bottomrule
+    \end{tabular}
+  \end{table}
+
+
+Diese liegen bei $\kappa_{Messing}=4367.46\si[]{\frac{W}{K*m}}$,
 $\kappa_{Aluminium}=18745.14\si[]{\frac{W}{K*m}}$,  $\kappa_{Edelstahl}=(-2.3\pm 1.1)\times 10^{4}\si[]{\frac{W}{K*m}}$. 
-Die gemessenen Werte weichen alle um Faktoren von etwa 10 bis 100 ab, sodass ein Vergleich mit den Literaturwerten 
-[2.] keinen Sinn ergibt. Dieser  große Fehler welcher auch für Edelstahl auserhalb der berechneten ungenauigkeit 
+Die gemessenen Werte weichen alle um Faktoren von etwa 10 bis 100 ab, wie ein Vergleich mit den Literaturwerten 
+[2.] zeigt. Dieser  große Fehler welcher auch für Edelstahl auserhalb der berechneten ungenauigkeit 
 liegt lässt auf einen unentdeckten Rechenfehler schließen. Weitere kleinere Ungenaigkeiten können darin begründet 
 liegen, dass die Isolierung der Stäbe unzureichen ist und nur die Stäbe gegen die Außenwelt nicht aber untereinander
 abschirmt und es somit durch Strahlung und Konvektion zum Wärmeaustausch zwischen den beiden Stäben kommen kann.
-
+Zudem wurde auch der Einfluss von Phononen und eventuelle Ungleichmäßigkeiten beim Heizen und kühlen
+durch das Peltierelemt vernachlässigt.
+Für die berechneten Wellenlängen leigen keine Literaturwerte vor. Sie hängen von der Kreisfrequenz und somit indirekt
+von den Periodendauern ab die im Experiment durch die Länge des Heizen-Kühlen-Intervalls quasi frei gewählt werden 
+können. Die Wellenlängen haben für Messing den Wert $\lambda_{Messing}=1,12\pm 0,023\si[]{m}$ , für Aluminium den Wert $\lambda_{Aluminium}=1,83\pm 0,04\si[]{m}$ und für Edelstahl den Wert $\lambda_{Edelstahl}=3,87\pm 0,08\si[]{m}$. Damit liegen
+sie in einem intuitiv realistischen Bereich.
+\section{Literatur}
 1. TU-Dortmund, V204: Wärmeleitung von Metallen\\
 2. Dr.Jörg Wittrock, Wärmeleitfähigkeit der Elemente,\hyperlink{http://www.wittrock-web.de/pse_leit_th.html}{www.wittrock-web.de} abgerufen am 13.06.2021
