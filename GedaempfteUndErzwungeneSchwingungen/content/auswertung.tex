@@ -7,6 +7,7 @@ In diesem Kapitel sollen die aufgenommenen Messwerte ausgewertet werden.
     $R = 67,2 +/- 0,2 \si[]{\Omega}$.\\
 \end{center}
 \subsection{Berechnung der Abklingdauer}
+
 \label{sec:abklingdauer}
 Die aufgenommenen Wertepaare aus Spannung $U(t)$ und $t$ wurden in \autoref{fig:bild1}
 aufgetragen und es wurde eine Ausgleichskurve hindurchgelegt. Sie hat die Parameter:
@@ -46,6 +47,7 @@ berechnet werden. Damit folgt sofort:
   \end{figure}
 
   \subsection{Der Aperiodische Grezfall}
+  \label{sec:apg}
   Der Widerstand wurde solange verändert bis der Aperiodische Grenzfall eingetreten ist. Der zu diesem 
   Zeitpunkt eingestellte Widerstand liegt bei:
   \begin{center}
@@ -62,67 +64,99 @@ berechnet werden. Damit folgt sofort:
   und Innenwiderstände von Geräten wie dem Oszilloskop und dem Erreger nicht ideal sind.
 
   \subsection{Resonanzüberhöhung}
-  In \autoref{fig:resonanz}
+  \label{sec:res}
+  In \autoref{fig:resonanz} ist die Erregerfrequenz gegen die Spannung halblogaritmisch aufgetragen.
+  Die rote Linie zeigt dabei an, wo die Resonanzüberhöhung bzw. die Güte berechnet wurde. In
+  \autoref{fig:resonanzzoom} ist nur der Bereich der Resonanzüberhöhung linear dargestellt. Da es keine
+  Messwerte gibt weche genau den Wert $\frac{max(U_C)}{U_E*\sqrt{2}}$ mit $U_E=50V$, haben wurde zwischen
+  dem jeweils darüber und darunter liegenden Messwert linear interpoliert. Dies führt zu folgenden Ergebnissen:
+  \begin{center}
+      $\omega_-=\SI[]{25,2245}[]{\kilo\hertz}$,\\
+      $\omega_+=\SI[]{26,6224}[]{\kilo\hertz}$.\\
+  \end{center}
+  Die Güte lässt sich dann einfach über:
+  \begin{center}
+      $q=\frac{\omega_0}{\omega_+-\omega_-}$,\\
+      $\omega_0=\frac{1}{\sqrt{LC}}$,\\
+      $\Rightarrow$ $q=\frac{1}{\sqrt{LC}(\omega_+-\omega_-)=121.5\pm 0.4}$
+  \end{center} 
+
+  Der thoeretische Wert lässt sich dann über:
+  \begin{center}
+      $q=\frac{L}{\sqrt{LC}R}$,\\
+      $\Rightarrow$  $q=42.41\pm 0.18$\\
+  \end{center}
+  berechnen. Die über \autoref{eq:prozentuale} berechnete prozentuale Abweichung betraägt dann 186.5\%.
   \begin{figure}
     \centering
     \includegraphics{frequenz.pdf}
     \caption{Spannungsverlauf in Abhängigkeit der Frequenz}
     \label{fig:resonanz}
   \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \section{Auswertung}
 
+  \begin{figure}
+    \centering
+    \includegraphics{resonanzuberhohung.pdf}
+    \caption{Spannungsverlauf in Abhängigkeit der Frequenz}
+    \label{fig:resonanzzoom}
+  \end{figure}
 
-
-
-
-
-
-
-
-
-
-
-
-\subsection{Frequenzabhängigkeit der Kondensatorspannung}
-
-Die gemessene Kondensatorspannung $U_C$ und die dazugehörige Frequenz $\omega$ wird in die \autoref{tab:2} eingetragen und 
-der Quotient $\frac{U_C}{U_\text{Err}}$ gegen die Frequenz $\omega$ halblogarithmisch in die Abbildung (9) aufgetragen.
-
-
-
+\subsection{Phasenverschiebung}
+\label{sec:phs}
+Aus der als Zeitwerte gemessenen Phasenverschiebung lassen sich über:
+\begin{center}
+    $\phi=\Delta tf360°$\\
+\end{center}
+die Phasenverschiebungen in grad berechnen. Sie wurden in \autoref{fig:phasenverschiebung} halblogaritmisch gegen die Frequenz
+aufgetragen. In \autoref{fig:phasenverschiebung2} ist der Selbe Sachverhalt nocheinmal linear aufgetragen. Zudem
+sind hier noch Graden bei den Winkeln 45°,90° und 135° einetragen. Um die zugehörigen Frequenzen zu finden wurde
+wieder linear interpoliert.
 \begin{figure}
     \centering
-    \includegraphics{Daten/c.pdf}
-    \label{fig:21}
-    \caption{Quotient $\frac{U_C}{U_\text{Err}}$ gegen die Frequenz $\omega$ halblogarithmisch aufgetragen}
-\end{figure}
+    \includegraphics{phasenverschiebung.pdf}
+    \caption{Phasenverschiebung in Abhängigkeit der Frequenz.}
+    \label{fig:phasenverschiebung}
+  \end{figure}
+  \begin{figure}
+    \centering
+    \includegraphics{phasenverschiebunglin.pdf}
+    \caption{Phasenverschiebung in Abhängigkeit der Frequenz.}
+    \label{fig:phasenverschiebung2}
+  \end{figure}
+  Die daraus resultierenden Frequenzen lauten:
+  \begin{center}
+      $45°$$\rightarrow$$\omega_1=\SI[]{25,5728}[]{kHz}$,\\
+      $90°$$\rightarrow$$\omega_{res}=\SI[]{25,9684}[]{kHz}$ und\\
+      $135°$$\rightarrow$$\omega_2=\SI[]{26,4182}[]{kHz}$.\\
+  \end{center}
+  Die theoretischen pendants lassen sich über die nachstehenden Gleichungen bestimmen.
+  \begin{center}
+      $\omega_{1,2}=\pm \frac{R}{2L}+\sqrt{\frac{R^2}{4L^2}+\frac{1}{LC}}$,\\
+      $\omega_{res}=\sqrt{\frac{1}{LC}-\frac{R^2}{2L^2}}$
+  \end{center}
+Damit folgt dann sofort:
+\begin{center}
+    $45°$$\rightarrow$$\omega_1=(2.774\pm 0.011) \times 10^5\si[]{Hz}$,\\
+    $90°$$\rightarrow$$\omega_{res}=(1.0398\pm 0.0027)\times 10^5\si[]{kHz}$ und\\
+    $135°$$\rightarrow$$\omega_2=(1.175\pm 0.004)\times 10^5\si[]{kHz}$.\\
+  \end{center}
+\end{center}
+ 
+Die nach \autoref{eq:prozentuale} berechneten relativen Abweichungen betragen für $\omega_1$ 90.78\%, für 
+$\omega_2$ 77,9\% und für $\omega_{res}$ 74,59\%.
 
 
-\noindent
-Aus der Grafik lässt sich für die Frequenzen, bei denen die Spannung den Wert $\frac{U_\text{max}}{U_\text{Err}}\frac{1}{\sqrt{2}}$ erreicht, entnehmen als
 
-\begin{align*}
-    \omega_+ &= 35,1 \pm 0,3 \,  \si{\kilo\hertz} \\
-    \omega_- &= 38,5 \pm 0,3 \,  \si{\kilo\hertz} \, .
-\end{align*}
 
-\noindent
-Daraus folgt die Breite 
-\begin{equation*}
-    b = 3,4 \pm 0,3 \si{\kilo\hertz} \, .
-\end{equation*}
 
-\noindent
-Für die Güte kann mit der \autoref{eqn:guete} $$ q = 70 \pm 6 \, $$ berechnet werden. 
 
-\noindent
-Die theoretische Breite der Ressonanzkurve lässt sich der \autoref{eqn:wmp} nähern. Mithilfe dieser Näherung lässt sich die Breite der Ressonanzkurve und die Güte berechnen zu %w+ - w- = R/L
 
-\begin{align*}
-    b & = 8.657 \pm 0.025 \, \si{\kilo\hertz}\\
-    q & = 27.61\pm 0.04 \, . 
-\end{align*}
 
-\noindent
-Daraus folgt für den Fehler zwischen der theoretischen und gemessen Güte ein Fehler von $1.55 \pm 0.22 \si{\percent}$.
+
+
+
+
+
+
+ 
+
